@@ -17,6 +17,7 @@
 		3A5707F81F3CD8C90091B04E /* LBZFBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5707F41F3CD8C90091B04E /* LBZFBController.m */; };
 		3A5707F91F3CD8C90091B04E /* LBZFBTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5707F71F3CD8C90091B04E /* LBZFBTableView.m */; };
 		3A5707FC1F3CDA040091B04E /* LBZFBTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5707FB1F3CDA040091B04E /* LBZFBTableCell.m */; };
+		3A5708001F3CE00E0091B04E /* LBZFBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5707FF1F3CE00E0091B04E /* LBZFBModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		3A5707F71F3CD8C90091B04E /* LBZFBTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBZFBTableView.m; sourceTree = "<group>"; };
 		3A5707FA1F3CDA040091B04E /* LBZFBTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBZFBTableCell.h; sourceTree = "<group>"; };
 		3A5707FB1F3CDA040091B04E /* LBZFBTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBZFBTableCell.m; sourceTree = "<group>"; };
+		3A5707FE1F3CE00E0091B04E /* LBZFBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBZFBModel.h; sourceTree = "<group>"; };
+		3A5707FF1F3CE00E0091B04E /* LBZFBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBZFBModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,7 @@
 				3A5707B91F3CD3ED0091B04E /* AppDelegate.m */,
 				3A5707F21F3CD8C90091B04E /* controller */,
 				3A5707F51F3CD8C90091B04E /* view */,
+				3A5707FD1F3CDFFB0091B04E /* model */,
 				3A5707BE1F3CD3ED0091B04E /* Main.storyboard */,
 				3A5707C11F3CD3ED0091B04E /* Assets.xcassets */,
 				3A5707C31F3CD3ED0091B04E /* LaunchScreen.storyboard */,
@@ -164,6 +168,15 @@
 				3A5707FB1F3CDA040091B04E /* LBZFBTableCell.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		3A5707FD1F3CDFFB0091B04E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3A5707FE1F3CE00E0091B04E /* LBZFBModel.h */,
+				3A5707FF1F3CE00E0091B04E /* LBZFBModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +316,7 @@
 			files = (
 				3A5707FC1F3CDA040091B04E /* LBZFBTableCell.m in Sources */,
 				3A5707F81F3CD8C90091B04E /* LBZFBController.m in Sources */,
+				3A5708001F3CE00E0091B04E /* LBZFBModel.m in Sources */,
 				3A5707BA1F3CD3ED0091B04E /* AppDelegate.m in Sources */,
 				3A5707F91F3CD8C90091B04E /* LBZFBTableView.m in Sources */,
 				3A5707B71F3CD3ED0091B04E /* main.m in Sources */,

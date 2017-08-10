@@ -15,6 +15,8 @@
     if (self) {
         self.delegate = self;
         self.dataSource = self;
+        /// 注册cell
+        /// [self registerClass:[LBZFBTableCell class] forCellReuseIdentifier:@"LBZFBTableCell"]
     }
     return self;
 }
@@ -31,6 +33,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    /// cell 重用
     LBZFBTableCell *cell = [LBZFBTableCell cellWithTableView:tableView];
     
     return cell;

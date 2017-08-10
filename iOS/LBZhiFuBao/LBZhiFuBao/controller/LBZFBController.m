@@ -7,9 +7,10 @@
 //
 
 #import "LBZFBController.h"
-
+#import "LBZFBTableView.h"
+#import "LBZFBModel.h"
 @interface LBZFBController ()
-
+@property (nonatomic, strong) LBZFBTableView *lbzfbTableView;
 @end
 
 @implementation LBZFBController
@@ -18,7 +19,30 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor redColor];
+    /// 创建表
+    [self setUpTableView];
+    /// 加载数据
+    [self addData];
 }
 
+- (void)setUpTableView{
 
+    _lbzfbTableView = [[LBZFBTableView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen]bounds].size.width, [[UIScreen mainScreen]bounds].size.height) style:UITableViewStylePlain];
+    
+    [self.view addSubview:_lbzfbTableView];
+}
+
+- (void)addData{
+
+    NSMutableArray *dataArray = [[NSMutableArray alloc]init];
+    NSURL *url = [[NSBundle mainBundle]URLForResource:@"dataList.plist" withExtension:nil ];
+    NSArray *array = [NSArray arrayWithContentsOfURL:url];
+
+    for (NSDictionary *dic in array) {
+        LBZFBModel *model = [[LBZFBModel alloc]init];
+        [model setValuesForKeysWithDictionary:dic];
+        [dataArray addObject:model];
+    }
+    _lbzfbTableView.dataArray = dataArray;
+}
 @end
