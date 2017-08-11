@@ -37,10 +37,10 @@
     NSMutableArray *dataArray = [[NSMutableArray alloc]init];
     NSURL *url = [[NSBundle mainBundle]URLForResource:@"dataList.plist" withExtension:nil ];
     NSArray *array = [NSArray arrayWithContentsOfURL:url];
-
+    /// array = dataArray.copy; copy 把一个可变的copy成不可变
     for (NSDictionary *dic in array) {
-        LBZFBModel *model = [[LBZFBModel alloc]init];
-        [model setValuesForKeysWithDictionary:dic];
+        //LBZFBModel *model = [LBZFBModel mj_objectWithKeyValues:dic];
+        LBZFBModel *model = [LBZFBModel modelWithDict:dic];
         [dataArray addObject:model];
     }
     _lbzfbTableView.dataArray = dataArray;

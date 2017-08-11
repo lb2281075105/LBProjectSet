@@ -23,6 +23,7 @@
 
 - (void)setDataArray:(NSMutableArray *)dataArray{
     _dataArray = dataArray;
+    NSLog(@"%ld",_dataArray.count);
     /// 刷新表
     [self reloadData];
 }
