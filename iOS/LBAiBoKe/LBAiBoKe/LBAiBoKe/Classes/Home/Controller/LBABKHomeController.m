@@ -7,31 +7,40 @@
 //
 
 #import "LBABKHomeController.h"
-
+#import "LBABKHomeTopView.h"
 @interface LBABKHomeController ()
-
+// 设置上部视图
+@property (nonatomic, strong) LBABKHomeTopView *topView;
 @end
 
 @implementation LBABKHomeController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // 设置上部视图
+    [self setUpTopView];
+    
+}
+// 设置上部视图
+- (void)setUpTopView{
+   
+    _topView = [[LBABKHomeTopView alloc]init];
+    _topView.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:_topView];
+    [_topView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.top.equalTo(@0);
+        make.height.equalTo(@80);
+    }];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
 }
-*/
 
 @end
