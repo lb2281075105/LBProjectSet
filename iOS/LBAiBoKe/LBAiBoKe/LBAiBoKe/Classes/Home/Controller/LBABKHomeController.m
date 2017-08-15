@@ -111,14 +111,17 @@
 - (void)addData{
 
     [LBABKNetService getArticleWithId:@"8888" WithBlock:^(NSDictionary *result, NSError *error) {
-        NSLog(@"%@",result);
+        // NSLog(@"%@",result);
         
-        for (NSDictionary *dic in result[@"data"]) {
-            LBABKModel *model = [LBABKModel mj_objectWithKeyValues:dic];
-            [_dataArray addObject:model];
+        if ([result[@"ret"] integerValue] == 200) {
+            
+            for (NSDictionary *dic in result[@"data"]) {
+                LBABKModel *model = [LBABKModel mj_objectWithKeyValues:dic];
+                [_dataArray addObject:model];
+            }
+            _tableView.dataArray = _dataArray;
+            _downScrollView.contentSize = CGSizeMake(0, _dataArray.count * 90 + 452);
         }
-        _tableView.dataArray = _dataArray;
-        _downScrollView.contentSize = CGSizeMake(0, _dataArray.count * 90 + 452);
     }];
 
 }
