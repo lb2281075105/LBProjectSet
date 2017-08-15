@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3CD3EC0BE1C6F9766D208FDB /* Pods_LBAiBoKe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660164CEDE1EF2BA42C5D470 /* Pods_LBAiBoKe.framework */; };
+		F85C2AC31F42F92F002779E9 /* LBABKCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F85C2AC21F42F92F002779E9 /* LBABKCenterView.m */; };
 		F887D6061F42781900EF1FAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F887D6051F42781900EF1FAA /* main.m */; };
 		F887D60F1F42781900EF1FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F887D60D1F42781900EF1FAA /* Main.storyboard */; };
 		F887D6121F42781900EF1FAA /* LBAiBoKe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F887D6101F42781900EF1FAA /* LBAiBoKe.xcdatamodeld */; };
@@ -43,12 +44,15 @@
 		F887D6A11F42D6CC00EF1FAA /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F887D6981F42D6CC00EF1FAA /* SDCollectionViewCell.m */; };
 		F887D6A21F42D6CC00EF1FAA /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F887D69A1F42D6CC00EF1FAA /* SDCycleScrollView.m */; };
 		F887D6A31F42D6CC00EF1FAA /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F887D69C1F42D6CC00EF1FAA /* UIView+SDExtension.m */; };
+		F887D6AA1F42E86300EF1FAA /* LBABKAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = F887D6A91F42E86300EF1FAA /* LBABKAdView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21A9D5EA17FC8677DCF20949 /* Pods-LBAiBoKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBAiBoKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBAiBoKe/Pods-LBAiBoKe.debug.xcconfig"; sourceTree = "<group>"; };
 		660164CEDE1EF2BA42C5D470 /* Pods_LBAiBoKe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBAiBoKe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6AFC05F720BB1AE65B4A22 /* Pods-LBAiBoKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBAiBoKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBAiBoKe/Pods-LBAiBoKe.release.xcconfig"; sourceTree = "<group>"; };
+		F85C2AC11F42F92F002779E9 /* LBABKCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBABKCenterView.h; sourceTree = "<group>"; };
+		F85C2AC21F42F92F002779E9 /* LBABKCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBABKCenterView.m; sourceTree = "<group>"; };
 		F887D6011F42781900EF1FAA /* LBAiBoKe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBAiBoKe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F887D6051F42781900EF1FAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F887D60E1F42781900EF1FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 		F887D69A1F42D6CC00EF1FAA /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
 		F887D69B1F42D6CC00EF1FAA /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
 		F887D69C1F42D6CC00EF1FAA /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		F887D6A81F42E86300EF1FAA /* LBABKAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBABKAdView.h; sourceTree = "<group>"; };
+		F887D6A91F42E86300EF1FAA /* LBABKAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBABKAdView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +429,10 @@
 			children = (
 				F887D6821F4292F400EF1FAA /* LBABKHomeTopView.h */,
 				F887D6831F4292F400EF1FAA /* LBABKHomeTopView.m */,
+				F887D6A81F42E86300EF1FAA /* LBABKAdView.h */,
+				F887D6A91F42E86300EF1FAA /* LBABKAdView.m */,
+				F85C2AC11F42F92F002779E9 /* LBABKCenterView.h */,
+				F85C2AC21F42F92F002779E9 /* LBABKCenterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -653,6 +663,7 @@
 				F887D69D1F42D6CC00EF1FAA /* TAAbstractDotView.m in Sources */,
 				F887D6811F428A6F00EF1FAA /* UIView+Toast.m in Sources */,
 				F887D67A1F4282FB00EF1FAA /* UIView+CZAddition.m in Sources */,
+				F887D6AA1F42E86300EF1FAA /* LBABKAdView.m in Sources */,
 				F887D64B1F427E5500EF1FAA /* LBABKShopController.m in Sources */,
 				F887D6781F4282FB00EF1FAA /* UILabel+CZAddition.m in Sources */,
 				F887D6741F4282FB00EF1FAA /* NSString+CZHash.m in Sources */,
@@ -670,6 +681,7 @@
 				F887D68C1F42CE4700EF1FAA /* UIView+YMExtension.m in Sources */,
 				F887D6711F4282FB00EF1FAA /* NSAttributedString+CZAdditon.m in Sources */,
 				F887D6761F4282FB00EF1FAA /* UIButton+CZAddition.m in Sources */,
+				F85C2AC31F42F92F002779E9 /* LBABKCenterView.m in Sources */,
 				F887D6121F42781900EF1FAA /* LBAiBoKe.xcdatamodeld in Sources */,
 				F887D62E1F427B5300EF1FAA /* LBABKTabBarController.m in Sources */,
 				F887D6061F42781900EF1FAA /* main.m in Sources */,

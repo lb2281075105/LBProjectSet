@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor cz_colorWithHex:0xFFF6F8];
     [self.window makeKeyAndVisible];
     
     LBABKTabBarController *tabbar = [[LBABKTabBarController alloc]init];
