@@ -8,9 +8,14 @@
 
 #import "LBABKHomeController.h"
 #import "LBABKHomeTopView.h"
-@interface LBABKHomeController ()
+
+@interface LBABKHomeController ()<UIScrollViewDelegate>
 // 设置上部视图
 @property (nonatomic, strong) LBABKHomeTopView *topView;
+///最底层滑动视图
+@property (strong, nonatomic) UIScrollView *downScrollView;
+///轮播图
+@property (strong, nonatomic) SDCycleScrollView *topScrollView;
 @end
 
 @implementation LBABKHomeController
@@ -19,7 +24,7 @@
     [super viewDidLoad];
     // 设置上部视图
     [self setUpTopView];
-    
+    [self addSubViews];
 }
 // 设置上部视图
 - (void)setUpTopView{
@@ -33,7 +38,25 @@
     }];
     
 }
+- (void)addSubViews{
+    ///最底层滑动视图
+    _downScrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 82, [UIScreen cz_screenWidth], [UIScreen cz_screenHeight] - 82 - 49)];
+    _downScrollView.contentSize = CGSizeMake(0, 1980);
+    _downScrollView.delegate = self;
+    
+    ///轮播图
+    _topScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, [UIScreen cz_screenWidth], 130) delegate:nil placeholderImage:[UIImage imageNamed:@"图标1"]];
+    _topScrollView.backgroundColor = [UIColor orangeColor];
+    _topScrollView.pageControlAliment = SDCycleScrollViewPageContolAlimentCenter;
+    _topScrollView.currentPageDotColor = [UIColor whiteColor];
+    NSArray *imageUrlArray = @[@"德国11",@"九月活动"];
+    _topScrollView.imageURLStringsGroup = imageUrlArray;
+    
+    
+    [self.view addSubview:self.downScrollView];
+    [self.downScrollView addSubview:self.topScrollView];
 
+}
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;

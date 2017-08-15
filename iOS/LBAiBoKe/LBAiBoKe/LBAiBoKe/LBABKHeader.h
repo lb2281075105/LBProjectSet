@@ -12,6 +12,7 @@
 #ifdef DEBUG
 ///LBABKLog是不限制参数的，中间用三个英文句号表示
 #define LBABKLog(...) NSLog(__VA_ARGS__)
+#define WidthScale [UIScreen mainScreen].bounds.size.width / 375.0
 ///如果是发布状态LBABKLog就直接为空
 #elif
 #define LBABKLog(...)

@@ -7,4 +7,5 @@ target 'LBAiBoKe' do
 pod 'Masonry'
 pod 'AFNetworking'
 pod 'MJExtension'
+pod 'SDWebImage'
 end

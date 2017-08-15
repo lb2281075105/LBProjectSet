@@ -110,7 +110,7 @@
         [self addSubview:centerButton];
         [_arrayButton addObject:centerButton];
         _indicatorView.y = 78;
-        _indicatorView.x = 105;
+        _indicatorView.x = 105 * WidthScale;
         [centerButton mas_makeConstraints:^(MASConstraintMaker *make) {
             if (i == 0) {
                 make.left.equalTo(sundayLabel.mas_right).offset((i+1) * 30);
@@ -135,7 +135,6 @@
             _indicatorView.height = 2;
             _indicatorView.centerX = centerButton.centerX;
             _indicatorView.hidden = NO;
-            LBABKLog(@"%f,%f",_indicatorView.frame.origin.y,_indicatorView.frame.size.width);
         }
     }
     
