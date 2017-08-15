@@ -10,6 +10,7 @@
 #import "LBABKHomeTopView.h"
 #import "LBABKAdView.h"
 #import "LBABKCenterView.h"
+#import "LBABKFeatureView.h"
 @interface LBABKHomeController ()<UIScrollViewDelegate>
 // 设置上部视图
 @property (nonatomic, strong) LBABKHomeTopView *topView;
@@ -23,6 +24,8 @@
 @property (strong, nonatomic) LBABKAdView *adView;
 /// 中间分类模块
 @property (strong, nonatomic) LBABKCenterView *centerView;
+/// 有特色模块
+@property (strong, nonatomic) LBABKFeatureView *featureView;
 @end
 
 @implementation LBABKHomeController
@@ -77,7 +80,10 @@
     _centerView.backgroundColor = [UIColor redColor];
     [self.downScrollView addSubview:_centerView];
     
-    
+    // 有特色
+    _featureView = [[LBABKFeatureView alloc]initWithFrame:CGRectMake(0, 410, [UIScreen cz_screenWidth], 40)];
+    _featureView.backgroundColor = [UIColor redColor];
+    [self.downScrollView addSubview:_featureView];
     
     
     
