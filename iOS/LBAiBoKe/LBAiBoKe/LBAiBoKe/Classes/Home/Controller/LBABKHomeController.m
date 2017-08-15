@@ -11,6 +11,9 @@
 #import "LBABKAdView.h"
 #import "LBABKCenterView.h"
 #import "LBABKFeatureView.h"
+#import "LBABKTableView.h"
+#import "LBABKNetService.h"
+#import "LBABKModel.h"
 @interface LBABKHomeController ()<UIScrollViewDelegate>
 // 设置上部视图
 @property (nonatomic, strong) LBABKHomeTopView *topView;
@@ -26,15 +29,22 @@
 @property (strong, nonatomic) LBABKCenterView *centerView;
 /// 有特色模块
 @property (strong, nonatomic) LBABKFeatureView *featureView;
+/// 添加表视图
+@property (strong, nonatomic) LBABKTableView *tableView;
+@property (strong, nonatomic) NSMutableArray *dataArray;
+
 @end
 
 @implementation LBABKHomeController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _dataArray = [[NSMutableArray alloc]init];
     // 设置上部视图
     [self setUpTopView];
+    // 布局子视图
     [self addSubViews];
+    [self addData];
 }
 // 设置上部视图
 - (void)setUpTopView{
@@ -85,7 +95,8 @@
     _featureView.backgroundColor = [UIColor redColor];
     [self.downScrollView addSubview:_featureView];
     
-    
+    // 添加表示图
+    _tableView = [[LBABKTableView alloc]initWithFrame:CGRectMake(0, 451, [UIScreen cz_screenWidth], 1700) style:UITableViewStylePlain];
     
     
     
@@ -93,7 +104,22 @@
     
     [self.view addSubview:self.downScrollView];
     [self.downScrollView addSubview:self.topScrollView];
+    [self.downScrollView addSubview:self.tableView];
     [self.downScrollView addSubview:self.topScrollView1];
+
+}
+- (void)addData{
+
+    [LBABKNetService getArticleWithId:@"8888" WithBlock:^(NSDictionary *result, NSError *error) {
+        NSLog(@"%@",result);
+        
+        for (NSDictionary *dic in result[@"data"]) {
+            LBABKModel *model = [LBABKModel mj_objectWithKeyValues:dic];
+            [_dataArray addObject:model];
+        }
+        _tableView.dataArray = _dataArray;
+        _downScrollView.contentSize = CGSizeMake(0, _dataArray.count * 90 + 452);
+    }];
 
 }
 - (void)viewWillAppear:(BOOL)animated{

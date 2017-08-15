@@ -35,6 +35,7 @@
 
     UILabel *label = [[UILabel alloc]init];
     label.text = @"有特色";
+    label.font = [UIFont systemFontOfSize:15];
     [self addSubview:label];
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(indicatorView.mas_right).offset(10);

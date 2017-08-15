@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A607EE31F43288500D288E4 /* LBABKTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A607EE21F43288500D288E4 /* LBABKTableView.m */; };
+		3A607EE61F432A8500D288E4 /* LBABKTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A607EE51F432A8500D288E4 /* LBABKTableCell.m */; };
+		3A607EED1F435AB000D288E4 /* LBABKSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A607EEC1F435AB000D288E4 /* LBABKSingle.m */; };
+		3A607EF01F435D0400D288E4 /* LBABKNetService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A607EEF1F435D0400D288E4 /* LBABKNetService.m */; };
+		3A607EF31F4366CC00D288E4 /* LBABKModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A607EF21F4366CC00D288E4 /* LBABKModel.m */; };
 		3CD3EC0BE1C6F9766D208FDB /* Pods_LBAiBoKe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660164CEDE1EF2BA42C5D470 /* Pods_LBAiBoKe.framework */; };
 		F85C2AC31F42F92F002779E9 /* LBABKCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F85C2AC21F42F92F002779E9 /* LBABKCenterView.m */; };
 		F85C2AC61F430036002779E9 /* LBABKFeatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = F85C2AC51F430036002779E9 /* LBABKFeatureView.m */; };
@@ -50,6 +55,16 @@
 
 /* Begin PBXFileReference section */
 		21A9D5EA17FC8677DCF20949 /* Pods-LBAiBoKe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBAiBoKe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBAiBoKe/Pods-LBAiBoKe.debug.xcconfig"; sourceTree = "<group>"; };
+		3A607EE11F43288500D288E4 /* LBABKTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBABKTableView.h; sourceTree = "<group>"; };
+		3A607EE21F43288500D288E4 /* LBABKTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBABKTableView.m; sourceTree = "<group>"; };
+		3A607EE41F432A8500D288E4 /* LBABKTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBABKTableCell.h; sourceTree = "<group>"; };
+		3A607EE51F432A8500D288E4 /* LBABKTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBABKTableCell.m; sourceTree = "<group>"; };
+		3A607EEB1F435AB000D288E4 /* LBABKSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBABKSingle.h; sourceTree = "<group>"; };
+		3A607EEC1F435AB000D288E4 /* LBABKSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBABKSingle.m; sourceTree = "<group>"; };
+		3A607EEE1F435D0400D288E4 /* LBABKNetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBABKNetService.h; sourceTree = "<group>"; };
+		3A607EEF1F435D0400D288E4 /* LBABKNetService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBABKNetService.m; sourceTree = "<group>"; };
+		3A607EF11F4366CC00D288E4 /* LBABKModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBABKModel.h; path = LBAiBoKe/net/LBABKModel.h; sourceTree = SOURCE_ROOT; };
+		3A607EF21F4366CC00D288E4 /* LBABKModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBABKModel.m; path = LBAiBoKe/net/LBABKModel.m; sourceTree = SOURCE_ROOT; };
 		660164CEDE1EF2BA42C5D470 /* Pods_LBAiBoKe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBAiBoKe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6AFC05F720BB1AE65B4A22 /* Pods-LBAiBoKe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBAiBoKe.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBAiBoKe/Pods-LBAiBoKe.release.xcconfig"; sourceTree = "<group>"; };
 		F85C2AC11F42F92F002779E9 /* LBABKCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBABKCenterView.h; sourceTree = "<group>"; };
@@ -150,6 +165,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3A607EE71F43312200D288E4 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				3A607EEB1F435AB000D288E4 /* LBABKSingle.h */,
+				3A607EEC1F435AB000D288E4 /* LBABKSingle.m */,
+				3A607EEE1F435D0400D288E4 /* LBABKNetService.h */,
+				3A607EEF1F435D0400D288E4 /* LBABKNetService.m */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
 		97A3E4BE6EEB7716E9C09224 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +210,7 @@
 				F887D61F1F4279A600EF1FAA /* model */,
 				F887D6551F4282FA00EF1FAA /* common */,
 				F887D6201F4279A600EF1FAA /* orther */,
+				3A607EE71F43312200D288E4 /* net */,
 				F887D60D1F42781900EF1FAA /* Main.storyboard */,
 				F887D67C1F42836100EF1FAA /* LBABKHeader.h */,
 				F887D67D1F42848D00EF1FAA /* LBABKHeaderPch.pch */,
@@ -207,6 +234,8 @@
 		F887D61F1F4279A600EF1FAA /* model */ = {
 			isa = PBXGroup;
 			children = (
+				3A607EF11F4366CC00D288E4 /* LBABKModel.h */,
+				3A607EF21F4366CC00D288E4 /* LBABKModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -438,6 +467,10 @@
 				F85C2AC21F42F92F002779E9 /* LBABKCenterView.m */,
 				F85C2AC41F430036002779E9 /* LBABKFeatureView.h */,
 				F85C2AC51F430036002779E9 /* LBABKFeatureView.m */,
+				3A607EE11F43288500D288E4 /* LBABKTableView.h */,
+				3A607EE21F43288500D288E4 /* LBABKTableView.m */,
+				3A607EE41F432A8500D288E4 /* LBABKTableCell.h */,
+				3A607EE51F432A8500D288E4 /* LBABKTableCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -610,9 +643,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LBAiBoKe/Pods-LBAiBoKe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -640,13 +682,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LBAiBoKe-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -660,12 +705,15 @@
 				F887D69F1F42D6CC00EF1FAA /* TADotView.m in Sources */,
 				F887D6241F4279BD00EF1FAA /* AppDelegate.m in Sources */,
 				F887D6481F427E4200EF1FAA /* LBABKHomeController.m in Sources */,
+				3A607EF31F4366CC00D288E4 /* LBABKModel.m in Sources */,
 				F887D6721F4282FB00EF1FAA /* NSObject+CZRuntime.m in Sources */,
 				F887D6731F4282FB00EF1FAA /* NSString+CZBase64.m in Sources */,
+				3A607EF01F435D0400D288E4 /* LBABKNetService.m in Sources */,
 				F887D64E1F427E6A00EF1FAA /* LBABKClassifyController.m in Sources */,
 				F887D6A31F42D6CC00EF1FAA /* UIView+SDExtension.m in Sources */,
 				F887D6511F427E7600EF1FAA /* LBABKMineController.m in Sources */,
 				F887D69D1F42D6CC00EF1FAA /* TAAbstractDotView.m in Sources */,
+				3A607EE61F432A8500D288E4 /* LBABKTableCell.m in Sources */,
 				F887D6811F428A6F00EF1FAA /* UIView+Toast.m in Sources */,
 				F887D67A1F4282FB00EF1FAA /* UIView+CZAddition.m in Sources */,
 				F887D6AA1F42E86300EF1FAA /* LBABKAdView.m in Sources */,
@@ -677,7 +725,9 @@
 				F887D67B1F4282FB00EF1FAA /* UIViewController+CZAddition.m in Sources */,
 				F887D6791F4282FB00EF1FAA /* UIScreen+CZAddition.m in Sources */,
 				F887D6311F427C1400EF1FAA /* LBABKNaviController.m in Sources */,
+				3A607EED1F435AB000D288E4 /* LBABKSingle.m in Sources */,
 				F887D69E1F42D6CC00EF1FAA /* TAAnimatedDotView.m in Sources */,
+				3A607EE31F43288500D288E4 /* LBABKTableView.m in Sources */,
 				F887D6A01F42D6CC00EF1FAA /* TAPageControl.m in Sources */,
 				F887D6751F4282FB00EF1FAA /* NSString+CZPath.m in Sources */,
 				F887D6701F4282FA00EF1FAA /* NSArray+Log.m in Sources */,
