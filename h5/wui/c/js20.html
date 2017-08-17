@@ -31,7 +31,7 @@ firstCallback : function(i,sum,me){
             me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
         }
 });  
-	  });    
+      });    
       
       </script>
 
@@ -84,15 +84,33 @@ document.addEventListener('DOMContentLoaded', loaded, false);
     </div>
 </div>
 <div id="insert1" ></div>
+<div style="padding: 10px;border: 1px solid green;height: 30px">
+       <span style="background-color: red;width: 1px;padding-left: 10px;height:20px;"></span>      
+        <span style="line-height: 30px;padding-left: 10px;padding-top: 17px">服务项目</span>
 
-<ul class="mainmenu">
-	<li>
-			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014938&idx=2&sn=41cc501ff053f92c364a34a747ceddf5&chksm=bd059f9f8a72168932afc68c6a2f99d95eb667b535e71ee7e5da729d34a4e0484a3f30b911d1#rd&wecha_id=" >
-				<em></em><p><span>服务项目</span><i></i></p><b></b>
-			</a>
-		</li>
-</ul>
-
+</div>
+<div class="weui_panel weui_panel_access">
+            <div class="weui_panel_bd">
+                <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <img class="weui_media_appmsg_thumb" src="../images/thumb_561ccc7b0b71b.jpg" alt="" height="100%" width="100px">
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">标题1</h4>
+                        <p class="weui_media_desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+                    </div>
+                </a>
+                <a href="javascript:void(0);" class="weui_media_box weui_media_appmsg">
+                    <div class="weui_media_hd">
+                        <img class="weui_media_appmsg_thumb" src="../images/thumb_561ccc7b0b71b.jpg" alt="" height="100%" width="100px">
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">标题二</h4>
+                        <p class="weui_media_desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+                    </div>
+                </a>
+            </div>
+        </div>        
 <div class="weui-footer">
             <p class="weui-footer-links">
                 <a href="javascript:void(0);" class="weui-footer-link">底部链接</a>
@@ -101,7 +119,7 @@ document.addEventListener('DOMContentLoaded', loaded, false);
             <p class="weui-footer-text">Copyright &copy; 2008-2016 移植</p>
         </div>
         <script>
-var count = document.getElementById("thelist").getElementsByTagName("img").length;	
+var count = document.getElementById("thelist").getElementsByTagName("img").length;  
 
 var count2 = document.getElementsByClassName("menuimg").length;
 for(i=0;i<count;i++){
