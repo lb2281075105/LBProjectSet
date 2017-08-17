@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+ <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta charset="utf-8">
+<link href="../style/css/cate.css" rel="stylesheet" type="text/css" />
+ <link href="../style/css/iscroll.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="../style/weui.css"/>
+  <link rel="stylesheet" href="../style/weui2.css"/>
+  <link rel="stylesheet" href="../style/weui3.css"/>
+      <script src="../zepto.min.js"></script>
+      <script src="../swipe.js"></script>
+      <script>
+  $(function(){
+$('#slide1').swipeSlide({
+autoSwipe:true,//自动切换默认是
+speed:3000,//速度默认4000
+continuousScroll:true,//默认否
+transitionType:'cubic-bezier(0.22, 0.69, 0.72, 0.88)',//过渡动画linear/ease/ease-in/ease-out/ease-in-out/cubic-bezier
+lazyLoad:true,//懒加载默认否
+firstCallback : function(i,sum,me){
+            me.find('.dot').children().first().addClass('cur');
+        },
+        callback : function(i,sum,me){
+            me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+        }
+});  
+	  });    
+      
+      </script>
+
+      <script src="style/js/iscroll.js" type="text/javascript"></script>
+<script type="text/javascript">
+var myScroll;
+
+function loaded() {
+myScroll = new iScroll('wrapper', {
+snap: true,
+momentum: false,
+hScrollbar: false,
+onScrollEnd: function () {
+document.querySelector('#indicator > li.active').className = '';
+document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+}
+ });
+ 
+ 
+}
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+</head>
+
+<body ontouchstart style="background-color: #f8f8f8;">
+
+<div class="slide" id="slide1">
+    <ul>
+        <li>
+            <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="../images/thumb_561ccbf96acfc.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="../images/thumb_561ccc7b0b71b.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" data-src="../images/thumb_561f5c6990f56.jpg" alt="">
+            </a>
+        </li>
+    </ul>
+    <div class="dot">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div id="insert1" ></div>
+
+<ul class="mainmenu">
+	<li>
+			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014938&idx=2&sn=41cc501ff053f92c364a34a747ceddf5&chksm=bd059f9f8a72168932afc68c6a2f99d95eb667b535e71ee7e5da729d34a4e0484a3f30b911d1#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载-47【视频—曲线单梁加移动荷载及纵向折减系数】</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014883&idx=2&sn=319bfb202b5f3bab48d63de11175cbbe&chksm=bd059fe68a7216f0a6afe141c9c80e1b9740955235fe3f05e783faeb833075f250e12efb750b#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载-46【视频—网格共节点举例—千斤顶反力架】</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014849&idx=2&sn=17377997431f79f787481c57983dd7bc&chksm=bd059fc48a7216d28d5833de89f39e662bee6d9e9a8ba09ca6eb2343820ab02dd98fb2ed9796#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载-45【视频—BOSS开讲-如何得到合理的地锚式悬索的平衡状态】</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014798&idx=2&sn=91f699960e808844280f5bdc67d02871&chksm=bd059e0b8a72171d2f8349e83401b60f5e26e43400b7e0d02d96b46a23798317c92d6e2516c8#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载-44【视频-桥梁微讲堂-映射网格举例—花瓶墩网格】</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://v.qq.com/x/page/n0519tf5ipo.html?wecha_id=" >
+				<em></em><p><span>桥梁网络课堂-Civil桥梁抗震专题—反应谱分析方法（一）0331 </span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://v.qq.com/x/page/g05127bcbjr.html?wecha_id=" >
+				<em></em><p><span>桥梁网络课堂-FEA桥梁检测专题 小箱梁二0526</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="/index.php?g=Wap&m=Index&a=content&id=193&classid=151&token=eeuqdt1444454641" >
+				<em></em><p><span>桥梁网络课堂-抗震分析-反应谱分析（二）0425</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://v.qq.com/x/page/t0506ssypa7.html?wecha_id=" >
+				<em></em><p><span>桥梁网络课堂-抗震专题——Pushover分析方法0523</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="/index.php?g=Wap&m=Index&a=content&id=194&classid=151&token=eeuqdt1444454641" >
+				<em></em><p><span>桥梁网络课堂-FEA桥梁检测专题-小箱梁（一）0428</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014750&idx=1&sn=12d23bcf1997db255c2f16eb81a03146&chksm=bd059e5b8a72174df1002eb65124ce4e08fa54966fbe53b1d3615f99f5508258355f1e72bd97#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载-43【视频—桥梁微讲堂—受拉区钢束预应力计算】</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014692&idx=2&sn=db240d18653e597643a0d810ecb9082b&chksm=bd059ea18a7217b7005dfa02dd0d113828ba2868330cb570e59d64a4be1ac243bbaff4427547#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载-42【视频—用FEA几何功能创建空间钢筋】</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014662&idx=2&sn=866b8f21705bbf83cc59c21553b0e2e0&chksm=bd059e838a721795d54b617f25dc656e594660ed659f13a2cf489be8bd1f2fafbdd6709a45df#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载-41【视频—Civil钢束输入方法】</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014612&idx=3&sn=85b1c8fd19163840218cdaaf57884611&chksm=bd059ed18a7217c7643c6944c442856523d9a24a708e61ce2c002912adab12d0da682ab1d8e3#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载-40【视频—印刻功能的应用】</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014561&idx=2&sn=3c55be8b0eb6944a6d3389a32fd49b48&chksm=bd0591248a721832ea5c78dab12092d0cbb3f21534d35c646ea7eade94a51714488b92ccf4b9#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载-39【视频—PSC建模助手】</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014392&idx=2&sn=904c2ed7a778a8a9f19d52c09db549c8&chksm=bd0591fd8a7218eb5b1de352fe45b3b892d8aba77fc4aa7b45c3e9dff1eb6d3080ad42185b66#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载-38【视频—CAD文件的导入和处理】</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="https://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014357&idx=1&sn=38ea510dca6bece71ea5c1730942b9c5&chksm=bd0591d08a7218c61468e4a2fc3a6364cbd73bc6992f68854d9088ad7a9fbd112796208ec9c9#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载-37【视频—梁格建模助手】</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="http://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014289&idx=3&sn=77e9564c324eadb4ed13ff35ec704df2&chksm=bd0590148a7219029abfeddc3006c4b69caa94841686ffec8c7c984c06c8b8441ddaecd8e21a#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载【视频-FEA坐标系统】-36</span><i></i></p><b></b>
+			</a>
+		</li><li>
+			<a href="http://mp.weixin.qq.com/s?__biz=MjM5Njc5OTQwMg==&mid=2652014212&idx=3&sn=6525bcf6f2fe76217eb84fb9e58875ca&chksm=bd0590418a721957af121689ed86c341ca7e3e42026a3f00490d470c8f1110aeb4792a5001c5#rd&wecha_id=" >
+				<em></em><p><span>桥梁微课堂连载【有效宽度】-35</span><i></i></p><b></b>
+			</a>
+		</li>
+</ul>
+
+<div class="weui-footer">
+            <p class="weui-footer-links">
+                <a href="javascript:void(0);" class="weui-footer-link">底部链接</a>
+                <a href="javascript:void(0);" class="weui-footer-link">底部链接</a>
+            </p>
+            <p class="weui-footer-text">Copyright &copy; 2008-2016 移植</p>
+        </div>
+        <script>
+var count = document.getElementById("thelist").getElementsByTagName("img").length;	
+
+var count2 = document.getElementsByClassName("menuimg").length;
+for(i=0;i<count;i++){
+ document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+
+}
+document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+
+ setInterval(function(){
+myScroll.scrollToPage('next', 0,400,count);
+},3500 );
+window.onresize = function(){ 
+for(i=0;i<count;i++){
+document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+
+}
+ document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+} 
+
+
+</script>
+<div class="copyright">
+</div>  <script src="style/js/jquery.min.js" type="text/javascript"></script>
+</body>
+</html>
