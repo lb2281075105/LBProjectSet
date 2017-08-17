@@ -1,0 +1,3 @@
+rootProject.name = 'EImageDemo'
+
+include ':app'
