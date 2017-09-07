@@ -60,27 +60,50 @@
 	margin: 0 auto;
 	border-bottom: 2px solid red;
 }
-.search{
-	width: 200px;
+.nav >.search{
+	/*width: 980px;*/
 	height: 84px;
+	/*background-color: red;*/
+	position: relative;
 }
-.nav .search > img{
-	margin-right: auto;
-	/*display: inline;*/
-	/*float: left;*/
-}
-.nav .search > .images{
+.nav > .search > .imagesClass{
 	float: left;
 }
-.nav .search > .inputClass{
-	float: right;
-}
-/*.search > input{
+.nav > .search > .inputClass > input{
 	height: 30px;
 	width: 300px;
 	outline-style: none;
 	padding-left: 5px;
-	display: inline;
-	/*float: right;
 	background: url(images/serch.png)  no-repeat right center;
-}*/
+}
+.nav > .search > .inputClass{
+	float: right;
+	/*margin-right: auto;*/
+	position: absolute;
+	right: 0px;
+	line-height: 84px;
+	/*background-color: green;*/
+}
+.nav > .tab{
+	/*background-color: green;*/
+	position: relative;
+	height: 41px;
+}
+.nav > .tab > .tab_content > ul{
+     list-style: none;
+}
+.nav > .tab > .tab_content > ul > li{
+     float: left;
+     font-size: 12px;
+}
+.nav > .tab > .tab_content > ul > li > a{
+	 padding: 5px 10px;
+	 text-decoration: none;
+}
+.nav > .tab > .tab_content > ul > li > a:hover{
+	 background-color: #0266a3;
+}
+.nav > .tab > .tab_content{
+	 position: absolute;
+     bottom: 5px;
+}
