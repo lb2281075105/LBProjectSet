@@ -1,0 +1,49 @@
+/* 初始化 */
+
+body{
+    background-color: #F8F8F8;
+}
+
+/* 颜色辅助 */
+
+.bg-white{
+    background-color: #ffffff;
+}
+
+.bg-red{
+    background-color: red;
+}
+.bg-orange{
+    background-color: orange;
+}
+
+.color-white{
+    color: #ffffff;
+}
+
+/* 边框辅助 */
+
+.border-none{
+    border :none !important;
+}
+
+
+
+/*  对齐方式辅助 */
+.text-left{
+    text-align: left !important;
+}
+
+/* padding 辅助 */
+.pd-30{
+    padding: 30px;
+}
+
+.pd-40{
+    padding: 40px;
+}
+
+/* margin 辅助 */
+.mab-40{
+    margin-bottom: 40px;
+}

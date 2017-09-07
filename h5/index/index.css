@@ -30,15 +30,7 @@
 	font-size: 12px;
 	color: rgba(66,66,66);
 }
-/* 清除浮动： */
-.clearFix:after{
-	content: ".";
-	display: block;
-	height: 0;
-	line-height: 0;
-	visibility: hidden;
-	clear:both;
-}
+
 .header_right > ul > li{
 	position: relative;
 }
@@ -107,3 +99,159 @@
 	 position: absolute;
      bottom: 5px;
 }
+/* 商机市场 */
+.buziness{
+	width: 980px;
+	height: 210px;
+	margin: 0px auto;
+	/*background-color: green;*/
+	margin-top: 10px;
+}
+.buziness > .buziness_left{
+	height: 210px;
+	width: 200px;
+	float: left;
+}
+.buziness > .buziness_left > .buziness_left_center{
+	color: white;
+	line-height: 30px;
+	background-color: #0266a3;
+	padding-left: 10px;
+
+}
+.buziness > .buziness_left > .buziness_left_down{
+	background-color: #ebf0f6;
+	height: 160px;
+	padding: 10px 10px;
+}
+.buziness > .buziness_left > .buziness_left_down > ul{
+    list-style: none;
+}
+.buziness > .buziness_left > .buziness_left_down > ul > li{
+	padding-left: 20px;
+}
+.buziness > .buziness_left > .buziness_left_down > ul > li > a{
+	padding: 5px 5px;
+	font-size: 13px;
+	text-decoration: none;
+}
+.buziness > .buziness_left > .buziness_left_down > ul > li > a:hover{
+	color: red;
+	text-decoration: underline;
+}
+.buziness > .buziness_left > .buziness_left_down > ul > .one{
+	background: url(images/icon_1.png) no-repeat left center;
+}
+.buziness > .buziness_left > .buziness_left_down > ul > .two{
+	background: url(images/icon_2.png) no-repeat left center;
+}
+.buziness > .buziness_left > .buziness_left_down > ul > .three{
+	background: url(images/icon_3.png) no-repeat left center;
+}
+.buziness > .buziness_left > .buziness_left_down > ul > .four{
+	background: url(images/icon_4.png) no-repeat left center;
+}
+.buziness > .buziness_left > .buziness_left_down > ul > .five{
+	background: url(images/icon_5.png) no-repeat left center;
+}
+.buziness > .buziness_left > .buziness_left_down > ul > .six{
+	background: url(images/icon_6.png) no-repeat left center;
+}
+.buziness > .buziness_center{
+	height: 210px;
+	width: 540px;
+	float: left;
+	background: url(images/center.png) no-repeat center center;
+}
+.buziness > .buziness_right{
+	height: 210px;
+	width: 240px;
+	float: left;
+	position: relative;
+}
+.buziness > .buziness_right > .buziness_right_top{
+	height: 95px;
+	background-color: red;
+    margin-right: 0px;
+	background: url(images/center-r.png) no-repeat top right;
+}
+.buziness > .buziness_right > .buziness_right_down{
+	height: 115px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	background: url(images/center-r2.png) no-repeat bottom right;
+}
+/* 建筑材料 */
+.jianzhucailiao{
+	width: 970px;
+	height: 30px;
+	margin: 0 auto;
+	background-color: #ecf1f7;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	line-height: 30px;
+	padding-left: 10px;
+	margin-top: 15px;
+	font-size: 14px;
+}
+.cailiao{
+	width: 980px;
+	height: 345px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.cailiao > .cailiaoLeft{
+	width: 730px;
+	height: 345px;
+	border: 1px solid gray;
+	float: left;
+}
+.cailiao > .cailiaoRight{
+	width: 230px;
+	height: 345px;
+	border: 1px solid gray;
+	margin-left: 15px;
+	float: left;
+}
+.cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1{
+	height: 172px;
+	width: 365px;
+	float: left;
+	padding-left: 26px;
+}
+.cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1 > .cailiao_content1_top{
+	height: 120px;
+	margin-top: 16px;
+}
+.cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1 > .cailiao_content1_top > .cailiao_content1_img{
+	width: 98px;
+	height:101px;
+	line-height: 101px;
+	text-align: center;
+/*	vertical-align:middle;*/
+	border: 1px solid gray;
+	float: left;
+}
+.cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1 > .cailiao_content1_top > .cailiao_content1_img > img{
+    vertical-align:middle;
+}
+.cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1 > .cailiao_content1_top > .cailiao_content1_P > .p_one{
+	padding-left: 10px;
+}
+
+
+
+
+/* 清除浮动： */
+.clearFix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear:both;
+}
+
+
+
+
