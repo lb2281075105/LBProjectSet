@@ -235,9 +235,37 @@
 .cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1 > .cailiao_content1_top > .cailiao_content1_img > img{
     vertical-align:middle;
 }
-.cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1 > .cailiao_content1_top > .cailiao_content1_P > .p_one{
-	padding-left: 10px;
+.cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1 > .cailiao_content1_top > .cailiao_content1_P{
+   margin-left: 10px;
+   background-color: red;
+   float: left;
+   height:101px;
+   position: relative;
+   font-size: 14px;
 }
+.cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1 > .cailiao_content1_top > .cailiao_content1_P > .p_four{
+    position: absolute;
+    bottom: 0px;
+}
+.cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1 > .cailiao_content1_top > .cailiao_content1_P > .p_one{
+    margin-top: 10px;
+
+}
+
+.cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1 > .cailiao_content1_top > .cailiao_content1_P > .p_two{
+    padding-top: 5px;
+}
+.cailiao > .cailiaoLeft > .cailiao_content_top > .cailiao_content1 > .cailiao_content1_down{
+
+
+
+
+}
+
+
+
+
+
 
 
 
