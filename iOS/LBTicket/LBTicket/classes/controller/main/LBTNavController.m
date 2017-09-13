@@ -14,24 +14,61 @@
 
 @implementation LBTNavController
 
++(void)initialize{
+
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    UIBarButtonItem *barItem = [UIBarButtonItem appearance];
+    
+    // 设置导航栏的背景图片
+    NSString *navBarBg = nil;
+    if ([[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0) { // iOS7
+        navBarBg = @"NavBar64";
+        
+        // 设置导航栏的渐变色为白色（iOS7中返回箭头的颜色变为这个颜色：白色）
+        navBar.tintColor = [UIColor whiteColor];
+    } else { // 非iOS7
+        navBarBg = @"NavBar";
+        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleBlackOpaque;
+        
+        // 设置导航栏按钮的背景图片
+        [barItem setBackgroundImage:[UIImage imageNamed:@"NavButton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+        [barItem setBackgroundImage:[UIImage imageNamed:@"NavButtonPressed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+        
+        // 设置导航栏返回按钮的背景图片
+        [barItem setBackButtonBackgroundImage:[UIImage imageNamed:@"NavBackButton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+        [barItem setBackButtonBackgroundImage:[UIImage imageNamed:@"NavBackButtonPressed"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    }
+    
+    [navBar setBackgroundImage:[UIImage imageNamed:navBarBg] forBarMetrics:UIBarMetricsDefault];
+    
+    // 设置导航栏标题颜色为白色
+    [navBar setTitleTextAttributes:@{
+                                     UITextAttributeTextColor : [UIColor whiteColor]
+                                     }];
+    
+    // 设置导航栏按钮文字颜色为白色
+    [barItem setTitleTextAttributes:@{
+                                      UITextAttributeTextColor : [UIColor whiteColor],
+                                      UITextAttributeFont : [UIFont systemFontOfSize:13]
+                                      } forState:UIControlStateNormal];
+
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    // 白色样式
+    return UIStatusBarStyleLightContent;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (self.viewControllers.count) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
 }
-*/
 
 @end

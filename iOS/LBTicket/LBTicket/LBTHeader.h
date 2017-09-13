@@ -7,3 +7,9 @@
 //
 
 // 宏定义
+
+#ifdef DEBUG
+#define LBTLog(...) NSLog(__VA_ARGS__)
+#else
+#define LBTLog(...)
+#endif

@@ -62,6 +62,7 @@
 		3AC899E11F6985ED00FD362A /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 3AC899C01F6985ED00FD362A /* product.json */; };
 		3AC899E51F6987FA00FD362A /* LBTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC899E41F6987FA00FD362A /* LBTTabBar.m */; };
 		3AC899E81F69882A00FD362A /* LBTTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC899E71F69882A00FD362A /* LBTTabBarButton.m */; };
+		3AC899EC1F698D6600FD362A /* UIImage+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC899EB1F698D6600FD362A /* UIImage+Fit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +164,8 @@
 		3AC899E41F6987FA00FD362A /* LBTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTTabBar.m; sourceTree = "<group>"; };
 		3AC899E61F69882A00FD362A /* LBTTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTTabBarButton.h; sourceTree = "<group>"; };
 		3AC899E71F69882A00FD362A /* LBTTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTTabBarButton.m; sourceTree = "<group>"; };
+		3AC899EA1F698D6600FD362A /* UIImage+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Fit.h"; sourceTree = "<group>"; };
+		3AC899EB1F698D6600FD362A /* UIImage+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Fit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +269,7 @@
 		3AC899671F6982DB00FD362A /* common */ = {
 			isa = PBXGroup;
 			children = (
+				3AC899E91F698D6600FD362A /* UIImage+Fit */,
 				3AC899761F69838700FD362A /* Additions */,
 			);
 			path = common;
@@ -419,6 +423,15 @@
 				3AC899E71F69882A00FD362A /* LBTTabBarButton.m */,
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		3AC899E91F698D6600FD362A /* UIImage+Fit */ = {
+			isa = PBXGroup;
+			children = (
+				3AC899EA1F698D6600FD362A /* UIImage+Fit.h */,
+				3AC899EB1F698D6600FD362A /* UIImage+Fit.m */,
+			);
+			path = "UIImage+Fit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -604,6 +617,7 @@
 				3AC899971F69838700FD362A /* UIColor+CZAddition.m in Sources */,
 				3AC899331F6980EF00FD362A /* main.m in Sources */,
 				3AC8996E1F6982DB00FD362A /* AppDelegate.m in Sources */,
+				3AC899EC1F698D6600FD362A /* UIImage+Fit.m in Sources */,
 				3AC899E51F6987FA00FD362A /* LBTTabBar.m in Sources */,
 				3AC899721F69830800FD362A /* LBTTabBarController.m in Sources */,
 			);
