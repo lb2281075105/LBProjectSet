@@ -8,7 +8,7 @@
 
 #import "LBTTabBarController.h"
 #import "LBTTabBar.h"
-@interface LBTTabBarController ()
+@interface LBTTabBarController ()<LBTTabBarDelegate>
 
 @end
 
@@ -24,6 +24,7 @@
 
     LBTTabBar *lbtTabBar = [[LBTTabBar alloc]init];
     lbtTabBar.frame = self.tabBar.bounds;
+    lbtTabBar.delegate = self;
     [self.tabBar addSubview:lbtTabBar];
     // 设置TabBar
     // [self setValue:lbtTabBar forKey:@"tabBar"];
