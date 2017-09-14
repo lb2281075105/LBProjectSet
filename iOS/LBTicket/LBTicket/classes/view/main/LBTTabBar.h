@@ -16,8 +16,10 @@
 - (void)tabBar:(LBTTabBar *)tabBar didSelectButtonFrom:(NSUInteger)from to:(NSUInteger)to;
 
 @end
+/// mark -- 自定义UITabBar
+/// 1.下面是第一个方法
 @interface LBTTabBar : UIView
-
+/// 2.LBTTabBar继承自系统的UITabBar，再进行设置title和image
 - (void)addTabBarButton:(NSString *)icon selIcon:(NSString *)selIcon;
 @property (nonatomic, weak) id<LBTTabBarDelegate> delegate;
 

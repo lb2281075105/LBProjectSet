@@ -56,7 +56,7 @@
     _lbtTabBar = lbtTabBar;
     lbtTabBar.frame = self.tabBar.bounds;
     lbtTabBar.delegate = self;
-
+    // 把LBTTabBar添加到tabBar上面
     [self.tabBar addSubview:lbtTabBar];
     // 设置TabBar(LBTTabBar是继承UIView下面这句代码不能使用)
     // [self setValue:lbtTabBar forKey:@"tabBar"];
