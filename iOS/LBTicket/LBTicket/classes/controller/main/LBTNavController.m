@@ -8,7 +8,7 @@
 
 #import "LBTNavController.h"
 
-@interface LBTNavController ()
+@interface LBTNavController ()<UINavigationControllerDelegate>
 
 @end
 
@@ -55,14 +55,24 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // 设置代理
+    self.delegate = self;
 }
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     // 白色样式
     return UIStatusBarStyleLightContent;
 }
-
+// 设置代理删除系统自带的UITabBarButton
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    // 删除系统自带的tabBarButton
+    for (UIView *tabBar in self.tabBarController.tabBar.subviews) {
+        if ([tabBar isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            [tabBar removeFromSuperview];
+        }
+    }
+}
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     if (self.viewControllers.count) {

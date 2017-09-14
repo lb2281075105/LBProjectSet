@@ -63,6 +63,11 @@
 		3AC899E51F6987FA00FD362A /* LBTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC899E41F6987FA00FD362A /* LBTTabBar.m */; };
 		3AC899E81F69882A00FD362A /* LBTTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC899E71F69882A00FD362A /* LBTTabBarButton.m */; };
 		3AC899EC1F698D6600FD362A /* UIImage+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC899EB1F698D6600FD362A /* UIImage+Fit.m */; };
+		F8BBC80A1F6A0BF90098A213 /* LBTHallTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8091F6A0BF90098A213 /* LBTHallTableController.m */; };
+		F8BBC80D1F6A0F760098A213 /* LBTInfoTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC80C1F6A0F760098A213 /* LBTInfoTableController.m */; };
+		F8BBC8101F6A10030098A213 /* LBTLuckyController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC80F1F6A10030098A213 /* LBTLuckyController.m */; };
+		F8BBC8131F6A10180098A213 /* LBTMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8121F6A10180098A213 /* LBTMineController.m */; };
+		F8BBC8161F6A10FA0098A213 /* LBTBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8151F6A10FA0098A213 /* LBTBuyController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +171,16 @@
 		3AC899E71F69882A00FD362A /* LBTTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTTabBarButton.m; sourceTree = "<group>"; };
 		3AC899EA1F698D6600FD362A /* UIImage+Fit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Fit.h"; sourceTree = "<group>"; };
 		3AC899EB1F698D6600FD362A /* UIImage+Fit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Fit.m"; sourceTree = "<group>"; };
+		F8BBC8081F6A0BF90098A213 /* LBTHallTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTHallTableController.h; sourceTree = "<group>"; };
+		F8BBC8091F6A0BF90098A213 /* LBTHallTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTHallTableController.m; sourceTree = "<group>"; };
+		F8BBC80B1F6A0F760098A213 /* LBTInfoTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTInfoTableController.h; sourceTree = "<group>"; };
+		F8BBC80C1F6A0F760098A213 /* LBTInfoTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTInfoTableController.m; sourceTree = "<group>"; };
+		F8BBC80E1F6A10030098A213 /* LBTLuckyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTLuckyController.h; sourceTree = "<group>"; };
+		F8BBC80F1F6A10030098A213 /* LBTLuckyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTLuckyController.m; sourceTree = "<group>"; };
+		F8BBC8111F6A10180098A213 /* LBTMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTMineController.h; sourceTree = "<group>"; };
+		F8BBC8121F6A10180098A213 /* LBTMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTMineController.m; sourceTree = "<group>"; };
+		F8BBC8141F6A10FA0098A213 /* LBTBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTBuyController.h; sourceTree = "<group>"; };
+		F8BBC8151F6A10FA0098A213 /* LBTBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTBuyController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +293,11 @@
 		3AC899681F6982DB00FD362A /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				F8BBC8031F6A0B720098A213 /* buy(合买跟单) */,
+				F8BBC8041F6A0B720098A213 /* hall(购彩大厅) */,
+				F8BBC8051F6A0B720098A213 /* info(开奖信息) */,
+				F8BBC8061F6A0B720098A213 /* lucky(幸运选号) */,
+				F8BBC8071F6A0B720098A213 /* mine(我的彩票) */,
 				3AC8996F1F6982F300FD362A /* main */,
 			);
 			path = controller;
@@ -432,6 +452,51 @@
 				3AC899EB1F698D6600FD362A /* UIImage+Fit.m */,
 			);
 			path = "UIImage+Fit";
+			sourceTree = "<group>";
+		};
+		F8BBC8031F6A0B720098A213 /* buy(合买跟单) */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8141F6A10FA0098A213 /* LBTBuyController.h */,
+				F8BBC8151F6A10FA0098A213 /* LBTBuyController.m */,
+			);
+			path = "buy(合买跟单)";
+			sourceTree = "<group>";
+		};
+		F8BBC8041F6A0B720098A213 /* hall(购彩大厅) */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8081F6A0BF90098A213 /* LBTHallTableController.h */,
+				F8BBC8091F6A0BF90098A213 /* LBTHallTableController.m */,
+			);
+			path = "hall(购彩大厅)";
+			sourceTree = "<group>";
+		};
+		F8BBC8051F6A0B720098A213 /* info(开奖信息) */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC80B1F6A0F760098A213 /* LBTInfoTableController.h */,
+				F8BBC80C1F6A0F760098A213 /* LBTInfoTableController.m */,
+			);
+			path = "info(开奖信息)";
+			sourceTree = "<group>";
+		};
+		F8BBC8061F6A0B720098A213 /* lucky(幸运选号) */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC80E1F6A10030098A213 /* LBTLuckyController.h */,
+				F8BBC80F1F6A10030098A213 /* LBTLuckyController.m */,
+			);
+			path = "lucky(幸运选号)";
+			sourceTree = "<group>";
+		};
+		F8BBC8071F6A0B720098A213 /* mine(我的彩票) */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8111F6A10180098A213 /* LBTMineController.h */,
+				F8BBC8121F6A10180098A213 /* LBTMineController.m */,
+			);
+			path = "mine(我的彩票)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,20 +671,25 @@
 				3AC899941F69838700FD362A /* NSString+CZHash.m in Sources */,
 				3AC899751F69834700FD362A /* LBTNavController.m in Sources */,
 				3AC899991F69838700FD362A /* UIScreen+CZAddition.m in Sources */,
+				F8BBC80A1F6A0BF90098A213 /* LBTHallTableController.m in Sources */,
 				3AC899981F69838700FD362A /* UILabel+CZAddition.m in Sources */,
 				3AC899961F69838700FD362A /* UIButton+CZAddition.m in Sources */,
 				3AC899921F69838700FD362A /* NSObject+CZRuntime.m in Sources */,
 				3AC899931F69838700FD362A /* NSString+CZBase64.m in Sources */,
 				3AC8999B1F69838700FD362A /* UIViewController+CZAddition.m in Sources */,
+				F8BBC8101F6A10030098A213 /* LBTLuckyController.m in Sources */,
 				3AC899E81F69882A00FD362A /* LBTTabBarButton.m in Sources */,
 				3AC8999A1F69838700FD362A /* UIView+CZAddition.m in Sources */,
+				F8BBC80D1F6A0F760098A213 /* LBTInfoTableController.m in Sources */,
 				3AC899911F69838700FD362A /* NSAttributedString+CZAdditon.m in Sources */,
 				3AC899971F69838700FD362A /* UIColor+CZAddition.m in Sources */,
 				3AC899331F6980EF00FD362A /* main.m in Sources */,
 				3AC8996E1F6982DB00FD362A /* AppDelegate.m in Sources */,
+				F8BBC8161F6A10FA0098A213 /* LBTBuyController.m in Sources */,
 				3AC899EC1F698D6600FD362A /* UIImage+Fit.m in Sources */,
 				3AC899E51F6987FA00FD362A /* LBTTabBar.m in Sources */,
 				3AC899721F69830800FD362A /* LBTTabBarController.m in Sources */,
+				F8BBC8131F6A10180098A213 /* LBTMineController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,6 +919,7 @@
 				3AC8995D1F6980EF00FD362A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC8995E1F6980EF00FD362A /* Build configuration list for PBXNativeTarget "LBTicketTests" */ = {
 			isa = XCConfigurationList;
@@ -857,6 +928,7 @@
 				3AC899601F6980EF00FD362A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AC899611F6980EF00FD362A /* Build configuration list for PBXNativeTarget "LBTicketUITests" */ = {
 			isa = XCConfigurationList;
@@ -865,6 +937,7 @@
 				3AC899631F6980EF00FD362A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
