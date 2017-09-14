@@ -8,6 +8,7 @@
 
 #import "LBTMineController.h"
 #import "UIImage+Fit.h"
+#import "LBTSettingController.h"
 @interface LBTMineController ()
 @property (strong, nonatomic) UIButton *loginBtn;
 @property (strong, nonatomic) UIImageView *imageview;
@@ -23,6 +24,27 @@
     [self setUpTopImgaeView];
     // 登录按钮
     [self setUpLoginButton];
+    // 右上角设置
+    [self setUpInfoButton];
+}
+// 设置
+- (void)setUpInfoButton{
+    
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightButton setTitle:@"设置" forState:UIControlStateNormal];
+    [rightButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    rightButton.titleLabel.font = [UIFont systemFontOfSize:15];
+    [rightButton addTarget:self action:@selector(setButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
+    [rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@40);
+        make.height.equalTo(@30);
+    }];
+}
+// 点击
+- (void)setButtonClick{
+    LBTLog(@"点击了");
+    [self.navigationController pushViewController:[[LBTSettingController alloc]init] animated:YES];
 }
 // 设置上部视图
 - (void)setUpTopImgaeView{

@@ -79,6 +79,22 @@
 		F8BBC83A1F6A217E0098A213 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC82C1F6A217E0098A213 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		F8BBC83B1F6A217E0098A213 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC82E1F6A217E0098A213 /* View+MASAdditions.m */; };
 		F8BBC83C1F6A217E0098A213 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8311F6A217E0098A213 /* ViewController+MASAdditions.m */; };
+		F8BBC8441F6A50110098A213 /* LBTSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8431F6A50110098A213 /* LBTSettingItem.m */; };
+		F8BBC8471F6A512A0098A213 /* LBTSettingArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8461F6A512A0098A213 /* LBTSettingArrowItem.m */; };
+		F8BBC84A1F6A515B0098A213 /* LBTSettingSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8491F6A515B0098A213 /* LBTSettingSwitchItem.m */; };
+		F8BBC84D1F6A51780098A213 /* LBTSettingLabelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC84C1F6A51780098A213 /* LBTSettingLabelItem.m */; };
+		F8BBC8501F6A518F0098A213 /* LBTSettingValueItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC84F1F6A518F0098A213 /* LBTSettingValueItem.m */; };
+		F8BBC8541F6A53120098A213 /* LBTSettingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8531F6A53120098A213 /* LBTSettingTool.m */; };
+		F8BBC8571F6A564D0098A213 /* LBTSettingGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8561F6A564D0098A213 /* LBTSettingGroup.m */; };
+		F8BBC85B1F6A574C0098A213 /* LBTBaseSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC85A1F6A574C0098A213 /* LBTBaseSettingController.m */; };
+		F8BBC85F1F6A5A4C0098A213 /* LBTSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC85E1F6A5A4C0098A213 /* LBTSettingCell.m */; };
+		F8BBC8621F6A64C40098A213 /* LBTSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8611F6A64C40098A213 /* LBTSettingController.m */; };
+		F8BBC8651F6A656C0098A213 /* LBTSettingKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8641F6A656C0098A213 /* LBTSettingKeys.m */; };
+		F8BBC8691F6A66600098A213 /* LBTPushNoticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8681F6A66600098A213 /* LBTPushNoticeController.m */; };
+		F8BBC8701F6A792C0098A213 /* LBTAwardAnimController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC86F1F6A792C0098A213 /* LBTAwardAnimController.m */; };
+		F8BBC8731F6A79380098A213 /* LBTAwardPushController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8721F6A79380098A213 /* LBTAwardPushController.m */; };
+		F8BBC8761F6A795E0098A213 /* LBTBuyTimedNoticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8751F6A795E0098A213 /* LBTBuyTimedNoticeController.m */; };
+		F8BBC8791F6A796F0098A213 /* LBTScoreShowNoticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8781F6A796F0098A213 /* LBTScoreShowNoticeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,6 +234,38 @@
 		F8BBC82F1F6A217E0098A213 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		F8BBC8301F6A217E0098A213 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		F8BBC8311F6A217E0098A213 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		F8BBC8421F6A50110098A213 /* LBTSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTSettingItem.h; sourceTree = "<group>"; };
+		F8BBC8431F6A50110098A213 /* LBTSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTSettingItem.m; sourceTree = "<group>"; };
+		F8BBC8451F6A512A0098A213 /* LBTSettingArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTSettingArrowItem.h; sourceTree = "<group>"; };
+		F8BBC8461F6A512A0098A213 /* LBTSettingArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTSettingArrowItem.m; sourceTree = "<group>"; };
+		F8BBC8481F6A515B0098A213 /* LBTSettingSwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTSettingSwitchItem.h; sourceTree = "<group>"; };
+		F8BBC8491F6A515B0098A213 /* LBTSettingSwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTSettingSwitchItem.m; sourceTree = "<group>"; };
+		F8BBC84B1F6A51780098A213 /* LBTSettingLabelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTSettingLabelItem.h; sourceTree = "<group>"; };
+		F8BBC84C1F6A51780098A213 /* LBTSettingLabelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTSettingLabelItem.m; sourceTree = "<group>"; };
+		F8BBC84E1F6A518F0098A213 /* LBTSettingValueItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTSettingValueItem.h; sourceTree = "<group>"; };
+		F8BBC84F1F6A518F0098A213 /* LBTSettingValueItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTSettingValueItem.m; sourceTree = "<group>"; };
+		F8BBC8521F6A53120098A213 /* LBTSettingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTSettingTool.h; sourceTree = "<group>"; };
+		F8BBC8531F6A53120098A213 /* LBTSettingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTSettingTool.m; sourceTree = "<group>"; };
+		F8BBC8551F6A564D0098A213 /* LBTSettingGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTSettingGroup.h; sourceTree = "<group>"; };
+		F8BBC8561F6A564D0098A213 /* LBTSettingGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTSettingGroup.m; sourceTree = "<group>"; };
+		F8BBC8591F6A574C0098A213 /* LBTBaseSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTBaseSettingController.h; sourceTree = "<group>"; };
+		F8BBC85A1F6A574C0098A213 /* LBTBaseSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTBaseSettingController.m; sourceTree = "<group>"; };
+		F8BBC85D1F6A5A4C0098A213 /* LBTSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTSettingCell.h; sourceTree = "<group>"; };
+		F8BBC85E1F6A5A4C0098A213 /* LBTSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTSettingCell.m; sourceTree = "<group>"; };
+		F8BBC8601F6A64C40098A213 /* LBTSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTSettingController.h; sourceTree = "<group>"; };
+		F8BBC8611F6A64C40098A213 /* LBTSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTSettingController.m; sourceTree = "<group>"; };
+		F8BBC8631F6A656C0098A213 /* LBTSettingKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTSettingKeys.h; sourceTree = "<group>"; };
+		F8BBC8641F6A656C0098A213 /* LBTSettingKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTSettingKeys.m; sourceTree = "<group>"; };
+		F8BBC8671F6A66600098A213 /* LBTPushNoticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTPushNoticeController.h; sourceTree = "<group>"; };
+		F8BBC8681F6A66600098A213 /* LBTPushNoticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTPushNoticeController.m; sourceTree = "<group>"; };
+		F8BBC86E1F6A792C0098A213 /* LBTAwardAnimController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTAwardAnimController.h; sourceTree = "<group>"; };
+		F8BBC86F1F6A792C0098A213 /* LBTAwardAnimController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTAwardAnimController.m; sourceTree = "<group>"; };
+		F8BBC8711F6A79380098A213 /* LBTAwardPushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTAwardPushController.h; sourceTree = "<group>"; };
+		F8BBC8721F6A79380098A213 /* LBTAwardPushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTAwardPushController.m; sourceTree = "<group>"; };
+		F8BBC8741F6A795E0098A213 /* LBTBuyTimedNoticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTBuyTimedNoticeController.h; sourceTree = "<group>"; };
+		F8BBC8751F6A795E0098A213 /* LBTBuyTimedNoticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTBuyTimedNoticeController.m; sourceTree = "<group>"; };
+		F8BBC8771F6A796F0098A213 /* LBTScoreShowNoticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTScoreShowNoticeController.h; sourceTree = "<group>"; };
+		F8BBC8781F6A796F0098A213 /* LBTScoreShowNoticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTScoreShowNoticeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,8 +359,8 @@
 			children = (
 				3AC899671F6982DB00FD362A /* common */,
 				3AC899681F6982DB00FD362A /* controller */,
-				3AC899691F6982DB00FD362A /* model */,
 				3AC8996A1F6982DB00FD362A /* orther */,
+				F8BBC83E1F6A4F6D0098A213 /* model */,
 				3AC8996D1F6982DB00FD362A /* view */,
 			);
 			path = classes;
@@ -341,13 +389,6 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		3AC899691F6982DB00FD362A /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
 		3AC8996A1F6982DB00FD362A /* orther */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +401,7 @@
 		3AC8996D1F6982DB00FD362A /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F8BBC83D1F6A4F1C0098A213 /* mine */,
 				3AC899E21F6987CF00FD362A /* main */,
 			);
 			path = view;
@@ -531,6 +573,7 @@
 		F8BBC8071F6A0B720098A213 /* mine(我的彩票) */ = {
 			isa = PBXGroup;
 			children = (
+				F8BBC8581F6A57370098A213 /* setting */,
 				F8BBC8111F6A10180098A213 /* LBTMineController.h */,
 				F8BBC8121F6A10180098A213 /* LBTMineController.m */,
 			);
@@ -568,6 +611,139 @@
 				F8BBC8311F6A217E0098A213 /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		F8BBC83D1F6A4F1C0098A213 /* mine */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC85C1F6A5A2C0098A213 /* setting */,
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		F8BBC83E1F6A4F6D0098A213 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC83F1F6A4F980098A213 /* setting */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F8BBC83F1F6A4F980098A213 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8511F6A52F10098A213 /* tool */,
+				F8BBC8401F6A4FB20098A213 /* group */,
+				F8BBC8411F6A4FB20098A213 /* item */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		F8BBC8401F6A4FB20098A213 /* group */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8551F6A564D0098A213 /* LBTSettingGroup.h */,
+				F8BBC8561F6A564D0098A213 /* LBTSettingGroup.m */,
+			);
+			path = group;
+			sourceTree = "<group>";
+		};
+		F8BBC8411F6A4FB20098A213 /* item */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8421F6A50110098A213 /* LBTSettingItem.h */,
+				F8BBC8431F6A50110098A213 /* LBTSettingItem.m */,
+				F8BBC8451F6A512A0098A213 /* LBTSettingArrowItem.h */,
+				F8BBC8461F6A512A0098A213 /* LBTSettingArrowItem.m */,
+				F8BBC8481F6A515B0098A213 /* LBTSettingSwitchItem.h */,
+				F8BBC8491F6A515B0098A213 /* LBTSettingSwitchItem.m */,
+				F8BBC84B1F6A51780098A213 /* LBTSettingLabelItem.h */,
+				F8BBC84C1F6A51780098A213 /* LBTSettingLabelItem.m */,
+				F8BBC84E1F6A518F0098A213 /* LBTSettingValueItem.h */,
+				F8BBC84F1F6A518F0098A213 /* LBTSettingValueItem.m */,
+			);
+			path = item;
+			sourceTree = "<group>";
+		};
+		F8BBC8511F6A52F10098A213 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8521F6A53120098A213 /* LBTSettingTool.h */,
+				F8BBC8531F6A53120098A213 /* LBTSettingTool.m */,
+				F8BBC8631F6A656C0098A213 /* LBTSettingKeys.h */,
+				F8BBC8641F6A656C0098A213 /* LBTSettingKeys.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		F8BBC8581F6A57370098A213 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8591F6A574C0098A213 /* LBTBaseSettingController.h */,
+				F8BBC85A1F6A574C0098A213 /* LBTBaseSettingController.m */,
+				F8BBC8601F6A64C40098A213 /* LBTSettingController.h */,
+				F8BBC8611F6A64C40098A213 /* LBTSettingController.m */,
+				F8BBC8661F6A66430098A213 /* push */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		F8BBC85C1F6A5A2C0098A213 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC85D1F6A5A4C0098A213 /* LBTSettingCell.h */,
+				F8BBC85E1F6A5A4C0098A213 /* LBTSettingCell.m */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		F8BBC8661F6A66430098A213 /* push */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8671F6A66600098A213 /* LBTPushNoticeController.h */,
+				F8BBC8681F6A66600098A213 /* LBTPushNoticeController.m */,
+				F8BBC86A1F6A791C0098A213 /* LBTAwardAnimController */,
+				F8BBC86B1F6A791C0098A213 /* LBTAwardPushController */,
+				F8BBC86C1F6A791C0098A213 /* LBTBuyTimedNoticeController */,
+				F8BBC86D1F6A791C0098A213 /* LBTScoreShowNoticeController */,
+			);
+			path = push;
+			sourceTree = "<group>";
+		};
+		F8BBC86A1F6A791C0098A213 /* LBTAwardAnimController */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC86E1F6A792C0098A213 /* LBTAwardAnimController.h */,
+				F8BBC86F1F6A792C0098A213 /* LBTAwardAnimController.m */,
+			);
+			path = LBTAwardAnimController;
+			sourceTree = "<group>";
+		};
+		F8BBC86B1F6A791C0098A213 /* LBTAwardPushController */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8711F6A79380098A213 /* LBTAwardPushController.h */,
+				F8BBC8721F6A79380098A213 /* LBTAwardPushController.m */,
+			);
+			path = LBTAwardPushController;
+			sourceTree = "<group>";
+		};
+		F8BBC86C1F6A791C0098A213 /* LBTBuyTimedNoticeController */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8741F6A795E0098A213 /* LBTBuyTimedNoticeController.h */,
+				F8BBC8751F6A795E0098A213 /* LBTBuyTimedNoticeController.m */,
+			);
+			path = LBTBuyTimedNoticeController;
+			sourceTree = "<group>";
+		};
+		F8BBC86D1F6A791C0098A213 /* LBTScoreShowNoticeController */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8771F6A796F0098A213 /* LBTScoreShowNoticeController.h */,
+				F8BBC8781F6A796F0098A213 /* LBTScoreShowNoticeController.m */,
+			);
+			path = LBTScoreShowNoticeController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -746,31 +922,47 @@
 				3AC899751F69834700FD362A /* LBTNavController.m in Sources */,
 				3AC899991F69838700FD362A /* UIScreen+CZAddition.m in Sources */,
 				F8BBC80A1F6A0BF90098A213 /* LBTHallTableController.m in Sources */,
+				F8BBC85B1F6A574C0098A213 /* LBTBaseSettingController.m in Sources */,
 				3AC899981F69838700FD362A /* UILabel+CZAddition.m in Sources */,
 				3AC899961F69838700FD362A /* UIButton+CZAddition.m in Sources */,
 				3AC899921F69838700FD362A /* NSObject+CZRuntime.m in Sources */,
 				3AC899931F69838700FD362A /* NSString+CZBase64.m in Sources */,
 				3AC8999B1F69838700FD362A /* UIViewController+CZAddition.m in Sources */,
+				F8BBC8691F6A66600098A213 /* LBTPushNoticeController.m in Sources */,
 				F8BBC8101F6A10030098A213 /* LBTLuckyController.m in Sources */,
 				F8BBC8341F6A217E0098A213 /* MASConstraint.m in Sources */,
 				3AC899E81F69882A00FD362A /* LBTTabBarButton.m in Sources */,
+				F8BBC8501F6A518F0098A213 /* LBTSettingValueItem.m in Sources */,
+				F8BBC8651F6A656C0098A213 /* LBTSettingKeys.m in Sources */,
+				F8BBC8541F6A53120098A213 /* LBTSettingTool.m in Sources */,
 				F8BBC8381F6A217E0098A213 /* MASViewConstraint.m in Sources */,
 				F8BBC83B1F6A217E0098A213 /* View+MASAdditions.m in Sources */,
 				F8BBC8351F6A217E0098A213 /* MASConstraintMaker.m in Sources */,
+				F8BBC8761F6A795E0098A213 /* LBTBuyTimedNoticeController.m in Sources */,
+				F8BBC8731F6A79380098A213 /* LBTAwardPushController.m in Sources */,
 				3AC8999A1F69838700FD362A /* UIView+CZAddition.m in Sources */,
+				F8BBC85F1F6A5A4C0098A213 /* LBTSettingCell.m in Sources */,
 				F8BBC8331F6A217E0098A213 /* MASCompositeConstraint.m in Sources */,
 				F8BBC80D1F6A0F760098A213 /* LBTInfoTableController.m in Sources */,
+				F8BBC8701F6A792C0098A213 /* LBTAwardAnimController.m in Sources */,
+				F8BBC84A1F6A515B0098A213 /* LBTSettingSwitchItem.m in Sources */,
 				3AC899911F69838700FD362A /* NSAttributedString+CZAdditon.m in Sources */,
+				F8BBC8571F6A564D0098A213 /* LBTSettingGroup.m in Sources */,
 				3AC899971F69838700FD362A /* UIColor+CZAddition.m in Sources */,
 				F8BBC83A1F6A217E0098A213 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				F8BBC8441F6A50110098A213 /* LBTSettingItem.m in Sources */,
 				3AC899331F6980EF00FD362A /* main.m in Sources */,
 				3AC8996E1F6982DB00FD362A /* AppDelegate.m in Sources */,
 				F8BBC8161F6A10FA0098A213 /* LBTBuyController.m in Sources */,
 				3AC899EC1F698D6600FD362A /* UIImage+Fit.m in Sources */,
 				F8BBC8361F6A217E0098A213 /* MASLayoutConstraint.m in Sources */,
+				F8BBC8791F6A796F0098A213 /* LBTScoreShowNoticeController.m in Sources */,
+				F8BBC8621F6A64C40098A213 /* LBTSettingController.m in Sources */,
 				3AC899E51F6987FA00FD362A /* LBTTabBar.m in Sources */,
+				F8BBC84D1F6A51780098A213 /* LBTSettingLabelItem.m in Sources */,
 				3AC899721F69830800FD362A /* LBTTabBarController.m in Sources */,
 				F8BBC83C1F6A217E0098A213 /* ViewController+MASAdditions.m in Sources */,
+				F8BBC8471F6A512A0098A213 /* LBTSettingArrowItem.m in Sources */,
 				F8BBC8131F6A10180098A213 /* LBTMineController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

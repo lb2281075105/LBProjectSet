@@ -10,6 +10,7 @@
 
 #ifdef DEBUG
 #define LBTLog(...) NSLog(__VA_ARGS__)
+#define LBTColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #else
 #define LBTLog(...)
 #endif
