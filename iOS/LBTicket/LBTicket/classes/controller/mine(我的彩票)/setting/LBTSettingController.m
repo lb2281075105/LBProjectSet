@@ -8,6 +8,7 @@
 
 #import "LBTSettingController.h"
 #import "LBTPushNoticeController.h"
+#import "LBTHelpController.h"
 @interface LBTSettingController ()
 
 @end
@@ -53,7 +54,7 @@
     
     // 2.2.帮助
     LBTSettingArrowItem *help = [LBTSettingArrowItem itemWithIcon:@"MoreHelp" title:@"帮助"];
-    // help.showVCClass = [ILHelpViewController class];
+    help.showVCClass = [LBTHelpController class];
     
     // 2.3.分享
     LBTSettingArrowItem *share = [LBTSettingArrowItem itemWithIcon:@"MoreShare" title:@"分享"];

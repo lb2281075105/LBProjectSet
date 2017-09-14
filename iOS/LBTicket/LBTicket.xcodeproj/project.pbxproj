@@ -95,6 +95,10 @@
 		F8BBC8731F6A79380098A213 /* LBTAwardPushController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8721F6A79380098A213 /* LBTAwardPushController.m */; };
 		F8BBC8761F6A795E0098A213 /* LBTBuyTimedNoticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8751F6A795E0098A213 /* LBTBuyTimedNoticeController.m */; };
 		F8BBC8791F6A796F0098A213 /* LBTScoreShowNoticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8781F6A796F0098A213 /* LBTScoreShowNoticeController.m */; };
+		F8BBC8811F6A81820098A213 /* LBTHelpController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8801F6A81820098A213 /* LBTHelpController.m */; };
+		F8BBC8851F6A82FE0098A213 /* LBTHelpPage.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8841F6A82FE0098A213 /* LBTHelpPage.m */; };
+		F8BBC8891F6A839F0098A213 /* LBTProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8881F6A839F0098A213 /* LBTProduct.m */; };
+		F8BBC88C1F6A84B10098A213 /* LBTHelpHtmlController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC88B1F6A84B10098A213 /* LBTHelpHtmlController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -266,6 +270,14 @@
 		F8BBC8751F6A795E0098A213 /* LBTBuyTimedNoticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTBuyTimedNoticeController.m; sourceTree = "<group>"; };
 		F8BBC8771F6A796F0098A213 /* LBTScoreShowNoticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTScoreShowNoticeController.h; sourceTree = "<group>"; };
 		F8BBC8781F6A796F0098A213 /* LBTScoreShowNoticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTScoreShowNoticeController.m; sourceTree = "<group>"; };
+		F8BBC87F1F6A81820098A213 /* LBTHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTHelpController.h; sourceTree = "<group>"; };
+		F8BBC8801F6A81820098A213 /* LBTHelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTHelpController.m; sourceTree = "<group>"; };
+		F8BBC8831F6A82FE0098A213 /* LBTHelpPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTHelpPage.h; sourceTree = "<group>"; };
+		F8BBC8841F6A82FE0098A213 /* LBTHelpPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTHelpPage.m; sourceTree = "<group>"; };
+		F8BBC8871F6A839F0098A213 /* LBTProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTProduct.h; sourceTree = "<group>"; };
+		F8BBC8881F6A839F0098A213 /* LBTProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTProduct.m; sourceTree = "<group>"; };
+		F8BBC88A1F6A84B10098A213 /* LBTHelpHtmlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTHelpHtmlController.h; sourceTree = "<group>"; };
+		F8BBC88B1F6A84B10098A213 /* LBTHelpHtmlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTHelpHtmlController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -632,6 +644,8 @@
 		F8BBC83F1F6A4F980098A213 /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				F8BBC8861F6A838E0098A213 /* product */,
+				F8BBC8821F6A82E80098A213 /* help */,
 				F8BBC8511F6A52F10098A213 /* tool */,
 				F8BBC8401F6A4FB20098A213 /* group */,
 				F8BBC8411F6A4FB20098A213 /* item */,
@@ -683,6 +697,11 @@
 				F8BBC85A1F6A574C0098A213 /* LBTBaseSettingController.m */,
 				F8BBC8601F6A64C40098A213 /* LBTSettingController.h */,
 				F8BBC8611F6A64C40098A213 /* LBTSettingController.m */,
+				F8BBC87A1F6A81730098A213 /* about */,
+				F8BBC87B1F6A81730098A213 /* help */,
+				F8BBC87C1F6A81730098A213 /* message */,
+				F8BBC87D1F6A81730098A213 /* product */,
+				F8BBC87E1F6A81730098A213 /* share */,
 				F8BBC8661F6A66430098A213 /* push */,
 			);
 			path = setting;
@@ -744,6 +763,63 @@
 				F8BBC8781F6A796F0098A213 /* LBTScoreShowNoticeController.m */,
 			);
 			path = LBTScoreShowNoticeController;
+			sourceTree = "<group>";
+		};
+		F8BBC87A1F6A81730098A213 /* about */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = about;
+			sourceTree = "<group>";
+		};
+		F8BBC87B1F6A81730098A213 /* help */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC87F1F6A81820098A213 /* LBTHelpController.h */,
+				F8BBC8801F6A81820098A213 /* LBTHelpController.m */,
+				F8BBC88A1F6A84B10098A213 /* LBTHelpHtmlController.h */,
+				F8BBC88B1F6A84B10098A213 /* LBTHelpHtmlController.m */,
+			);
+			path = help;
+			sourceTree = "<group>";
+		};
+		F8BBC87C1F6A81730098A213 /* message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		F8BBC87D1F6A81730098A213 /* product */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = product;
+			sourceTree = "<group>";
+		};
+		F8BBC87E1F6A81730098A213 /* share */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = share;
+			sourceTree = "<group>";
+		};
+		F8BBC8821F6A82E80098A213 /* help */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8831F6A82FE0098A213 /* LBTHelpPage.h */,
+				F8BBC8841F6A82FE0098A213 /* LBTHelpPage.m */,
+			);
+			path = help;
+			sourceTree = "<group>";
+		};
+		F8BBC8861F6A838E0098A213 /* product */ = {
+			isa = PBXGroup;
+			children = (
+				F8BBC8871F6A839F0098A213 /* LBTProduct.h */,
+				F8BBC8881F6A839F0098A213 /* LBTProduct.m */,
+			);
+			path = product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -814,7 +890,7 @@
 				TargetAttributes = {
 					3AC8992D1F6980EF00FD362A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 9266GAZZ3C;
+						DevelopmentTeam = MECQS3Z269;
 						ProvisioningStyle = Automatic;
 					};
 					3AC899461F6980EF00FD362A = {
@@ -918,6 +994,7 @@
 				3AC899951F69838700FD362A /* NSString+CZPath.m in Sources */,
 				F8BBC8371F6A217E0098A213 /* MASViewAttribute.m in Sources */,
 				F8BBC8391F6A217E0098A213 /* NSArray+MASAdditions.m in Sources */,
+				F8BBC8811F6A81820098A213 /* LBTHelpController.m in Sources */,
 				3AC899941F69838700FD362A /* NSString+CZHash.m in Sources */,
 				3AC899751F69834700FD362A /* LBTNavController.m in Sources */,
 				3AC899991F69838700FD362A /* UIScreen+CZAddition.m in Sources */,
@@ -935,6 +1012,7 @@
 				F8BBC8501F6A518F0098A213 /* LBTSettingValueItem.m in Sources */,
 				F8BBC8651F6A656C0098A213 /* LBTSettingKeys.m in Sources */,
 				F8BBC8541F6A53120098A213 /* LBTSettingTool.m in Sources */,
+				F8BBC88C1F6A84B10098A213 /* LBTHelpHtmlController.m in Sources */,
 				F8BBC8381F6A217E0098A213 /* MASViewConstraint.m in Sources */,
 				F8BBC83B1F6A217E0098A213 /* View+MASAdditions.m in Sources */,
 				F8BBC8351F6A217E0098A213 /* MASConstraintMaker.m in Sources */,
@@ -957,7 +1035,9 @@
 				3AC899EC1F698D6600FD362A /* UIImage+Fit.m in Sources */,
 				F8BBC8361F6A217E0098A213 /* MASLayoutConstraint.m in Sources */,
 				F8BBC8791F6A796F0098A213 /* LBTScoreShowNoticeController.m in Sources */,
+				F8BBC8851F6A82FE0098A213 /* LBTHelpPage.m in Sources */,
 				F8BBC8621F6A64C40098A213 /* LBTSettingController.m in Sources */,
+				F8BBC8891F6A839F0098A213 /* LBTProduct.m in Sources */,
 				3AC899E51F6987FA00FD362A /* LBTTabBar.m in Sources */,
 				F8BBC84D1F6A51780098A213 /* LBTSettingLabelItem.m in Sources */,
 				3AC899721F69830800FD362A /* LBTTabBarController.m in Sources */,
@@ -1105,9 +1185,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 9266GAZZ3C;
+				DEVELOPMENT_TEAM = MECQS3Z269;
 				GCC_PREFIX_HEADER = LBTicket/LBTPrefixHeader.pch;
 				INFOPLIST_FILE = LBTicket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liubo.LBTicket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1119,9 +1200,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 9266GAZZ3C;
+				DEVELOPMENT_TEAM = MECQS3Z269;
 				GCC_PREFIX_HEADER = LBTicket/LBTPrefixHeader.pch;
 				INFOPLIST_FILE = LBTicket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = liubo.LBTicket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
