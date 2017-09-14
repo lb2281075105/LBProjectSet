@@ -99,6 +99,7 @@
 		F8BBC8851F6A82FE0098A213 /* LBTHelpPage.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8841F6A82FE0098A213 /* LBTHelpPage.m */; };
 		F8BBC8891F6A839F0098A213 /* LBTProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8881F6A839F0098A213 /* LBTProduct.m */; };
 		F8BBC88C1F6A84B10098A213 /* LBTHelpHtmlController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC88B1F6A84B10098A213 /* LBTHelpHtmlController.m */; };
+		F8BBC88F1F6A8D880098A213 /* LBTProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC88E1F6A8D880098A213 /* LBTProductController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -278,6 +279,8 @@
 		F8BBC8881F6A839F0098A213 /* LBTProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTProduct.m; sourceTree = "<group>"; };
 		F8BBC88A1F6A84B10098A213 /* LBTHelpHtmlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTHelpHtmlController.h; sourceTree = "<group>"; };
 		F8BBC88B1F6A84B10098A213 /* LBTHelpHtmlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTHelpHtmlController.m; sourceTree = "<group>"; };
+		F8BBC88D1F6A8D880098A213 /* LBTProductController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTProductController.h; sourceTree = "<group>"; };
+		F8BBC88E1F6A8D880098A213 /* LBTProductController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTProductController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -793,6 +796,8 @@
 		F8BBC87D1F6A81730098A213 /* product */ = {
 			isa = PBXGroup;
 			children = (
+				F8BBC88D1F6A8D880098A213 /* LBTProductController.h */,
+				F8BBC88E1F6A8D880098A213 /* LBTProductController.m */,
 			);
 			path = product;
 			sourceTree = "<group>";
@@ -1000,6 +1005,7 @@
 				3AC899991F69838700FD362A /* UIScreen+CZAddition.m in Sources */,
 				F8BBC80A1F6A0BF90098A213 /* LBTHallTableController.m in Sources */,
 				F8BBC85B1F6A574C0098A213 /* LBTBaseSettingController.m in Sources */,
+				F8BBC88F1F6A8D880098A213 /* LBTProductController.m in Sources */,
 				3AC899981F69838700FD362A /* UILabel+CZAddition.m in Sources */,
 				3AC899961F69838700FD362A /* UIButton+CZAddition.m in Sources */,
 				3AC899921F69838700FD362A /* NSObject+CZRuntime.m in Sources */,

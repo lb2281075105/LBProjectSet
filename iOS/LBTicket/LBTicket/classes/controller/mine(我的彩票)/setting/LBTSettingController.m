@@ -9,6 +9,7 @@
 #import "LBTSettingController.h"
 #import "LBTPushNoticeController.h"
 #import "LBTHelpController.h"
+#import "LBTProductController.h"
 @interface LBTSettingController ()
 
 @end
@@ -65,7 +66,7 @@
     
     // 2.5.产品推荐
     LBTSettingArrowItem *product = [LBTSettingArrowItem itemWithIcon:@"MoreNetease" title:@"产品推荐"];
-    // product.showVCClass = [ILProductsViewController class];
+    product.showVCClass = [LBTProductController class];
     
     // 2.6.关于
     LBTSettingArrowItem *about = [LBTSettingArrowItem itemWithIcon:@"MoreAbout" title:@"关于"];
