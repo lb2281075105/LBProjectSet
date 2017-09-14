@@ -18,8 +18,28 @@
     [super viewDidLoad];
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"LBTInfoTableViewCell"];
+    // 右上角开奖信息
+    [self setUpInfoButton];
 }
+// 右上角开奖信息
+- (void)setUpInfoButton{
 
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightButton setTitle:@"开奖设置" forState:UIControlStateNormal];
+    [rightButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    rightButton.titleLabel.font = [UIFont systemFontOfSize:15];
+    [rightButton addTarget:self action:@selector(rightButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
+    [rightButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@80);
+        make.height.equalTo(@30);
+    }];
+}
+// 点击
+- (void)rightButtonClick{
+    LBTLog(@"点击了");
+//    self.navigationController pushViewController:<#(nonnull UIViewController *)#> animated:YES
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 20;
