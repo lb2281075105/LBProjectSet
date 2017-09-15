@@ -8,6 +8,6 @@
 
 #import "LBTBaseSettingController.h"
 
-@interface LBTProductController : LBTBaseSettingController
+@interface LBTProductController : UICollectionViewController
 
 @end

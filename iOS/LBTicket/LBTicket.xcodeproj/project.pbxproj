@@ -100,6 +100,7 @@
 		F8BBC8891F6A839F0098A213 /* LBTProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC8881F6A839F0098A213 /* LBTProduct.m */; };
 		F8BBC88C1F6A84B10098A213 /* LBTHelpHtmlController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC88B1F6A84B10098A213 /* LBTHelpHtmlController.m */; };
 		F8BBC88F1F6A8D880098A213 /* LBTProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC88E1F6A8D880098A213 /* LBTProductController.m */; };
+		F8BD5B1F1F6B5F720085D317 /* LBTProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BD5B1E1F6B5F720085D317 /* LBTProductCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -281,6 +282,8 @@
 		F8BBC88B1F6A84B10098A213 /* LBTHelpHtmlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTHelpHtmlController.m; sourceTree = "<group>"; };
 		F8BBC88D1F6A8D880098A213 /* LBTProductController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTProductController.h; sourceTree = "<group>"; };
 		F8BBC88E1F6A8D880098A213 /* LBTProductController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTProductController.m; sourceTree = "<group>"; };
+		F8BD5B1D1F6B5F720085D317 /* LBTProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTProductCell.h; sourceTree = "<group>"; };
+		F8BD5B1E1F6B5F720085D317 /* LBTProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTProductCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -713,6 +716,7 @@
 		F8BBC85C1F6A5A2C0098A213 /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				F8BD5B1B1F6B5CAA0085D317 /* product */,
 				F8BBC85D1F6A5A4C0098A213 /* LBTSettingCell.h */,
 				F8BBC85E1F6A5A4C0098A213 /* LBTSettingCell.m */,
 			);
@@ -823,6 +827,15 @@
 			children = (
 				F8BBC8871F6A839F0098A213 /* LBTProduct.h */,
 				F8BBC8881F6A839F0098A213 /* LBTProduct.m */,
+			);
+			path = product;
+			sourceTree = "<group>";
+		};
+		F8BD5B1B1F6B5CAA0085D317 /* product */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD5B1D1F6B5F720085D317 /* LBTProductCell.h */,
+				F8BD5B1E1F6B5F720085D317 /* LBTProductCell.m */,
 			);
 			path = product;
 			sourceTree = "<group>";
@@ -1001,6 +1014,7 @@
 				F8BBC8391F6A217E0098A213 /* NSArray+MASAdditions.m in Sources */,
 				F8BBC8811F6A81820098A213 /* LBTHelpController.m in Sources */,
 				3AC899941F69838700FD362A /* NSString+CZHash.m in Sources */,
+				F8BD5B1F1F6B5F720085D317 /* LBTProductCell.m in Sources */,
 				3AC899751F69834700FD362A /* LBTNavController.m in Sources */,
 				3AC899991F69838700FD362A /* UIScreen+CZAddition.m in Sources */,
 				F8BBC80A1F6A0BF90098A213 /* LBTHallTableController.m in Sources */,
