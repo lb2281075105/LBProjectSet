@@ -104,6 +104,7 @@
 		F8BD5B241F6BDBD90085D317 /* LBTAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BD5B231F6BDBD90085D317 /* LBTAboutController.m */; };
 		F8BD5B2B1F6BDDA90085D317 /* LBTAboutHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BD5B2A1F6BDDA90085D317 /* LBTAboutHeaderView.m */; };
 		F8BD5B2D1F6BDDB30085D317 /* LBTAboutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8BD5B2C1F6BDDB30085D317 /* LBTAboutHeaderView.xib */; };
+		F8BD5B301F6BE25A0085D317 /* LBTShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BD5B2F1F6BE25A0085D317 /* LBTShareController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,6 +293,8 @@
 		F8BD5B291F6BDDA90085D317 /* LBTAboutHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTAboutHeaderView.h; sourceTree = "<group>"; };
 		F8BD5B2A1F6BDDA90085D317 /* LBTAboutHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTAboutHeaderView.m; sourceTree = "<group>"; };
 		F8BD5B2C1F6BDDB30085D317 /* LBTAboutHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBTAboutHeaderView.xib; sourceTree = "<group>"; };
+		F8BD5B2E1F6BE25A0085D317 /* LBTShareController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTShareController.h; sourceTree = "<group>"; };
+		F8BD5B2F1F6BE25A0085D317 /* LBTShareController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTShareController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -820,6 +823,8 @@
 		F8BBC87E1F6A81730098A213 /* share */ = {
 			isa = PBXGroup;
 			children = (
+				F8BD5B2E1F6BE25A0085D317 /* LBTShareController.h */,
+				F8BD5B2F1F6BE25A0085D317 /* LBTShareController.m */,
 			);
 			path = share;
 			sourceTree = "<group>";
@@ -1039,6 +1044,7 @@
 				F8BD5B1F1F6B5F720085D317 /* LBTProductCell.m in Sources */,
 				3AC899751F69834700FD362A /* LBTNavController.m in Sources */,
 				3AC899991F69838700FD362A /* UIScreen+CZAddition.m in Sources */,
+				F8BD5B301F6BE25A0085D317 /* LBTShareController.m in Sources */,
 				F8BBC80A1F6A0BF90098A213 /* LBTHallTableController.m in Sources */,
 				F8BBC85B1F6A574C0098A213 /* LBTBaseSettingController.m in Sources */,
 				F8BBC88F1F6A8D880098A213 /* LBTProductController.m in Sources */,
