@@ -101,6 +101,9 @@
 		F8BBC88C1F6A84B10098A213 /* LBTHelpHtmlController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC88B1F6A84B10098A213 /* LBTHelpHtmlController.m */; };
 		F8BBC88F1F6A8D880098A213 /* LBTProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BBC88E1F6A8D880098A213 /* LBTProductController.m */; };
 		F8BD5B1F1F6B5F720085D317 /* LBTProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BD5B1E1F6B5F720085D317 /* LBTProductCell.m */; };
+		F8BD5B241F6BDBD90085D317 /* LBTAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BD5B231F6BDBD90085D317 /* LBTAboutController.m */; };
+		F8BD5B2B1F6BDDA90085D317 /* LBTAboutHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BD5B2A1F6BDDA90085D317 /* LBTAboutHeaderView.m */; };
+		F8BD5B2D1F6BDDB30085D317 /* LBTAboutHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8BD5B2C1F6BDDB30085D317 /* LBTAboutHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -284,6 +287,11 @@
 		F8BBC88E1F6A8D880098A213 /* LBTProductController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTProductController.m; sourceTree = "<group>"; };
 		F8BD5B1D1F6B5F720085D317 /* LBTProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTProductCell.h; sourceTree = "<group>"; };
 		F8BD5B1E1F6B5F720085D317 /* LBTProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTProductCell.m; sourceTree = "<group>"; };
+		F8BD5B221F6BDBD90085D317 /* LBTAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTAboutController.h; sourceTree = "<group>"; };
+		F8BD5B231F6BDBD90085D317 /* LBTAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTAboutController.m; sourceTree = "<group>"; };
+		F8BD5B291F6BDDA90085D317 /* LBTAboutHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBTAboutHeaderView.h; sourceTree = "<group>"; };
+		F8BD5B2A1F6BDDA90085D317 /* LBTAboutHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBTAboutHeaderView.m; sourceTree = "<group>"; };
+		F8BD5B2C1F6BDDB30085D317 /* LBTAboutHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBTAboutHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -716,6 +724,7 @@
 		F8BBC85C1F6A5A2C0098A213 /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				F8BD5B251F6BDD730085D317 /* about */,
 				F8BD5B1B1F6B5CAA0085D317 /* product */,
 				F8BBC85D1F6A5A4C0098A213 /* LBTSettingCell.h */,
 				F8BBC85E1F6A5A4C0098A213 /* LBTSettingCell.m */,
@@ -775,6 +784,8 @@
 		F8BBC87A1F6A81730098A213 /* about */ = {
 			isa = PBXGroup;
 			children = (
+				F8BD5B221F6BDBD90085D317 /* LBTAboutController.h */,
+				F8BD5B231F6BDBD90085D317 /* LBTAboutController.m */,
 			);
 			path = about;
 			sourceTree = "<group>";
@@ -838,6 +849,16 @@
 				F8BD5B1E1F6B5F720085D317 /* LBTProductCell.m */,
 			);
 			path = product;
+			sourceTree = "<group>";
+		};
+		F8BD5B251F6BDD730085D317 /* about */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD5B291F6BDDA90085D317 /* LBTAboutHeaderView.h */,
+				F8BD5B2A1F6BDDA90085D317 /* LBTAboutHeaderView.m */,
+				F8BD5B2C1F6BDDB30085D317 /* LBTAboutHeaderView.xib */,
+			);
+			path = about;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -981,6 +1002,7 @@
 				3AC899D41F6985ED00FD362A /* pl5_howto.html in Resources */,
 				3AC899DB1F6985ED00FD362A /* x3d_howto.html in Resources */,
 				3AC899C71F6985ED00FD362A /* group_record.html in Resources */,
+				F8BD5B2D1F6BDDB30085D317 /* LBTAboutHeaderView.xib in Resources */,
 				3AC899D61F6985ED00FD362A /* qxc_howto.html in Resources */,
 				3AC899D31F6985ED00FD362A /* pl3_howto.html in Resources */,
 				3AC899CF1F6985ED00FD362A /* k3_howto.html in Resources */,
@@ -1048,6 +1070,7 @@
 				F8BBC8571F6A564D0098A213 /* LBTSettingGroup.m in Sources */,
 				3AC899971F69838700FD362A /* UIColor+CZAddition.m in Sources */,
 				F8BBC83A1F6A217E0098A213 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				F8BD5B2B1F6BDDA90085D317 /* LBTAboutHeaderView.m in Sources */,
 				F8BBC8441F6A50110098A213 /* LBTSettingItem.m in Sources */,
 				3AC899331F6980EF00FD362A /* main.m in Sources */,
 				3AC8996E1F6982DB00FD362A /* AppDelegate.m in Sources */,
@@ -1061,6 +1084,7 @@
 				3AC899E51F6987FA00FD362A /* LBTTabBar.m in Sources */,
 				F8BBC84D1F6A51780098A213 /* LBTSettingLabelItem.m in Sources */,
 				3AC899721F69830800FD362A /* LBTTabBarController.m in Sources */,
+				F8BD5B241F6BDBD90085D317 /* LBTAboutController.m in Sources */,
 				F8BBC83C1F6A217E0098A213 /* ViewController+MASAdditions.m in Sources */,
 				F8BBC8471F6A512A0098A213 /* LBTSettingArrowItem.m in Sources */,
 				F8BBC8131F6A10180098A213 /* LBTMineController.m in Sources */,

@@ -10,6 +10,7 @@
 #import "LBTPushNoticeController.h"
 #import "LBTHelpController.h"
 #import "LBTProductController.h"
+#import "LBTAboutController.h"
 @interface LBTSettingController ()
 
 @end
@@ -70,7 +71,7 @@
     
     // 2.6.关于
     LBTSettingArrowItem *about = [LBTSettingArrowItem itemWithIcon:@"MoreAbout" title:@"关于"];
-    // about.showVCClass = [ILAboutViewController class];
+    about.showVCClass = [LBTAboutController class];
     
     LBTSettingGroup *group = [LBTSettingGroup groupWithItems:@[update, help, share, msg, product, about]];
     [self.groupArray addObject:group];
