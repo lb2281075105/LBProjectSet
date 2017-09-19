@@ -486,8 +486,24 @@
 .children_quanbu > .children_quanbu_right > .children_content > .children__top,.children_down{
     text-align: right;
 }
-
-
+.cailiao > .cailiaoRight > .cailiao_content_down > .cailiao_content2 > .images_subtitle{
+	width: 340px;
+    height: 110px;
+}
+.cailiao > .cailiaoRight > .cailiao_content_down > .cailiao_content2 > .images_subtitle > .image{
+  width: 100px;
+  height: 80px;
+  float: left;
+}
+/*.cailiao > .cailiaoRight > .cailiao_content_down > .cailiao_content2 > .images_subtitle{
+  width: 340px;
+  height: 110px;
+}
+*/.cailiao > .cailiaoRight > .cailiao_content_down > .cailiao_content2 > .images_subtitle > .p_subtitle{
+  width: 70px;
+  height: 110px;
+  float: right;
+}
 
 
 
