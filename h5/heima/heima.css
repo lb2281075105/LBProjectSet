@@ -63,7 +63,7 @@ body,p,h1,h2,h3,h4,h5,h6,div,ul,dl,ol,dt,dd,li,a,span {
     margin: 0 auto;
     height: 110px;
     line-height: 110px;
-    background-color: red;
+    /*background-color: red;*/
 }
 .icon_content img{
     vertical-align: middle;
@@ -86,18 +86,163 @@ body,p,h1,h2,h3,h4,h5,h6,div,ul,dl,ol,dt,dd,li,a,span {
 }
 .nav_center_content > ul > li{
     float: left;
-    padding:0 20px;
+    position: relative;
 }
 .nav_center_content > ul > li > a{
     font-size: 19px;
     color: white;
+    text-decoration: none;
+    padding:0 20px;
+    display: block;
+    height: 55px;
 }
+.nav_center_content > ul > li > a:hover{
+    background-color: red;
+}
+li.li_four span{
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    left: 50%;
+    margin-left: -12.5px;
+    z-index: 9999;
+    background: url(./images/sprite.png) 103px 0px;
+}
+li.li_five span{
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: -6px;
+    left: 50%;
+    margin-left: -12.5px;
+    z-index: 9999;
+    background: url(./images/sprite.png) 103px 0px;
+}
+/* 不是设置背景图片就是设置的img对象 */
+.bg{
+	width: 100%;
+	height: 300px;
+    vertical-align: middle;
+	background: url(images/56e901b33bdbb.jpg) no-repeat center center;
+}
+.nav_down{
+	width: 1180px;
+	margin: 0 auto;
+	height: 60px;
+	margin-top: 100px;
+}
+.nav_down .nav_left{
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+}
+.nav_down .nav_right{
+	float: right;
+	height: 60px;
+	line-height: 60px;
+	font-size: 15px;
+}
+body{
+	background-color: #F1F1F1;
+}
+.banner{
+	width: 1180px;
+	height: 540px;
+	margin: 0 auto;
+}
+.div_one{
+	width: 280px;
+	height: 250px;
+	background-color: white;
+	float: left;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.div_one .shadow{
+	width: 280px;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(200,200,200,1);
+	line-height: 20px;
 
+}
+.shadow .shadow_one{
+	float: left;
+	padding: 0px 5px;
+}
+.shadow .shadow_two{
+	float: right;
+	padding: 0px 5px;
+}
+.div_one > .img_class > img{
+   width: 280px;
+   height: 160px;
 
+}
+.div_one > .img_class{
+   position: relative;
+}
+.div_one_content{
+	width: 280px;
+	height: 90px;
+	position: relative;
+}
+.div_one_content .p_one{
+	margin: 10px 5px;
+}
+.div_one_content .p_two{
+	margin: 5px 5px;
+	color: gray;
+}
+.div_one_content .p_three{
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    color: red;
+    border: 1px solid red;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+.down_bg{
+	margin-top: 50px;
+	background-color: black;
+	height: 235px;
+}
+.down_class{
+	width: 1180px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+.down_ul{
+	float: left;
+	font-size: 15px;
+    margin-top: 40px;
+}
+.down_ul li{
+	color: white;
+	padding-bottom: 10px;
+}
+.down_right img{
+	width: 275px;
+	height: 175px;
+}
+.down_right{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
 
 /* 清除浮动 */
 .clearFix{
-       content: "";
+       content: ".";
        height: 0;
        line-height: 0;
        display: block;
