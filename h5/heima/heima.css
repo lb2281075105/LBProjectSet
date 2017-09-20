@@ -1,0 +1,112 @@
+/* CSS初始化 */
+body,p,h1,h2,h3,h4,h5,h6,div,ul,dl,ol,dt,dd,li,a,span {
+
+    font-size: 12px;
+    font-family: 微软雅黑;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #333;
+}
+.nav_top{
+    width: 100%;
+    height: 40px;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid gray;
+}
+.nav_top_content{
+    width: 1180px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+.ul1{
+    float: left;
+    list-style: none;
+    color: #F1F1F1;
+}
+.ul1 li{
+    float: left;
+    padding-right: 10px;
+}
+.ul1 > li > a{
+    text-decoration: none;
+}
+.ul1 > li > a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.ul2 > li > a{
+    text-decoration: none;
+}
+.ul2 > li > a:hover{
+    text-decoration: underline;
+    color: red;
+}
+.ul2{
+    float: right;
+    list-style: none;
+    color: black;
+}
+.ul2 li{
+    float: left;
+    padding-right: 10px;
+}
+/* 图标 */
+.icon{
+    width: 100%;
+    height: 110px;
+    background-color: white;
+}
+.icon .icon_content{
+    width: 1180px;
+    margin: 0 auto;
+    height: 110px;
+    line-height: 110px;
+    background-color: red;
+}
+.icon_content img{
+    vertical-align: middle;
+}
+.nav_center{
+    width: 100%;
+    height: 55px;
+    background-color: black;
+}
+.nav_center_content{
+    width: 1180px;
+    height: 55px;
+    margin: 0 auto;
+}
+.nav_center_content ul{
+    float: left;
+    list-style: none;
+    height: 55px;
+    line-height: 55px;
+}
+.nav_center_content > ul > li{
+    float: left;
+    padding:0 20px;
+}
+.nav_center_content > ul > li > a{
+    font-size: 19px;
+    color: white;
+}
+
+
+
+/* 清除浮动 */
+.clearFix{
+       content: "";
+       height: 0;
+       line-height: 0;
+       display: block;
+       clear: both;
+       visibility: hidden;
+}
+.clearFix{
+     zoom: 1; 
+}
+
+
+

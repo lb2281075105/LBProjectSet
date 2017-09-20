@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body,div,ul,li,a,p,input{
+			margin: 0;
+			padding: 0;
+			font: 12px 微软雅黑;
+
+		}
+		body{
+			background: #eee;
+		}
+		img{
+			border: 0 none;
+		}
+		a{
+			text-decoration: none;
+			color: #666;
+		}
+		ul,li{
+			list-style: none;
+		}
+		input{
+			border: 0 none;
+			outline-style: none;
+		}
+		.fl{
+			float: left;
+		}
+		.fr{
+			float: right;
+		}
+		.top-nav{
+			height: 26px;
+			border-top: 1px solid #aaa;
+			border-bottom: 1px solid #aaa;
+			background: #eee;
+		}
+		.top-nav-con,.logo,.nav-con,.ke,.pic-ke{
+			margin: 0 auto;
+			width: 1180px;
+			
+		}
+		.top-nav-con{
+			height: 26px;
+
+
+		}
+		.l-top-nav li,.r-top-nav{
+			height: 26px;
+			line-height: 26px;
+		}
+		.top-nav-con li{
+			float: left;
+			padding-right: 10px;
+			
+		}
+		.logo{
+			height: 50px;
+			margin: 30px auto;
+		}
+		.nav{
+			background: #222;
+			height: 50px;
+			border-bottom: 1px solid #990000;
+		}
+		.nav-con{
+			position: relative;
+		}
+		.nav li{
+			float: left;
+			
+		}
+
+		.nav li a{
+			display: inline-block;
+			height: 50px;
+			line-height: 50px;
+			padding: 0  10px;
+			font-size: 16px;
+			color: white;
+		}
+
+		.nav li a:hover,.nav li.li1 a{
+			background: #990000;
+		}
+		.new-pic{
+			width: 24px;
+			height: 19px;
+			
+			position: absolute;
+			background: url("images/sprite.png") -137px 0;
+			left: 200px;
+			top: -8px;
+		}
+
+		.banner{
+				width: 100%;
+				height: 380px;
+				background: url("images/56e901b33bdbb.jpg") center center;
+		}
+		.ke{
+			margin: 70px auto;
+			overflow: hidden;
+
+		}
+		.pic-ke1{
+
+			width: 280px;
+			height: 230px;
+			background: white;
+			margin-right: 12px;
+			margin-bottom: 12px;
+
+		}
+		.ke01{
+			width: 280px;
+			height: 156px;
+			position: relative;
+
+		}
+		.ke02{
+			width: 280px;
+			height: 20px;
+			position: absolute;
+			bottom:0;
+			background: rgba(0,0,0,0.3);
+		}
+		.ke01 img{
+			width: 280px;
+			height: 156px;
+		}
+		.r-ke02{
+			height: 20px;
+			padding: 0 5px;
+			background: rgba(0,0,0,0.7);
+		}
+
+
+
+	</style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+	<div class="top-nav">
+		<div class="top-nav-con">
+			<div class="l-top-nav fl"><ul>
+				<li><a href="#">黑马程序员首页</a></li>
+				<li><a href="#">黑马程序员首页</a></li>
+				<li><a href="#">黑马程序员首页</a></li>
+				<li><a href="#">黑马程序员首页</a></li>
+			</ul></div>
+			<div class="r-top-nav fr">欢迎来到黑马程序员公开课！<a href="#"> 登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#"> 登录</a></div>
+		</div>
+	</div>
+	<!-- logo -->
+	<div class="logo"><img src="images/logo.gif" alt=""></div>
+	<!-- 主导航 -->
+	<div class="nav">
+		<div class="nav-con">
+			<ul>
+				<li class="li1"><a href="#">大前端</a></li>
+				<li><a href="#">大前端</a></li>
+				<li><a href="#">大前端</a></li>
+				<li><a href="#">大前端</a></li>
+				<li><a href="#">大前端</a></li>
+				<li><a href="#">大前端</a></li>
+				<li><a href="#">大前端</a></li>
+				<li><a href="#">大前端</a></li>
+			</ul>
+			<div class="new-pic"></div>
+			<div class="new-pic2"></div>
+		</div>
+	
+	</div>
+	<!-- banner部分 -->
+	<div class="banner">
+	</div>
+	<!-- 课部分 -->
+	<div class="ke">
+		<div class="l-ke fl" style="font-size:30px; ">近期免费公开课</div>
+		<div class="r-ke fr">查看更多</div>
+	</div>
+	<!-- 图片浮动 -->
+	<div class="pic-ke">
+		<div class="pic-ke1 fl">
+				<div class="ke01">
+					<img src="images/571f1b7abf11f.jpg" alt="">
+					<div class="ke02">
+					<div class="l-ke02 fl">2016年06月22日开课</div>
+					<div class="r-ke02 fr">ios</div>
+					</div>
+
+				</div>
+			
+		</div>
+		<div class="pic-ke1 fl">
+				<div class="ke01">
+					<img src="images/571f1b7abf11f.jpg" alt="">
+					<div class="ke02">
+					<div class="l-ke02 fl">2016年06月22日开课</div>
+					<div class="r-ke02 fr">ios</div>
+					</div>
+
+				</div>
+			
+		</div>
+		<div class="pic-ke1 fl">
+				<div class="ke01">
+					<img src="images/571f1b7abf11f.jpg" alt="">
+					<div class="ke02">
+					<div class="l-ke02 fl">2016年06月22日开课</div>
+					<div class="r-ke02 fr">ios</div>
+					</div>
+
+				</div>
+			
+		</div>
+		<div class="pic-ke1 fl">
+				<div class="ke01">
+					<img src="images/571f1b7abf11f.jpg" alt="">
+					<div class="ke02">
+					<div class="l-ke02 fl">2016年06月22日开课</div>
+					<div class="r-ke02 fr">ios</div>
+					</div>
+
+				</div>
+			
+		</div>
+		<div class="pic-ke1 fl">
+				<div class="ke01">
+					<img src="images/571f1b7abf11f.jpg" alt="">
+					<div class="ke02">
+					<div class="l-ke02 fl">2016年06月22日开课</div>
+					<div class="r-ke02 fr">ios</div>
+					</div>
+
+				</div>
+			
+		</div>
+		<div class="pic-ke1 fl">
+				<div class="ke01">
+					<img src="images/571f1b7abf11f.jpg" alt="">
+					<div class="ke02">
+					<div class="l-ke02 fl">2016年06月22日开课</div>
+					<div class="r-ke02 fr">ios</div>
+					</div>
+
+				</div>
+			
+		</div>
+		<div class="pic-ke1 fl">
+				<div class="ke01">
+					<img src="images/571f1b7abf11f.jpg" alt="">
+					<div class="ke02">
+					<div class="l-ke02 fl">2016年06月22日开课</div>
+					<div class="r-ke02 fr">ios</div>
+					</div>
+
+				</div>
+			
+		</div>
+		<div class="pic-ke1 fl">
+				<div class="ke01">
+					<img src="images/571f1b7abf11f.jpg" alt="">
+					<div class="ke02">
+					<div class="l-ke02 fl">2016年06月22日开课</div>
+					<div class="r-ke02 fr">ios</div>
+					</div>
+
+				</div>
+			
+		</div>
+
+	</div>
+
+</body>
+</html>

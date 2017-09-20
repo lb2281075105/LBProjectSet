@@ -579,7 +579,9 @@
 	visibility: hidden;
 	clear:both;
 }
-
+.clearFix{
+	zoom:1;
+}
 
 
 
