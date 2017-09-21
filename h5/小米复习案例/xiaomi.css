@@ -1,0 +1,90 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: gray;
+}
+.container{
+	width: 1180px;
+	margin: 0 auto;
+	height: 655px;
+}
+.nav_top{
+	width: 1180px;
+	height: 40px;
+}
+.nav_top .zhineng{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+}
+.nav_top .chakan{
+	float: right;
+	height: 40px;
+	line-height: 40px;
+}
+.down_left{
+	width: 230px;
+	float: left;
+}
+.down_right{
+	float: right;
+	width: 930px;
+	height: 600px;
+}
+.div_image{
+	width: 210px;
+	height: 300px;
+	position: relative;
+	text-align: center;
+	background-color: white;
+	float: left;
+	margin:0 0px 14px 22px;
+}
+.div_image img{
+	margin-top: 10px;
+	width: 160px;
+	height: 160px;
+	vertical-align: middle;
+}
+.div_image p.p_four{
+	background-color: orange;
+	color: white;
+	padding: 0px 5px;
+	position: absolute;
+	width: 60px;
+	top: 0px;
+	left: 75px;
+}
+.div_image p.p_one{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.div_image p.p_two{
+
+}
+.div_image p.p_three{
+	color: white;
+	padding: 0px 5px;
+	position: absolute;
+	width: 60px;
+	bottom: 10px;
+	color: orange;
+	left: 75px;
+}
+
+
+/* 清除浮动 */
+.clearFix{
+    content: ".";
+    height: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.clearFix{
+    zoom: 1; 
+}
