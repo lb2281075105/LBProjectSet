@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C122E20B80622D3CAEA9B5D1 /* libPods-LBOCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E1E425197E2F7E825081EE /* libPods-LBOCDemo.a */; };
+		F8CF97951F7D206600C01F38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CF97941F7D206600C01F38 /* AppDelegate.m */; };
+		F8CF979B1F7D206700C01F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CF97991F7D206700C01F38 /* Main.storyboard */; };
+		F8CF979E1F7D206700C01F38 /* LBOCDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F8CF979C1F7D206700C01F38 /* LBOCDemo.xcdatamodeld */; };
+		F8CF97A01F7D206700C01F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CF979F1F7D206700C01F38 /* Assets.xcassets */; };
+		F8CF97A31F7D206700C01F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CF97A11F7D206700C01F38 /* LaunchScreen.storyboard */; };
+		F8CF97A61F7D206700C01F38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CF97A51F7D206700C01F38 /* main.m */; };
+		F8CF97AE1F7D20E700C01F38 /* LBOCDemoHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CF97AD1F7D20E700C01F38 /* LBOCDemoHomeController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07597C44F5D671AD96251389 /* Pods-LBOCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBOCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBOCDemo/Pods-LBOCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		18E1E425197E2F7E825081EE /* libPods-LBOCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBOCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E041D787F1ED2DCD58DC8F0 /* Pods-LBOCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBOCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBOCDemo/Pods-LBOCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F8CF97901F7D206600C01F38 /* LBOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8CF97931F7D206600C01F38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F8CF97941F7D206600C01F38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F8CF979A1F7D206700C01F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8CF979D1F7D206700C01F38 /* LBOCDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LBOCDemo.xcdatamodel; sourceTree = "<group>"; };
+		F8CF979F1F7D206700C01F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8CF97A21F7D206700C01F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8CF97A41F7D206700C01F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8CF97A51F7D206700C01F38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8CF97AC1F7D20E700C01F38 /* LBOCDemoHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBOCDemoHomeController.h; sourceTree = "<group>"; };
+		F8CF97AD1F7D20E700C01F38 /* LBOCDemoHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBOCDemoHomeController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8CF978D1F7D206600C01F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C122E20B80622D3CAEA9B5D1 /* libPods-LBOCDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CABE1B096D91D1935C87AD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18E1E425197E2F7E825081EE /* libPods-LBOCDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9FC9CD63DE5C9F70D97247A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07597C44F5D671AD96251389 /* Pods-LBOCDemo.debug.xcconfig */,
+				9E041D787F1ED2DCD58DC8F0 /* Pods-LBOCDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8CF97871F7D206600C01F38 = {
+			isa = PBXGroup;
+			children = (
+				F8CF97921F7D206600C01F38 /* LBOCDemo */,
+				F8CF97911F7D206600C01F38 /* Products */,
+				D9FC9CD63DE5C9F70D97247A /* Pods */,
+				4CABE1B096D91D1935C87AD4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8CF97911F7D206600C01F38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8CF97901F7D206600C01F38 /* LBOCDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8CF97921F7D206600C01F38 /* LBOCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F8CF97931F7D206600C01F38 /* AppDelegate.h */,
+				F8CF97941F7D206600C01F38 /* AppDelegate.m */,
+				F8CF97AC1F7D20E700C01F38 /* LBOCDemoHomeController.h */,
+				F8CF97AD1F7D20E700C01F38 /* LBOCDemoHomeController.m */,
+				F8CF97AF1F7D249700C01F38 /* LBButton */,
+				F8CF97991F7D206700C01F38 /* Main.storyboard */,
+				F8CF979F1F7D206700C01F38 /* Assets.xcassets */,
+				F8CF97A11F7D206700C01F38 /* LaunchScreen.storyboard */,
+				F8CF97A41F7D206700C01F38 /* Info.plist */,
+				F8CF97A51F7D206700C01F38 /* main.m */,
+				F8CF979C1F7D206700C01F38 /* LBOCDemo.xcdatamodeld */,
+			);
+			path = LBOCDemo;
+			sourceTree = "<group>";
+		};
+		F8CF97AF1F7D249700C01F38 /* LBButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LBButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8CF978F1F7D206600C01F38 /* LBOCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8CF97A91F7D206700C01F38 /* Build configuration list for PBXNativeTarget "LBOCDemo" */;
+			buildPhases = (
+				0C7C4F8012B00E98973242FE /* [CP] Check Pods Manifest.lock */,
+				F8CF978C1F7D206600C01F38 /* Sources */,
+				F8CF978D1F7D206600C01F38 /* Frameworks */,
+				F8CF978E1F7D206600C01F38 /* Resources */,
+				5715941841303196859A24AB /* [CP] Embed Pods Frameworks */,
+				DD0BE347543556E60541E0E3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LBOCDemo;
+			productName = LBOCDemo;
+			productReference = F8CF97901F7D206600C01F38 /* LBOCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8CF97881F7D206600C01F38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "刘博";
+				TargetAttributes = {
+					F8CF978F1F7D206600C01F38 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F8CF978B1F7D206600C01F38 /* Build configuration list for PBXProject "LBOCDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8CF97871F7D206600C01F38;
+			productRefGroup = F8CF97911F7D206600C01F38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8CF978F1F7D206600C01F38 /* LBOCDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8CF978E1F7D206600C01F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CF97A31F7D206700C01F38 /* LaunchScreen.storyboard in Resources */,
+				F8CF97A01F7D206700C01F38 /* Assets.xcassets in Resources */,
+				F8CF979B1F7D206700C01F38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C7C4F8012B00E98973242FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5715941841303196859A24AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBOCDemo/Pods-LBOCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD0BE347543556E60541E0E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBOCDemo/Pods-LBOCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8CF978C1F7D206600C01F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CF979E1F7D206700C01F38 /* LBOCDemo.xcdatamodeld in Sources */,
+				F8CF97AE1F7D20E700C01F38 /* LBOCDemoHomeController.m in Sources */,
+				F8CF97A61F7D206700C01F38 /* main.m in Sources */,
+				F8CF97951F7D206600C01F38 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8CF97991F7D206700C01F38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8CF979A1F7D206700C01F38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8CF97A11F7D206700C01F38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8CF97A21F7D206700C01F38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8CF97A71F7D206700C01F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8CF97A81F7D206700C01F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8CF97AA1F7D206700C01F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07597C44F5D671AD96251389 /* Pods-LBOCDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MECQS3Z269;
+				INFOPLIST_FILE = LBOCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liubo.LBOCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8CF97AB1F7D206700C01F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E041D787F1ED2DCD58DC8F0 /* Pods-LBOCDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MECQS3Z269;
+				INFOPLIST_FILE = LBOCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liubo.LBOCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8CF978B1F7D206600C01F38 /* Build configuration list for PBXProject "LBOCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8CF97A71F7D206700C01F38 /* Debug */,
+				F8CF97A81F7D206700C01F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8CF97A91F7D206700C01F38 /* Build configuration list for PBXNativeTarget "LBOCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8CF97AA1F7D206700C01F38 /* Debug */,
+				F8CF97AB1F7D206700C01F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F8CF979C1F7D206700C01F38 /* LBOCDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F8CF979D1F7D206700C01F38 /* LBOCDemo.xcdatamodel */,
+			);
+			currentVersion = F8CF979D1F7D206700C01F38 /* LBOCDemo.xcdatamodel */;
+			path = LBOCDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F8CF97881F7D206600C01F38 /* Project object */;
+}
