@@ -1,0 +1,100 @@
+{template 'common/header'}
+
+
+
+<link rel="stylesheet" href="/wui/css/weui.css">
+<link rel="stylesheet" href="/wui/css/jquery-weui.css">
+
+<!-- 自定义CSS
+    demo.css      引用例子使用的，不可以删除，不可以编辑
+    extends.css   组件css，比如自己新做了组件，封装成css放到这里，加好备注，便于weui升级更新
+    help.css      全局辅助css，比如一些浮动的辅助样式，颜色的辅助，偏移的辅助等
+    s.css         自己的css，一些效果实现，修改的，不通用的放到这里
+ -->
+
+<link rel="stylesheet" href="/wui/css/demos.css">
+<link rel="stylesheet" href="/wui/css/extends.css">
+<link rel="stylesheet" href="/wui/css/help.css">
+<link rel="stylesheet" href="/wui/css/s.css">
+
+<!-- jquery ui JS -->
+<script src="/wui/js/jquery-2.1.4.js"></script>
+<script src="/wui/js/jquery-weui.js"></script>
+
+
+<div class="bg-white" style="margin-top: 30px;margin-bottom: 30px">
+    <a class="weui-block " href="javascript:void(0)">
+        <div class="weui-block-content  clearfix">
+            <div class="text-right float-right mt-10">
+                <div class="font-w600 mb-5">{$fan['nickname']}</div>
+                <div class="text-muted">云媒股份~~~</div>
+            </div>
+            <div class="float-left">
+                <img class="img-avatar" src="{$avatar}" alt="" style="border-radius: 6px">
+            </div>
+        </div>
+    </a>
+</div>
+
+
+
+
+
+
+
+<!--基本信息-->
+
+<div class="weui-cells__title">基本信息</div>
+<div class="weui-cells">
+
+
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__bd">
+            <span style="vertical-align: middle"><a href="{php echo $this->createMobileUrl('resume');}">个人简历</a></span>
+            <p class="weui-media-box__desc">暂未维护</p>
+        </div>
+        <div class="weui-cell__ft"></div>
+    </div>
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__bd">
+            <span style="vertical-align: middle">我收藏的职位</span>
+            <p class="weui-media-box__desc">个人收藏</p>
+        </div>
+        <div class="weui-cell__ft"></div>
+    </div>
+
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__bd">
+            <span style="vertical-align: middle">我投递的简历</span>
+            <p class="weui-media-box__desc">个人收藏</p>
+        </div>
+        <div class="weui-cell__ft"></div>
+    </div>
+    <div class="weui-cell weui-cell_access">
+        <div class="weui-cell__bd">
+            <span style="vertical-align: middle">云媒官网</span>
+            <p class="weui-media-box__desc">云媒体人</p>
+        </div>
+        <div class="weui-cell__ft"></div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+
+<div class="xunmall-copyright">
+    <a href="../index.html" class="flag"></a>
+</div>
+
+{template 'common/footer'}

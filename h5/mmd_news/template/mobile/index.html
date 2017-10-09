@@ -1,0 +1,125 @@
+{template 'common/header'}
+
+
+
+    <link rel="stylesheet" href="/wui/css/weui.css">
+    <link rel="stylesheet" href="/wui/css/jquery-weui.css">
+
+    <!-- 自定义CSS
+        demo.css      引用例子使用的，不可以删除，不可以编辑
+        extends.css   组件css，比如自己新做了组件，封装成css放到这里，加好备注，便于weui升级更新
+        help.css      全局辅助css，比如一些浮动的辅助样式，颜色的辅助，偏移的辅助等
+        s.css         自己的css，一些效果实现，修改的，不通用的放到这里
+     -->
+
+    <link rel="stylesheet" href="/wui/css/demos.css">
+    <link rel="stylesheet" href="/wui/css/extends.css">
+    <link rel="stylesheet" href="/wui/css/help.css">
+    <link rel="stylesheet" href="/wui/css/s.css">
+
+    <!-- jquery ui JS -->
+    <script src="/wui/js/jquery-2.1.4.js"></script>
+    <script src="/wui/js/jquery-weui.js"></script>
+
+
+
+<style>
+    .swiper-container {
+        width: 100%;
+    }
+
+    .swiper-container img {
+        display: block;
+        width: 100%;
+    }
+</style>
+
+
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><a href="{$url1}"><img src="/attachment/{$hd1}" /></a></div>
+        <div class="swiper-slide"><a href="{$url2}"><img src="/attachment/{$hd2}" /></a></div>
+        <div class="swiper-slide"><a href="{$url3}"><img src="/attachment/{$hd3}" /></a></div>
+        <div class="swiper-slide"><a href="{$url4}"><img src="/attachment/{$hd4}" /></a></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<div class="weui-cells__title">公告：{$notice}</div>
+
+<div class="weui-grids">
+
+
+   {loop $categorys $category}
+
+        <a href="{php echo $this->createMobileUrl('jobs',array('id'=>$category['id']));}" class="weui-grid  bg-white">
+            <div class="weui-grid__icon">
+                <img src="/attachment/{$category['logo']}" alt="">
+            </div>
+            <p class="weui-grid__label">{$category['name']}</p>
+        </a>
+
+
+    {/loop}
+
+
+
+</div>
+
+
+
+
+
+
+<script src="/wui/js/swiper.js"></script>
+
+<script>
+    $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+    });
+</script>
+
+
+<!--<style>
+    .page__ft.j_bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .page__ft img {
+        height: 19px;
+    }
+    .page__ft {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+</style>
+<div class="page__ft j_bottom">
+    <a href="javascript:home()"><img src="images/icon_footer.png"></a>
+</div>
+-->
+<script src="/wui/js/fastclick.js"></script>
+
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+</script>
+
+
+
+
+
+<div class="xunmall-copyright">
+    <a href="../index.html" class="flag"></a>
+</div>
+
+
+{template 'common/footer'}

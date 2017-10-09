@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="0.8">
+	<application setting="true">
+		<name><![CDATA[mmd_news]]></name>
+		<identifie><![CDATA[mmd_news]]></identifie>
+		<version><![CDATA[1.0]]></version>
+		<type><![CDATA[business]]></type>
+		<ability><![CDATA[精英管理]]></ability>
+		<description><![CDATA[新闻系统]]></description>
+		<author><![CDATA[Gorden]]></author>
+		<url><![CDATA[http://bbs.we7.cc/]]></url>
+	</application>
+	<platform>
+		<subscribes>
+			<message type="text" />
+			<message type="image" />
+			<message type="voice" />
+			<message type="video" />
+			<message type="location" />
+			<message type="link" />
+			<message type="subscribe" />
+			<message type="unsubscribe" />
+			<message type="qr" />
+			<message type="trace" />
+			<message type="click" />
+			<message type="enter" />
+		</subscribes>
+		<handles>
+			<message type="text" />
+			<message type="image" />
+			<message type="voice" />
+			<message type="video" />
+			<message type="location" />
+			<message type="link" />
+			<message type="subscribe" />
+			<message type="qr" />
+			<message type="trace" />
+			<message type="click" />
+			<message type="enter" />
+		</handles>
+		<rule embed="true" />
+	</platform>
+	<bindings>
+		<!-- mobile -->
+		<cover call="getRuleMenus">
+			<entry title="新闻" do="news" state="" direct="false" />
+		</cover>
+		<!-- web  -->
+		<menu call="getMenus">
+			<entry title="精英管理" do="news" state="" direct="false" />
+		</menu>
+		<home call="getHomes">
+			<entry title="便利店首页" do="store" state="" direct="true" />
+		</home>
+		<profile call="getProfiles">
+			<entry title="便利店订单" do="orders" state="" direct="false" />
+		</profile>
+		<shortcut call="getShortcuts">
+			<entry title="便利店订单" do="orders" state="" direct="false" />
+		</shortcut>
+		<rule>
+			<entry title="规则" do="rule" state="" direct="false" />
+		</rule>
+	</bindings>
+	<install></install>
+	<uninstall></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

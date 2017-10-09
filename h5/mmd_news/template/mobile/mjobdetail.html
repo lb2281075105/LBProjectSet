@@ -1,0 +1,263 @@
+{template 'common/header'}
+
+<link rel="stylesheet" href="/wui/css/weui.css">
+<link rel="stylesheet" href="/wui/css/jquery-weui.css">
+
+<!-- 自定义CSS
+    demo.css      引用例子使用的，不可以删除，不可以编辑
+    extends.css   组件css，比如自己新做了组件，封装成css放到这里，加好备注，便于weui升级更新
+    help.css      全局辅助css，比如一些浮动的辅助样式，颜色的辅助，偏移的辅助等
+    s.css         自己的css，一些效果实现，修改的，不通用的放到这里
+ -->
+
+<link rel="stylesheet" href="/wui/css/demos.css">
+<link rel="stylesheet" href="/wui/css/extends.css">
+<link rel="stylesheet" href="/wui/css/help.css">
+<link rel="stylesheet" href="/wui/css/s.css">
+
+<!-- jquery ui JS -->
+<script src="/wui/js/jquery-2.1.4.js"></script>
+<script src="/wui/js/jquery-weui.js"></script>
+
+<!--幻灯片-->
+<style>
+    .swiper-container {
+        width: 100%;
+    }
+
+    .swiper-container img {
+        display: block;
+        width: 100%;
+    }
+
+    label {
+        font-weight: normal;
+    }
+
+    .weui-form-preview:after {
+
+        border-bottom: none !important;
+
+    }
+    .weui-toast_content{
+        color: #fff!important;
+    }
+</style>
+
+
+<style>
+    h2 {
+        color: #0a2198;
+    }
+</style>
+{loop $jobdetail $d}
+
+
+<div class="bg-white">
+    <a class="weui-block" href="javascript:void(0)">
+        <div class="weui-block-content  clearfix">
+            <div class="float-right">
+                <img class="img-avatar" src="/wui/images/ylogo.png" alt="">
+            </div>
+            <div class="float-left mt-10">
+                <div class="font-w600 mb-5">{$d["name"]}</div>
+                <div class="text-muted">
+                    <small>{$d["updatetime"]}更新</small>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+
+<div class="weui-form-preview ">
+
+
+    <div class="weui-form-preview__bd">
+        <div class="weui-form-preview__item">
+            <label class="weui-form-preview__label"><i class="iconfont">&#xe693;</i> 招聘人数:{$d["number"]}</label>
+            <label class="weui-form-preview__value"><i class="iconfont">&#xe6f7;</i> {$d["salary"]}</label>
+            <!--<span class="weui-form-preview__value">薪资:{$d["salary"]}</span>-->
+        </div>
+        <div class="weui-form-preview__item ">
+            <label class="weui-form-preview__label"><i class="iconfont">&#xe627;</i> {$d["comment"]}</label>
+            <!--<span class="weui-form-preview__value" style="text-align: left">测试测试</span>-->
+        </div>
+    </div>
+</div>
+
+
+<div style="background-color:#fff; padding: 0px 15px 15px 15px">
+    <div>
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><a href="{$url1}"><img src="/wui/images/xm3.png"/></a></div>
+                <div class="swiper-slide"><a href="{$url2}"><img src="/wui/images/xm2.png"/></a></div>
+                <div class="swiper-slide"><a href="{$url1}"><img src="/wui/images/xm4.png"/></a></div>
+
+            </div>
+            <!-- If we need pagination -->
+
+        </div>
+    </div>
+</div>
+
+<div class="weui-cells__title" style="    color: #999999;">职位描述</div>
+<div class="weui-cells" style="padding: 0px 15px">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <p>{$d["description"]}</p>
+        </div>
+    </div>
+</div>
+<div class="weui-cells__title" style="    color: #999999;">任职要求</div>
+<div class="weui-cells" style="padding: 0px 15px">
+    <div class="weui-cell">
+        <!--<div class="weui-cell__hd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width:20px;margin-right:5px;display:block"></div>-->
+        <div class="weui-cell__bd">
+            <p>{$d["condition"]}</p>
+        </div>
+    </div>
+</div>
+{/loop}
+
+<div class="xunmall-copyright">
+    <a href="../index.html" class="flag"></a>
+</div>
+
+
+<!--底部导航-->
+<section class="weui-menu  border-none " style="background-color: #fff;  box-shadow: 0 2px 4px rgba(20,20,20,0.35);">
+
+    <div class="weui-menu-inner   " style="width: 20%">
+        <img src="{$avatar}" alt="">
+
+    </div>
+
+
+    <div class="weui-menu-inner  border-none " style="width: 20%;"
+         onclick=" $('.weui-share').show().addClass('fadeIn');">
+        <div>
+            <p style="margin: 2px 0 0 0;"><i class="iconfont" style="font-size: 20px">&#xe6ca;</i>
+
+            </p>
+            <div style="font-size: 11px;margin-top:-5px ">分享</div>
+
+        </div>
+    </div>
+
+
+
+    <div class="weui-menu-inner  border-none " style="width: 16%;" id="sc">
+
+        <div>
+            <p style="margin: 2px 0 0 0;"><i class="iconfont" id="scn" style="font-size: 20px">&#xe679;</i>
+
+            </p>
+            <div style="font-size: 11px;margin-top:-5px ">收藏</div>
+
+        </div>
+    </div>
+
+    <div class="weui-menu-inner  border-none " style="width: 3%;">
+
+    </div>
+
+    <!--php echo $this->createMobileUrl('toudi',array('jobid'=>$id,''=>$jobdetail[0]['uniacid']))  -->
+
+    <div class="weui-menu-inner border-none color-white " style="background-color: #204eae;width: 41%" id="{$tdzt}">
+
+        <span><i class="iconfont">&#xe655;</i> 投递该职位 </span>
+
+    </div>
+
+
+</section>
+
+<div class="weui-share fadeIn" onclick="$(this).fadeOut();$(this).removeClass('fadeOut')" style=" display: none;">
+    <div class="weui-share-box">
+        点击右上角发送给指定朋友或分享到朋友圈 <i></i>
+    </div>
+</div>
+
+<script src="/wui/js/swiper.js"></script>
+<script src="/wui/js/fastclick.js"></script>
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+    });
+</script>
+
+<script>
+    $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+    });
+
+
+
+</script>
+
+<script>
+
+
+
+    $('#sc').on('click','#scn',function(){
+
+
+        $('#scn').html('&#xe6bd;');
+        $('#scn').attr('id','scy');
+        $.toast("已收藏", function() {
+
+        });
+
+
+    });
+
+    $('#sc').on('click','#scy',function(){
+
+        $('#scy').html('&#xe679;');
+        $('#scy').attr('id','scn');
+        $.toast("已移除", function() {});
+
+    });
+
+
+
+
+
+
+
+
+
+    $("#nojl").click(function () {
+
+        $.modal({
+            title: "您好，宋英杰",
+            text: "为了更好的，2分钟维护简历",
+            buttons: [
+                { text: "新增简历", onClick: function(){
+                    window.location.href = "http://www.baidu.com";
+                } },
+
+                { text: "我先看看", className: "default"},
+            ]
+        });
+    });
+
+    $("#yes").click(function () {
+
+        $.toast("投递成功", function() {
+
+        });
+
+    });
+
+
+
+
+
+</script>
+{template 'common/footer'}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>MIDAS</title>
+    <!-- 导入手机端layer-->
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="layer_mobile/layer.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body >
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<?php //include "header.php" ?>
+
+<style type="text/css">
+   body {
+        margin: 0;
+        padding: 0;
+        background-color: #F7F4ED
+    }
+
+    .stylebar {
+        font-size: 12px;
+    }
+
+    .stylewh {
+        width: 18px;
+        height: 18px;
+    }
+
+    .stylebottom {
+        background-color: red;
+        height: 55px;
+        text-align: center;
+        line-height: 55px;
+    }
+
+
+</style>
+<main id="main-container" class="container-fluid">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <img class="img-responsive" src="http://i4.bvimg.com/571090/54ef90440b4b31b1.jpg" alt="ceshi">
+        </div>
+    </div>
+
+    <div style="height:55px" class="row text-center navbar-fixed-bottom">
+        <div style="background-color: white;height:55px">
+            <div class="col-xs-2 col-md-2">
+                <div style="padding:10px;">
+                    <img class="img-circle" src="../shouji/touxiang.png" alt="头像" width="35px" height="35px">
+                </div>
+            </div>
+            <div class="col-xs-2 col-md-2">
+                <div style="padding-top: 10px;">
+                    <img style="width: 20px;height: 18px" src="../shouji/zhuye.png" alt="ceshi">
+                </div>
+                <div>
+                    <a href="http://www.baidu.com"><span class="stylebar" style="">官网</span></a>
+                </div>
+            </div>
+            <div class="col-xs-2 col-md-2">
+                <div style="padding-top: 10px;">
+                    <img style="width: 17px;height: 18px" src="../shouji/dianhua.png" alt="ceshi">
+                </div>
+                <div>
+                    <a href="tel:13842059244"><span class="stylebar">手机</span></a>
+                </div>
+            </div>
+            <div class="col-xs-2 col-md-2">
+                <div style="padding-top: 10px;">
+                    <img style="width:21px;height: 18px" src="../shouji/weixin.png" alt="ceshi">
+                </div>
+                <div>
+                    <a  onclick="userinfo()"><span class="stylebar">微信</span></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-md-4">
+                <div class="stylebottom"><a href="http://sohu.com" style="color: white;font-size: 16px"  >一键报名</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add by xiaoniu-->
+
+</main>
+<style type="text/css">
+	.layui-m-layercont{
+		padding: 20px 30px;
+	}
+</style>
+<script>
+    function userinfo() {
+        layer.open({
+          
+             content: '<div style="margin:10px"><div style="float:left;"><img class="img-circle" src="../shouji/touxiang.png" alt="头像" width="50px" height="50px"></div>'
+            +'<div style="float:right;"><h4>张俭明<small> 资深销售人</small></h4><p style="font-size: 10px">"加我微信zjm265110，免费咨务！"</p></div><div style="clear:both"></div><div style="margin:0 auto"><img src="2.jpg" width="100px"><p style="margin-top:6px">长按加我微信</p></div></div>'
+              ,style: 'background-color:#09C1FF; color:#fff; border:none;' //自定风格
+
+
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WeUI</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- 框架CSS，大版本升级，不用编辑 -->
+    <link rel="stylesheet" href="/wui/css/weui.css">
+    <link rel="stylesheet" href="/wui/css/jquery-weui.css">
+
+    <!-- 自定义CSS
+        demo.css      引用例子使用的，不可以删除，不可以编辑
+        extends.css   组件css，比如自己新做了组件，封装成css放到这里，加好备注，便于weui升级更新
+        help.css      全局辅助css，比如一些浮动的辅助样式，颜色的辅助，偏移的辅助等
+        s.css         自己的css，一些效果实现，修改的，不通用的放到这里
+     -->
+
+    <link rel="stylesheet" href="/wui/css/demos.css">
+    <link rel="stylesheet" href="/wui/css/extends.css">
+    <link rel="stylesheet" href="/wui/css/help.css">
+    <link rel="stylesheet" href="/wui/css/s.css">
+
+    <!-- jquery ui JS -->
+    <script src="/wui/js/jquery-2.1.4.js"></script>
+    <script src="/wui/js/jquery-weui.js"></script>
+
+
+</head>
+
+<body ontouchstart style="background-color: #f8f8f8;">
+
+<header class='demos-header'>
+    <h1 class="demos-title">基本信息</h1>
+</header>
+ <!--基础信息，工作经历，教育经历-->
+<form id="form" action="{php echo $this->createMobileUrl('resume', array('op'=>'display'));}" method="post">
+    <div class="weui-cells__title" >基础信息</div>
+    <div class="weui-cells weui-cells_form">
+
+        <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="text" placeholder="请填写姓名" name="xingming" id="xingming">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="" class="weui-label">手机</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="tel"
+                   pattern="[0-9]{11}"
+                   maxlength="11"
+                   emptyTips="请输入手机号"
+                   notMatchTips="请输入正确的手机号"
+                   value="" placeholder="请填写手机" id="iphone" name="iphone">
+        </div>
+    </div>
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="" class="weui-label">邮箱</label></div>
+        <div class="weui-cell__bd">
+            <input class="weui-input" type="email" value="" placeholder="请填写邮箱" id="email" name="email">
+        </div>
+    </div>
+    </div>
+    <div class="weui-cells__title">工作经历</div>
+        <div class="weui-cells weui-cells_form">
+
+
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="date" class="weui-label">开始时间</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" id="date" type="date" name="start1">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="date1" class="weui-label">结束时间</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" id="date1" type="date" name="end1">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="" class="weui-label">公司名称</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" value="" placeholder="请填写公司名称" name="company">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="" class="weui-label">部门名称</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" value="" placeholder="请填写部门名称" name="bumen">
+                </div>
+            </div>
+
+            <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea class="weui-textarea" placeholder="请填写工作描述（200字以内）" rows="3" name="textarea"></textarea>
+                        <div class="weui-textarea-counter"><span>0</span>/200</div>
+                    </div>
+            </div>
+        </div>
+    <div class="weui-cells__title">教育经历</div>
+        <div class="weui-cells weui-cells_form">
+
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="date3" class="weui-label">开始时间</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" id="date3" type="date" name="start2">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="date4" class="weui-label">结束时间</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" id="date4" type="date" name="end2">
+                </div>
+            </div>
+
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="" class="weui-label">学校</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" value="" placeholder="请填写学校" name="xuexiao">
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label for="" class="weui-label">专业</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" value="" placeholder="请填写专业" name="zhuanye">
+                </div>
+            </div>
+        </div>
+    <!-- 提交 -->
+    <div class='demos-content-padded'>
+        <input name="submit" type="submit" value="提交" class="weui-btn weui-btn_primary" />
+        <input type="hidden" name="token" value="{$_W['token']}" />
+        <!--<a href="javascript:;" class="weui-btn weui-btn_primary">提交</a>-->
+    </div>
+
+</form>
+</form>
+    <script src="/wui/js/fastclick.js"></script>
+
+    <script>
+        $(function() {
+            FastClick.attach(document.body);
+        });
+    </script>
+    <script>
+        $("#date").calendar({
+            onChange: function (p, values, displayValues) {
+                console.log(values, displayValues);
+            }
+        });
+        $("#date1").calendar({
+            onChange: function (p, values, displayValues) {
+                console.log(values, displayValues);
+            }
+        });
+        $("#date2").calendar({
+            onChange: function (p, values, displayValues) {
+                console.log(values, displayValues);
+            }
+        });
+        $("#date3").calendar({
+            onChange: function (p, values, displayValues) {
+                console.log(values, displayValues);
+            }
+        });
+
+        $("#date4").calendar({
+            onChange: function (p, values, displayValues) {
+                console.log(values, displayValues);
+            }
+        });
+
+        $("#date-multiple").calendar({
+            multiple: true,
+            onChange: function (p, values, displayValues) {
+                console.log(values, displayValues);
+            }
+        });
+        $("#date3").calendar({
+            container: "#inline-calendar"
+        });
+    </script>
+</div>
+
+</body>
+</html>

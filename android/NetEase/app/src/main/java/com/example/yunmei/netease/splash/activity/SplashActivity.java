@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.yunmei.netease.R;
 import com.example.yunmei.netease.splash.bean.Ads;
@@ -40,9 +41,10 @@ public class SplashActivity extends Activity {
 
         imageView = (ImageView) findViewById(R.id.ads);
         // 添加广告图
-       // getAds();
+        getAds();
     }
-    public void click(View view ){
+    public void click(View view){
+
         final OkHttpClient client = new OkHttpClient();
 
         Request request = new Request.Builder()
@@ -59,12 +61,9 @@ public class SplashActivity extends Activity {
 
             //有响应
             @Override public void onResponse(Call call, Response response) throws IOException {
-//                if (!response.isSuccessful()) {
-//                    //请求失败
-//                }
-
-
-
+                if (!response.isSuccessful()) {
+                    //请求失败
+                }
             }
         });
     }
@@ -92,22 +91,21 @@ public class SplashActivity extends Activity {
                 }
 
                 //获取到接口的数据
-                String date = response.body().string();
+                String data = response.body().string();
+                Ads ads =  JsonUtil.parseJson(data, Ads.class);
 
-//                Ads ads =  JsonUtil.parseJson(date, Ads.class);
-//
-//                if(null!= ads ){
-//                    //请求成功
-//                    Log.i("it520",ads.toString());
-//
-////                    Intent intent = new Intent();
-////                    intent.setClass(SplashActivity.this,DowloadImageService.class);
-////                    intent.putExtra(DowloadImageService.ADS_DATE ,ads);
-////                    startService(intent);
-//
-//                }else{
-//                    //请求失败
-//                }
+                if(null!= ads ){
+                    //请求成功
+                    Log.i("JCSON",ads.toString());
+
+//                    Intent intent = new Intent();
+//                    intent.setClass(SplashActivity.this,DowloadImageService.class);
+//                    intent.putExtra(DowloadImageService.ADS_DATE ,ads);
+//                    startService(intent);
+
+                }else{
+                    //请求失败
+                }
             }
         });
 

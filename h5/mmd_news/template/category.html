@@ -1,0 +1,210 @@
+{template 'common/header'}
+
+
+
+{if $op == 'display'}
+
+<div class="we7-page-title">岗位列表</div>
+<ul class="we7-page-tab">
+	<li {if $op == 'display'}class="active"{/if}><a href="{php echo $this->createWebUrl('category', array('op'=>'display'));}">岗位分类列表</a></li>
+	<li {if $op == 'create'}class="active"{/if}><a href="{php echo $this->createWebUrl('category', array('op'=>'create'));}">添加岗位分类</a></li>
+
+</ul>
+<div class="we7-page-search we7-padding-bottom clearfix">
+	<div class="pull-right">
+		{if empty($id)}<a href="{php echo $this->createWebUrl('category', array('op'=>'create'));}" class="btn btn-primary we7-padding-horizontal">+新建岗位分类</a>{/if}
+		{if !empty($id)}<a href="{php echo url('site/category/post', array('id' => $id))}" class="btn btn-primary we7-padding-horizontal">编辑文章分类</a>{/if}
+	</div>
+</div>
+
+	<form action="" method="post" class="form-horizontal form" id="form">
+
+
+
+
+
+
+					<table class="table we7-table table-hover article-list vertical-middle" id="js-wesite-category-display">
+						<colgroup><col width="80px">
+							<col width="130px">
+							<col width="235px">
+							<col width="90px">
+							<col width="">
+						</colgroup><tbody><tr>
+						<th></th>
+						<th class="text-left">排序</th>
+						<th class="text-left">分类名称</th>
+						<th>显示？</th>
+						<th class="text-right">操作</th>
+					</tr>
+					{loop $categories $key $item}
+					<tr>
+						<td>
+							<input type="checkbox" we7-check-all="1" name="rid[]" id="rid-1" value="1">
+							<label for="rid-1">&nbsp;</label>
+						</td>
+						<td class="text-left"><input type="text" name="categories[{$item['id']}][orderno]" value="{$item['orderno']}" class="form-control"></td>
+						<td class="text-left">
+							<span><input type="text" name="categories[{$item['id']}][name]" value="{$item['name']}" class="form-control categories-name"></span>
+						</td>
+						<td>
+							<label>
+								<div class="switch switchOn" onclick="changeStatus(1)"></div>
+							</label>
+						</td>
+						<td style="position: relative;">
+							<div class="link-group">
+								<a href="{php echo $this->createWebUrl('category', array('op'=>'create', 'parentid'=>$item['id']));}">&nbsp;+添加子分类</a>
+
+
+
+
+								<a onclick="if(!confirm('删除后将不可恢复,确定删除吗?')) return false;" href="{php echo $this->createWebUrl('category', array('op'=>'delete', 'id'=>$item['id']));}">删除</a>
+							</div>
+						</td>
+					</tr>
+
+					{loop $children[$item['id']] $row}
+
+					<tr class="bg-light-gray"  >
+						<td>
+							<input type="checkbox" name="rid[]" id="rid-2" value="2">
+							<label for="rid-2">&nbsp;</label>
+						</td>
+						<td class="text-left">
+							<div class="pad-left">
+								<input type="text" name="categories[{$row['id']}][orderno]" value="{$row['orderno']}" class="form-control">					</div>
+						</td>
+						<td class="text-left"><span class="color-gray" style="margin-left: 50px;">
+							<input type="text" name="categories[{$row['id']}][name]" value="{$row['name']}" class="form-control categories-name">
+							</span></td>
+						<td>
+							<label>
+								<div class="switch switchOn" onclick="changeStatus(2)"></div>
+							</label>
+						</td>
+						<td style="position: relative;" class="text-right">
+							<div class="link-group">
+
+
+								<a onclick="if(!confirm('删除后将不可恢复,确定删除吗?')) return false;" href="{php echo $this->createWebUrl('category', array('op'=>'delete', 'id'=>$row['id']));}">删除</a>
+							</div>
+						</td>
+					</tr>
+					{/loop}
+
+					{/loop}
+					</tbody></table>
+
+
+
+
+
+
+
+
+
+
+							{if !empty($categories)}
+							<tr>
+								<td colspan="4">
+									<input name="submit" type="submit" value="保存" class="btn btn-primary" />
+									<input type="hidden" name="token" value="{$_W['token']}" />
+								</td>
+							</tr>
+							{else}
+							<tr>
+								<td colspan="4">
+									尚未添加岗位分类
+								</td>
+							</tr>
+							{/if}
+						</tbody>
+					</table>
+
+	</form>
+
+<script>
+require(['jquery', 'util'], function($, util){
+	$(function(){
+		$('#form').submit(function(){
+			var result = true;
+			$('input.categories-name').each(function(){
+				if(this.value.length == 0){
+					return result = false;
+				}
+			});
+			if(!result){
+				util.message('有分类名称未填写.');
+			}
+			return result;
+		});
+	});
+});
+</script>
+{/if} <!-- end of display -->
+
+{if $op == 'create'}
+<div class="we7-page-title">微官网</div>
+<ul class="we7-page-tab">
+	<li {if $op == 'display'}class="active"{/if}><a href="{php echo $this->createWebUrl('category', array('op'=>'display'));}">岗位分类列表</a></li>
+	<li {if $op == 'create'}class="active"{/if}><a href="{php echo $this->createWebUrl('category', array('op'=>'create'));}">添加岗位分类</a></li>
+</ul>
+
+<div class="main">
+	<form action="" method="post" class="form-horizontal form" id="form">
+		<div class="panel panel-default">
+			<div class="panel-heading">添加岗位分类</div>
+			<div class="panel-body">
+				<div class="form-group">
+					<label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">名称</label>
+					<div class="col-xs-12 col-sm-4">
+						<input type="text" name="category[name]" class="form-control" value="" />
+					</div>
+				</div>
+
+
+
+				<div class="form-group">
+					<label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">排序</label>
+					<div class="col-xs-12 col-sm-4">
+						<input type="text" name="category[orderno]" class="form-control" value="" />
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">分类图片</label>
+					<div class="col-sm-8">
+						{php echo tpl_form_field_image('category[logo]');}
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 col-sm-offset-3 col-md-offset-2 col-lg-offset-2">
+						<input name="submit" type="submit" value="提交" class="btn btn-primary" />
+						<input type="hidden" name="token" value="{$_W['token']}" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<script>
+require(['jquery', 'util'], function($, util){
+	$(function(){
+		$('#form').submit(function(){
+			var result = true;
+			if($('input[name="category[name]"]').val() == ''){
+				result = false;
+				util.message('未填写分类名称.');
+			}
+			return result;
+		});
+	});
+});
+</script>
+{/if} <!-- end of create -->
+
+{template 'common/footer'}

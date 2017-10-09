@@ -1,0 +1,44 @@
+
+{template 'common/header'}
+
+
+<form action="{php echo $this->createWebUrl('resume',array('op'=>'display'));}" method="post" class="form-horizontal form" id="form">
+    <table class="table we7-table table-hover article-list vertical-middle" id="js-wesite-category-display">
+        <colgroup>
+            <col width="80px">
+            <col width="80px">
+            <col width="80px">
+            <col width="80px">
+
+        </colgroup>
+        <tbody>
+        <tr>
+
+        <th class="text-left">姓名</th>
+        <th class="text-left">手机号</th>
+        <th>邮箱</th>
+        <th class="text-left">操作</th>
+    </tr>
+        {loop $jianli $key $value}
+        <tr>
+            <td>{$value['name']}</td>
+            <td>{$value['iphone']}</td>
+            <td>{$value['email']}</td>
+            <td style="position: relative;">
+                <div class="link-group">
+
+
+
+                    <a onclick="" href="{php echo $this->createWebUrl('resumeID',array('id'=>$value['jianID'],'uniacid'=>$value['uniacid']));}">查看</a>
+
+
+                    <a onclick="if(!confirm('删除后将不可恢复,确定删除吗?')) return false;" href="{php echo $this->createWebUrl('resume', array('op'=>'delete','id'=>$value['jianID'],'uniacid'=>$value['uniacid']));}">删除</a>
+                </div>
+            </td>
+        </tr>
+        {/loop}
+    </tbody>
+    </table>
+</form>
+
+{template 'common/footer'}

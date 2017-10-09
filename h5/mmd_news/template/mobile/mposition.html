@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>
+        {if !empty($title)}
+        {$title} -
+        {elseif !empty($_W['page']['title'])}
+        {$_W['page']['title']} -
+        {/if}
+        {if !empty($_W['page']['sitename'])}
+        {$_W['page']['sitename']}
+        {else}
+        {$_W['account']['name']}
+        {/if}
+        {if IMS_FAMILY == 'v'}
+        - Powered by WE7.CC
+        {/if}
+    </title>
+    <meta name="format-detection" content="telephone=no, address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" /> <!-- apple devices fullscreen -->
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="keywords" content="{if empty($_W['page']['keywords'])}{if IMS_FAMILY != 'x'}微擎,微信,微信公众平台,we7.cc{/if}{else}{$_W['page']['keywords']}{/if}" />
+    <meta name="description" content="{if empty($_W['page']['description'])}{if IMS_FAMILY != 'x'}公众平台自助引擎（www.we7.cc），简称微擎，微擎是一款免费开源的微信公众平台管理系统，是国内最完善移动网站及移动互联网技术解决方案。{/if}{else}{$_W['page']['description']}{/if}" />
+    <link rel="shortcut icon" href="{$_W['siteroot']}{$_W['config']['upload']['attachdir']}/{if !empty($_W['setting']['copyright']['icon'])}{$_W['setting']['copyright']['icon']}{else}images/global/wechat.jpg{/if}" />
+
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<!--    <script type="text/javascript" src="{$_W['siteroot']}app/resource/js/app/util.js"></script>
+    <script src="{$_W['siteroot']}app/resource/js/require.js"></script>-->
+
+    <script type="text/javascript" src="{$_W['siteroot']}app/resource/js/lib/jquery-1.11.1.min.js?v=20170802"></script>
+    <script type="text/javascript" src="{$_W['siteroot']}app/resource/js/lib/mui.min.js?v=20170802"></script>
+    <script type="text/javascript" src="{$_W['siteroot']}app/resource/js/app/common.js?v=20170802"></script>
+    <link href="{$_W['siteroot']}app/resource/css/bootstrap.min.css?v=20170802" rel="stylesheet">
+    <link href="{$_W['siteroot']}app/resource/css/common.min.css?v=20170802" rel="stylesheet">
+    <script type="text/javascript">
+        if(navigator.appName == 'Microsoft Internet Explorer'){
+            if(navigator.userAgent.indexOf("MSIE 5.0")>0 || navigator.userAgent.indexOf("MSIE 6.0")>0 || navigator.userAgent.indexOf("MSIE 7.0")>0) {
+                alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
+            }
+        }
+        window.sysinfo = {
+        {if !empty($_W['uniacid'])}'uniacid': '{$_W['uniacid']}',{/if}
+        {if !empty($_W['acid'])}'acid': '{$_W['acid']}',{/if}{if !empty($_W['openid'])}'openid': '{$_W['openid']}',{/if}
+        {if !empty($_W['uid'])}'uid': '{$_W['uid']}',{/if}
+        'siteroot': '{$_W['siteroot']}',
+            'siteurl': '{$_W['siteurl']}',
+            'attachurl': '{$_W['attachurl']}',
+            'attachurl_local': '{$_W['attachurl_local']}',
+            'attachurl_remote': '{$_W['attachurl_remote']}',
+            {if defined('MODULE_URL')}'MODULE_URL': '{MODULE_URL}',{/if}
+        'cookie' : {'pre': '{$_W['config']['cookie']['pre']}'}
+        };
+        // jssdk config 对象
+        jssdkconfig = {php echo json_encode($_W['account']['jssdkconfig']);} || {};
+        // 是否启用调试
+        jssdkconfig.debug = false;
+        jssdkconfig.jsApiList = [
+            'checkJsApi',
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage',
+            'onMenuShareQQ',
+            'onMenuShareWeibo',
+            'hideMenuItems',
+            'showMenuItems',
+            'hideAllNonBaseMenuItem',
+            'showAllNonBaseMenuItem',
+            'translateVoice',
+            'startRecord',
+            'stopRecord',
+            'onRecordEnd',
+            'playVoice',
+            'pauseVoice',
+            'stopVoice',
+            'uploadVoice',
+            'downloadVoice',
+            'chooseImage',
+            'previewImage',
+            'uploadImage',
+            'downloadImage',
+            'getNetworkType',
+            'openLocation',
+            'getLocation',
+            'hideOptionMenu',
+            'showOptionMenu',
+            'closeWindow',
+            'scanQRCode',
+            'chooseWXPay',
+            'openProductSpecificView',
+            'addCard',
+            'chooseCard',
+            'openCard',
+            'openAddress'
+        ];
+    </script>
+</head>
+<body>
+<div class="container container-fill">
+
+
+
+<link rel="stylesheet" href="/wui/css/weui.css">
+<link rel="stylesheet" href="/wui/css/jquery-weui.css">
+
+<!-- 自定义CSS
+    demo.css      引用例子使用的，不可以删除，不可以编辑
+    extends.css   组件css，比如自己新做了组件，封装成css放到这里，加好备注，便于weui升级更新
+    help.css      全局辅助css，比如一些浮动的辅助样式，颜色的辅助，偏移的辅助等
+    s.css         自己的css，一些效果实现，修改的，不通用的放到这里
+ -->
+
+<link rel="stylesheet" href="/wui/css/demos.css">
+<link rel="stylesheet" href="/wui/css/extends.css">
+<link rel="stylesheet" href="/wui/css/help.css">
+<link rel="stylesheet" href="/wui/css/s.css">
+
+<!-- jquery ui JS
+<script src="/wui/js/jquery-2.1.4.js"></script>-->
+<script src="/wui/js/jquery-2.1.4.js"></script>
+
+<script src="/wui/js/jquery-weui.js"></script>
+
+
+
+<!--幻灯片-->
+<style>
+    .swiper-container {
+        width: 100%;
+    }
+
+    .swiper-container img {
+        display: block;
+        width: 100%;
+    }
+    a:link,a:visited,a:hover,a:active {
+        text-decoration: none;
+        color:black;
+    }
+
+    .weui-media-box_appmsg .weui-media-box__hd {
+        margin-right: .8em;
+        width: 80px;
+        height: 80px;
+        line-height: 60px;
+        text-align: center;
+    }
+    .weui-media-box__info {
+        margin-top: 15px;
+        padding-bottom: 0px;
+        font-size: 13px;
+        color: #CECECE;
+        line-height: 1.5em;
+        list-style: none;
+        overflow: hidden;
+    }
+
+</style>
+
+
+
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide"><img src="/wui/images/y.png"/></div>
+
+    </div>
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+
+
+<div id="tagnav" class="weui-navigator weui-navigator-wrapper">
+    <ul class="weui-navigator-list" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 400ms; transform: translate(0px, 0px) translateZ(0px);">
+        <li class="weui-state-active"><a href="javascript:;">全部</a></li>
+        {loop $category $c}
+        <li class=""><a href="javascript:;"> {$c['name']}</a></li>
+        {/loop}
+
+    </ul>
+</div>
+
+
+
+
+
+<script>
+    $(function(){
+        TagNav('#tagnav',{
+            type: 'scrollToFirst',
+        });
+        $('.weui_tab').tab({
+            defaultIndex: 0,
+            activeClass:'weui_bar_item_on',
+            onToggle:function(index){
+                if(index>0){
+                    alert(index)
+                }
+            }
+        });
+
+    });
+
+</script>
+
+    <!--php echo $this->createMobileUrl('detail',array('jobid'=>$job['id'],'uniacid'=>$job['uniacid']));  onclick="test({$job['id']})-->
+
+
+
+
+
+    {loop $jobs $job}
+
+    <div class="weui-panel" onclick="window.location.href='{php echo $this->createMobileUrl("detail",array("jobid"=>$job["id"],"uniacid"=>$job["uniacid"]))}'">
+
+        <div class="weui-panel__bd">
+
+            <div class="weui-media-box weui-media-box_text">
+                <h4 class="weui-media-box__title">{$job["name"]}</h4>
+                <p class="weui-media-box__desc">{$job["comment"]}</p>
+                <img src="/attachment/{$job['zwtx']}" alt="" style="width: 40px;
+    position: absolute;
+    right: 15px;
+    top: 18px;">
+                <ul class="weui-media-box__info">
+                    <li class="weui-media-box__info__meta"><i class="iconfont">&#xe616;</i>  {$job["address"]}</li>
+
+                    <li class="weui-media-box__info__meta"><i class="iconfont">&#xe630;</i> {$job["salary"]} </li>
+                    <li class="weui-media-box__info__meta"><i class="iconfont">&#xe693;</i>  {$job["number"]}人 </li>
+
+                    <li class="weui-media-box__info__meta weui-media-box__info__meta_extra">{$job["updatetime"]}更新</li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    {/loop}
+
+
+<script src="/wui/js/iscroll.js"></script>
+
+    <script src="/wui/js/fastclick.js"></script>
+    <script>
+        $(function () {
+            FastClick.attach(document.body);
+        });
+
+        function test(id) {
+            var vid=id;
+            console.log("id=="+vid);
+            $.post("{php echo $this->createMobileUrl('detail',"jobid=");}");
+        }
+    </script>
+
+
+<div class="xunmall-copyright">
+    <a href="../index.html" class="flag"></a>
+</div>
+
+    {template 'common/footer'}

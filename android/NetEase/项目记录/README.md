@@ -14,3 +14,7 @@
 okhttp:不仅仅只是http请求，
 okhttp-3.4.1.jar  绑定到library
 
+6. 网络权限
+   <uses-permission android:name="android.permission.INTERNET"/>
+
+

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>MIDAS</title>
+    <!-- 导入手机端layer-->
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="/news/mm/layer_mobile/layer.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F7F4ED
+        }
+
+        .stylebar {
+            font-size: 12px;
+        }
+
+        .stylewh {
+            width: 18px;
+            height: 18px;
+        }
+
+        .stylebottom {
+            background-color: red;
+            height: 55px;
+            text-align: center;
+            line-height: 55px;
+        }
+
+
+    </style>
+
+</head>
+
+{template 'common/header'}
+
+<div class="we7-page-title">简历列表</div>
+<ul class="we7-page-tab">
+    <li {if $op == 'display'}class="active"{/if}><a href="{php echo $this->createWebUrl('news', array('op'=>'display'));}">所有精英列表</a></li>
+    <li {if $op == 'add_news'}class="active"{/if}><a href="{php echo $this->createWebUrl('news', array('op'=>'add_news'));}">添加精英</a></li>
+</ul>
+{if $op=='display'}
+
+<form action="{php echo $this->createWebUrl('jobs',array('op'=>'display'));}" method="post" class="form-horizontal form" id="form">
+    <table class="table we7-table table-hover article-list vertical-middle" id="js-wesite-category-display">
+        <colgroup>
+            <col width="40px">
+            <col width="100px">
+            <col width="80px">
+            <col width="10px">
+            <col width="210px">
+            <col width="150px">
+            <col width="80px">
+
+        </colgroup>
+        <tbody>
+        <tr>
+            <th class="text-left"></th>
+            <th class="text-left">精英名称</th>
+            <th class="text-left"></th>
+            <th class="text-left"></th>
+            <th class="text-left">精英地址</th>
+            <th class="text-left">操作</th>
+            <th class="text-left"></th>
+        </tr>
+        {loop $news_list $key $j}
+        <tr>
+            <td></td>
+            <td>{$j["name"]}</td>
+            <td></td>
+            <td></td>
+            <td>{$j["address"]}</td>
+            <td></td>
+            <!--<td>{php echo date("Y-m-d h:i:sa", $jianli[$key]["createtime"]);}</td>-->
+            <td style="position: relative;">
+                <div class="link-group">
+                    <a onclick="" href="{php echo $this->createWebUrl('news',array('op'=>'edit_news','id'=>$j['id']));}">编辑</a>
+                    <a onclick="if(!confirm('删除后将不可恢复,确定删除吗?')) return false;" href="{php echo $this->createWebUrl('news', array('op'=>'delete','id'=>$j['id']));}">删除</a>
+                </div>
+            </td>
+        </tr>
+        {/loop}
+        </tbody>
+    </table>
+</form>
+
+{/if}
+{if $op=='add_news'}
+<div id="add_news">
+<div class="main" style="width: 50%;float: left;">
+    <form action="{php echo $this->createWebUrl('news',array('op'=>'add_news_info'));}" method="post" class="form-horizontal form" id="setting-form">
+        <div class="panel panel-default">
+            <div class="panel-heading">添加信息</div>
+            <div class="panel-body">
+
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">精英名称</label>
+
+                    <div class="col-sm-8">
+                        <input class="form-control" v-model.trim="add_name" name="name"/>
+
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">电话</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" name="iphone" value="" v-model.trim="add_iphone"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">微信</label>
+
+                    <div class="col-sm-8">
+                        <input class="form-control" name="wechat" value="" v-model.trim="add_wechat"/>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">地址</label>
+
+                    <div class="col-sm-8">
+                        <input class="form-control" name="address" value="" v-model.trim="add_address"/>
+
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">头像</label>
+                    <div class="col-sm-9 col-xs-12">
+                        <!--<div style='position:absolute;right:90px;top:20px;'>-->
+                            <div class="image_container" id='dd' style='margin-bottom: 20px;'>
+                                <img id="preview" style="height:130px;width:117px;border:1px solid #ddd;padding:6px;" src="/IdII0J77jEEe32c8I2730qjJ3W3iQ0.jpg"/>
+                            </div>
+                            <a href=" " class='file'><input id="file_upload" type="file" accept="image/jpeg,image/png,image" class='radius' name="icon"/></a >
+                        <!--</div>-->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">分享标题</label>
+
+                    <div class="col-sm-8">
+                        <input class="form-control" name="title" value="" v-model.trim="add_title"/>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">介绍</label>
+
+                    <div class="col-sm-8">
+                        <input class="form-control" name="introduce" value="" v-model.trim="add_introduce"/>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">描述</label>
+
+                    <div class="col-sm-8">
+                        <input class="form-control" name="description" value="" v-model.trim="add_description"/>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 control-label">二维码图片</label>
+                    <div class="col-sm-9 col-xs-12">
+                        {php echo tpl_form_field_image('codeIcon', $storex_bases['codeIcon'])}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 col-sm-offset-3 col-md-offset-2 col-lg-offset-2">
+                        <input name="submit" type="submit" value="添加" class="btn btn-primary"/>
+                        <input type="hidden" name="token" value="{$_W['token']}"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+<div class="main" style="width: 50%;float: right;">
+    <form action="{php echo $this->createWebUrl('news',array('op'=>'add_news_info'));}" method="post" class="form-horizontal form" id="setting-form">
+        <div class="panel panel-default">
+            <div class="panel-heading">显示信息</div>
+            <div class="panel-body">
+
+        <div style="height:55px;" class="row text-center">
+            <div style="background-color: white;height:55px">
+                <div class="col-xs-2 col-md-2">
+                    <div style="padding:10px;">
+                        <img class="img-circle" v-bind:src="add_icon" alt="头像" width="35px" height="35px">
+                    </div>
+                </div>
+                <div class="col-xs-2 col-md-2">
+                    <div style="padding-top: 10px;">
+                        <img style="width: 20px;height: 18px" src="/news/shouji/zhuye.png" alt="ceshi">
+                    </div>
+                    <div>
+                        <a v-bind:href="add_address"><span class="stylebar" style="">官网</span></a>
+                    </div>
+                </div>
+                <div class="col-xs-2 col-md-2">
+                    <div style="padding-top: 10px;">
+                        <img style="width: 17px;height: 18px" src="/news/shouji/dianhua.png" alt="ceshi">
+                    </div>
+                    <div>
+                        <a v-bind:href="'tel'+':'+'add_iphone'"><span class="stylebar">手机</span></a>
+                    </div>
+                </div>
+                <div class="col-xs-2 col-md-2">
+                    <div style="padding-top: 10px;">
+                        <img style="width:21px;height: 18px" src="/news/shouji/weixin.png" alt="ceshi">
+                    </div>
+                    <div>
+                        <a  onclick="userinfo()" v-bind:href="add_wechat" name="add_wechat"><span class="stylebar">微信</span></a>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <div class="stylebottom"><a v-bind:href="add_address" style="color: white;font-size: 16px"  >{{ add_description }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </form>
+    <!--</main>-->
+</div>
+</div>
+<script>
+   var vue = new Vue({
+        el: '#add_news',
+        data: {
+            add_name: '',
+            add_address: 'http://taobao.com',
+            add_title: '',
+            add_icon: '/IdII0J77jEEe32c8I2730qjJ3W3iQ0.jpg',
+            add_iphone: '17078075655',
+            add_wechat: 'lb2281075105',
+            add_description: '一键报名',
+            add_introduce: '',
+            add_codeIcon: ''
+        }
+    })
+
+   $(function () {
+       $("#file_upload").change(function () {
+           var $file = $(this);
+           var fileObj = $file[0];
+//           console.log($file)
+//           console.log(fileObj )
+           var windowURL = window.URL || window.webkitURL;
+           var dataURL;
+           var $img = $("#preview");
+
+           if (fileObj && fileObj.files && fileObj.files[0]) {
+               dataURL = windowURL.createObjectURL(fileObj.files[0]);
+               $img.attr('src', dataURL);
+               vue.$data.add_icon=dataURL;
+           } else {
+               dataURL = $file.val();
+               var imgObj = document.getElementById("preview");
+               imgObj.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+               imgObj.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = dataURL;
+           }
+       });
+   });
+
+</script>
+{/if}
+
+{if $op=='edit_news'}
+<div class="main">
+    <form action="{php echo $this->createWebUrl('news',array('op'=>'save_news','id'=>$edit_info['id']));}" method="post" class="form-horizontal form" id="setting-form">
+        <div class="panel panel-default">
+            <div class="panel-heading">精英信息</div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">姓名</label>
+
+                    <div class="col-sm-8">
+                        <input class="form-control" name="name" value="{$edit_info['name']}" />
+
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">手机</label>
+                    <div class="col-sm-8">
+                        <input class="form-control" name="address" value="{$edit_info['address']}" />
+                    </div>
+                </div>
+                <!--<div class="form-group">-->
+                    <!--<label class="col-xs-12 col-sm-3 col-md-2 col-lg-2 control-label">邮箱</label>-->
+                    <!--<div class="col-sm-8">-->
+                        <!--<div class="form-control" >{$xiangqing['email']}</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 col-sm-offset-3 col-md-offset-2 col-lg-offset-2">
+                        <input name="submit" type="submit" value="保存" class="btn btn-primary"/>
+                        <input type="hidden" name="token" value="{$_W['token']}"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+{/if}
+{template 'common/footer'}

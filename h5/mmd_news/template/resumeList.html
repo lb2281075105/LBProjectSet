@@ -1,0 +1,62 @@
+{template 'common/header'}
+
+{if $op == 'display'}
+<div class="we7-page-title">简历列表</div>
+<ul class="we7-page-tab">
+    <li {if $op == 'display'}class="active"{/if}><a href="{php echo $this->createWebUrl('jobs', array('op'=>'display'));}">简历列表</a></li>
+    <!--<li {if $op == 'create'}class="active"{/if}><a href="{php echo $this->createWebUrl('jobs', array('op'=>'create'));}">添加职位</a></li>-->
+</ul>
+
+<div class="we7-page-search we7-padding-bottom clearfix">
+    <div class="pull-right">
+        {if empty($id)}<a href="{php echo $this->createWebUrl('orders', array('op'=>'display'));}" class="btn btn-primary we7-padding-horizontal">全部</a>{/if}
+        {if empty($id)}<a href="{php echo $this->createWebUrl('orders', array('op'=>'today','id'=>'2'));}" class="btn btn-primary we7-padding-horizontal">今天</a>{/if}
+    </div>
+</div>
+
+<form action="{php echo $this->createWebUrl('jobs',array('op'=>'display'));}" method="post" class="form-horizontal form" id="form">
+    <table class="table we7-table table-hover article-list vertical-middle" id="js-wesite-category-display">
+        <colgroup>
+            <col width="40px">
+            <col width="100px">
+            <col width="80px">
+            <col width="10px">
+            <col width="210px">
+            <col width="150px">
+            <col width="80px">
+
+        </colgroup>
+        <tbody>
+        <tr>
+            <th class="text-left"></th>
+            <th class="text-left">职位</th>
+            <th class="text-left"></th>
+            <th class="text-left"></th>
+            <th class="text-left">openId</th>
+            <th class="text-left">时间</th>
+            <th class="text-left"></th>
+        </tr>
+        {loop $array $key $j}
+
+        <tr>
+            <td></td>
+            <td>{$j["name"]}</td>
+            <td></td>
+            <td></td>
+            <td>{$jianli[$key]["openid"]}</td>
+            <td>{php echo date("Y-m-d h:i:sa", $jianli[$key]["createtime"]);}</td>
+            <td style="position: relative;">
+                <div class="link-group">
+                    <a onclick="" href="{php echo $this->createWebUrl('orders',array('op'=>'resumeDetail','id'=>$j['jianID'],'openId'=>$jianli[$key]['openid'],'uniacid'=>$jianli[$key]['uniacid']));}">查看</a>
+                    <!--<a onclick="if(!confirm('删除后将不可恢复,确定删除吗?')) return false;" href="{php echo $this->createWebUrl('jobs', array('op'=>'delete','id'=>$j['id']));}">删除</a>-->
+                </div>
+            </td>
+        </tr>
+        {/loop}
+        </tbody>
+    </table>
+</form>
+
+
+   {/if}
+{template 'common/footer'}
