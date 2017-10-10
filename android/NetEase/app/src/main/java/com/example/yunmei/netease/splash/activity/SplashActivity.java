@@ -64,10 +64,12 @@ public class SplashActivity extends Activity {
                 if (!response.isSuccessful()) {
                     //请求失败
                 }
+                Toast.makeText(getApplicationContext(),"hahah", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
-    //获取广告数据
+    // 获取广告数据
     public void  getAds(){
         // 异步请求
         final OkHttpClient client = new OkHttpClient();
@@ -76,27 +78,29 @@ public class SplashActivity extends Activity {
                 .url(Constant.SPLASH_URL)
                 .build();
 
-        //开启一个异步请求
+        // 开启一个异步请求
         client.newCall(request).enqueue(new Callback() {
 
-            //请求失败
+            // 请求失败
             @Override public void onFailure(Call call, IOException e) {
                 e.printStackTrace();
             }
 
-            //有响应
+            // 有响应
             @Override public void onResponse(Call call, Response response) throws IOException {
                 if (!response.isSuccessful()) {
-                    //请求失败
+                    // 请求失败
+                    Toast.makeText(getApplicationContext(),"请求失败", Toast.LENGTH_SHORT).show();
                 }
 
-                //获取到接口的数据
+                // 获取到接口的数据
                 String data = response.body().string();
                 Ads ads =  JsonUtil.parseJson(data, Ads.class);
 
-                if(null!= ads ){
+                if(null != ads ){
                     //请求成功
                     Log.i("JCSON",ads.toString());
+                    Toast.makeText(getApplicationContext(),ads.toString(), Toast.LENGTH_SHORT).show();
 
 //                    Intent intent = new Intent();
 //                    intent.setClass(SplashActivity.this,DowloadImageService.class);
