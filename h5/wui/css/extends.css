@@ -1,0 +1,248 @@
+/* 扩展样式集合 */
+
+@font-face {
+    font-family: 'iconfont';  /* project id 385000 */
+    src: url('//at.alicdn.com/t/font_385000_kadofuhde25fusor.eot');
+    src: url('//at.alicdn.com/t/font_385000_kadofuhde25fusor.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_385000_kadofuhde25fusor.woff') format('woff'),
+    url('//at.alicdn.com/t/font_385000_kadofuhde25fusor.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_385000_kadofuhde25fusor.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+
+.xs-title-mr{
+    margin: 10px 0px 10px 0px;
+}
+
+
+.xs-title-b{
+  width: 5px; height: 16px; vertical-align: text-bottom; display: inline-block; color: rgb(255, 255, 255); background-color: rgb(211, 42, 99);
+
+}
+.xs-title-e{
+font-size: 16px; vertical-align: text-bottom; line-height: 14px; padding: 0px 10px; display: inline-block;font-weight: bold;
+
+}
+
+.weui-btn_blue{
+    background-color:#1a8bf1;
+}
+.weui-btn_blue:not(.weui-btn_disabled):visited{
+    color:#FFFFFF;
+}
+.weui-btn_blue:not(.weui-btn_disabled):active{
+    color:rgba(255, 255, 255, 0.6);
+    background-color:#1574D1;
+}
+
+
+
+.weui-btn_cyan{
+    background-color:#04BFCE;
+}
+.weui-btn_cyan:not(.weui-btn_disabled):visited{
+    color:#FFFFFF;
+}
+.weui-btn_cyan:not(.weui-btn_disabled):active{
+    color:rgba(255, 255, 255, 0.6);
+    background-color:#04A1B2;
+}
+
+
+
+
+/* label */
+
+.weui-label-list .weui-label-e {
+    margin: 0 10px 10px 0;
+}
+
+.weui-label-e {
+    display: inline-block;
+    position: relative;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 15px;
+    border: 1px solid #cacccd;
+    border-radius: 15px;
+}
+.weui-label-s {
+    font-size: 11px;
+    line-height: 13px;
+    display: inline-block;
+    position: relative;
+    padding: 0 1px;
+    color: #ff7f0d;
+    border: 1px solid #ff7f0d;
+    border-radius: 2px;
+}
+
+/* 仿微信底部的菜单 */
+.weui-menu {
+    z-index: 1000;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    background: #f8f8f8;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    border-top: 1px solid #e5e5e5;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.weui-menu-inner {
+    border-left: 1px solid #ccc;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.weui-menu-inner span {
+    line-height: 50px;
+}
+.weui-menu-inner img{
+    width: 40px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+/* 微信分享 */
+
+.weui-share {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    display: none;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.75);
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.weui-share .weui-share-box {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    width: 140px;
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    border: 2px solid;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.weui-share i {
+    position: absolute;
+    background: url('../images/share.png') no-repeat 90% 5px;
+    -webkit-background-size: 56px 61px;
+    background-size: 56px 61px;
+    width: 56px;
+    height: 61px;
+    top: -63px;
+    right: 23px;
+}
+
+
+/* block 左右头像 */
+
+a.weui-block {
+    display: block;
+    color: #575757;
+    font-weight: 400;
+    transition: all .12s ease-out;
+}
+
+.weui-block-content {
+    transition: opacity .2s ease-out;
+    margin: 0 auto;
+    padding: 18px 18px ;
+    overflow-x: visible;
+}
+
+/* 动态滚动导航 */
+
+
+.weui-navigator.weui-navigator-wrapper {
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+}
+
+.weui-navigator .weui-navigator-list {
+    display: table;
+    table-layout: fixed;
+    white-space: nowrap;
+    width: auto;
+}
+.weui-navigator-list {
+    width: 100%;
+    list-style: none;
+    display: -webkit-box;
+    margin: 0 auto;
+}
+.weui-navigator-list li {
+    list-style: none;
+    line-height: 34px;
+    font-size: 16px;
+
+    text-align: center;
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+.weui-navigator-list li.weui-state-hover, .weui-navigator-list li.weui-state-active a {
+    color: #04be02;
+}
+.weui-navigator .weui-navigator-list li {
+    display: inline-block;
+}
+.weui-navigator-list li a {
+    text-decoration: none;
+    color: #666;
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    padding: 0 15px;
+}
+.weui-navigator-list li.weui-state-hover, .weui-navigator-list li.weui-state-active a:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #04be02;
+}
+.weui-navigator {
+    background: #fff;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
