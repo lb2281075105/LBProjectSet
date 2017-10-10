@@ -1,7 +1,6 @@
 package com.example.yunmei.netease.splash.activity;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -10,12 +9,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
-
 import com.example.yunmei.netease.R;
 import com.example.yunmei.netease.splash.bean.Ads;
-import com.example.yunmei.netease.splash.util.Constant;
-import com.example.yunmei.netease.splash.util.JsonUtil;
-
+import com.example.yunmei.netease.util.*;
 import java.io.IOException;
 
 import okhttp3.Call;
@@ -98,8 +94,9 @@ public class SplashActivity extends Activity {
                 Ads ads =  JsonUtil.parseJson(data, Ads.class);
 
                 if(null != ads ){
-                    //请求成功
                     Log.i("JCSON",ads.toString());
+
+                    //请求成功
                     Toast.makeText(getApplicationContext(),ads.toString(), Toast.LENGTH_SHORT).show();
 
 //                    Intent intent = new Intent();

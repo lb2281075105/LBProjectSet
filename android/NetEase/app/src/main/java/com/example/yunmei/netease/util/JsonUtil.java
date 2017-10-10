@@ -1,4 +1,4 @@
-package com.example.yunmei.netease.splash.util;
+package com.example.yunmei.netease.util;
 
 import android.text.TextUtils;
 
