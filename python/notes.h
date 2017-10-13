@@ -55,14 +55,44 @@ f1=w1(f1);
 
 @w1("哈哈哈")
 
-15. 命名空间 import  test/// from test import *
+15. 命名空间 import  test /// from test import *
 
 16. 作用域：glocals locals
 
 17. 动态添加属性和方法
 
+18. 动态添加静态方法，类方法和实例方法
 
+19. 生成器：用小括号包围
 
+yield
+
+20. 类装饰器
+__call__
+
+21. 元类
+
+22.type创建一个类；类也是一个对象；
+
+type创建一个类；继承类；创建类的属性和方法；
+
+23. filter
+
+reduce
+
+24. 集合set()
+
+25. 不定长参数（*ha，**hahh）;
+
+26. functools
+
+27. import hashlib
+
+hashlib.MD5()
+
+28. python3 -m http.server 8000 / 8888
+
+29. matplotlib
 
 
 
