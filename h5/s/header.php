@@ -9,22 +9,19 @@
     <meta name="description" content="">
 
     <!-- 不能动的css   -->
-    <link rel="stylesheet" href="css/weui.css">
-    <link rel="stylesheet" href="css/jquery-weui.css">
-    <link rel="stylesheet" href="css/demos.css">
+    <link rel="stylesheet" href="http://ui.we63.com/s/css/weui.css">
+    <link rel="stylesheet" href="http://ui.we63.com/s/css/jquery-weui.css">
+    <link rel="stylesheet" href="http://ui.we63.com/s/css/demos.css">
 
 
     <!-- 扩展css   不能动 -->
-    <link rel="stylesheet" href="css/extend.css">
+    <!-- <link rel="stylesheet" href="http://ui.we63.com/s/css/extend.css"> -->
 
     <!-- 辅助css 不能动 -->
-    <link rel="stylesheet" href="css/help.css">
+    <link rel="stylesheet" href="http://ui.we63.com/s/css/help.css">
 
     <!-- 每个组件或者页面独立的样式，整合好后才可以放到扩展里  -->
     <link rel="stylesheet" href="css/s.css">
-    <!--  字体  -->
-    <link rel="stylesheet" href="css/demo.css">
-    <script src="css/iconfont.js"></script>
 
 
     <script src="js/jquery-2.1.4.js"></script>
