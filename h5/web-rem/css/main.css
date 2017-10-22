@@ -1,0 +1,91 @@
+.main-wrap{
+	/* 固定定位可能用在微信上面去，微信上面固定定位有问题 */
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+.header{
+	height: 2.5rem;
+	background-color: #37ab40;
+	position: relative;
+}
+/*.center_wrap{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	top: 50px;
+	background-color: cyan;
+    overflow-x: hidden;
+    overflow-y: auto;
+}*/
+/*.footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 50px;
+	background-color: red;
+}
+*//*.logo{
+    height: 36px;
+	width: 89px;
+	margin: 7px auto 0;
+    display: block;
+}
+.logo img{
+    width: 100%;
+}
+
+.search{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 10px;
+}
+.search img{
+	width: 100%;
+}*/
+/* img 设置宽或者是高；有等比例缩放的属性 */
+/*.slide img{
+	width: 100%;
+}
+.menu{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: green;
+}
+.menu > div{
+	width: 25%;
+}
+.menu > div > div{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+.menu > div > h1{
+    font-size: 14px;
+    text-align: center;
+}*/
+
+
+
+
+
+
+
+
+
+
