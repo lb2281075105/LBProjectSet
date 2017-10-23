@@ -231,11 +231,13 @@
 #pragma mark - SRWebSocketDelegate
 - (void)webSocketDidOpen:(SRWebSocket *)webSocket;
 {
-    NSData *data = [NSJSONSerialization dataWithJSONObject:@{@"cmd":@"hello",@"uid":@"7",@"uname":@"博"} options:NSJSONWritingPrettyPrinted error:NULL];
+    NSLog(@"open");
+    NSData *data = [NSJSONSerialization dataWithJSONObject:@{@"cmd":@"hello",@"uid":@"100",@"uname":@"博"} options:NSJSONWritingPrettyPrinted error:NULL];
     NSString *string = [[ NSString alloc ] initWithData :data encoding : NSUTF8StringEncoding];
     NSLog(@"Websocket Connected");
     [self.view makeToast:@"新的订单" duration:2 position:@"bottom"];
     if (_webSocket) {
+        
         [_webSocket send:string];
     }
 }
@@ -247,6 +249,9 @@
 - (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error;
 {
     NSLog(@":( Websocket Failed With Error %@", error);
+    self.webSocket.delegate = nil;
+    [_webSocket close];
+//    [self.view makeToast:@"断网重连" duration:2 position:@"center"];
     ///重连
     [self buttonConnect];
 }
