@@ -67,7 +67,13 @@
         make.right.equalTo(self.view).offset(-190);
         make.width.height.equalTo(@60);
     }];
-    
+    [NSTimer scheduledTimerWithTimeInterval:10 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        NSLog(@"时间");
+        self.webSocket.delegate = nil;
+        [_webSocket close];
+
+        [self buttonConnect];
+    }];
    ///创建表视图
     [self setUpTableView];
 }
@@ -87,10 +93,10 @@
 - (void)sendiOS10LocalNotification
 {
     UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
-    content.body = @"Body:夏目友人帐";
+    content.body = @"云仓提醒您，您有新的订单";
     content.badge = @(1);
-    content.title = @"Title:夏目·贵志";
-    content.subtitle = @"SubTitle:三三";
+    content.title = @"";
+    content.subtitle = @"";
     content.categoryIdentifier = kNotificationCategoryIdentifile;
     content.userInfo = @{kLocalNotificationKey: @"iOS10推送"};
     //    content.launchImageName = @"xiamu";
@@ -183,10 +189,6 @@
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     self.navigationController.navigationBar.hidden = NO;
-    [NSTimer scheduledTimerWithTimeInterval:10 repeats:YES block:^(NSTimer * _Nonnull timer) {
-        NSLog(@"时间");
-        [self buttonConnect];
-    }];
 }
 - (void)connect{
     
@@ -237,7 +239,7 @@
     NSLog(@"Websocket Connected");
     [self.view makeToast:@"新的订单" duration:2 position:@"bottom"];
     if (_webSocket) {
-        
+        NSLog(@"我是刘博");
         [_webSocket send:string];
     }
 }
@@ -249,8 +251,8 @@
 - (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error;
 {
     NSLog(@":( Websocket Failed With Error %@", error);
-    self.webSocket.delegate = nil;
-    [_webSocket close];
+//    self.webSocket.delegate = nil;
+//    [_webSocket close];
 //    [self.view makeToast:@"断网重连" duration:2 position:@"center"];
     ///重连
     [self buttonConnect];

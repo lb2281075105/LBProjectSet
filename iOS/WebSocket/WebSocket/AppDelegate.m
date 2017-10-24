@@ -20,7 +20,9 @@
 @import Foundation;
 #import <AVFoundation/AVFoundation.h>
 @interface AppDelegate ()
-
+{
+    AVAudioPlayer *_player;
+}
 @end
 
 @implementation AppDelegate
@@ -49,27 +51,27 @@
 
     return YES;
 }
-- (void)applicationDidEnterBackground:(UIApplication *)application{
-    
-    UIApplication*   app = [UIApplication sharedApplication];
-    __block    UIBackgroundTaskIdentifier bgTask;
-    bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (bgTask != UIBackgroundTaskInvalid)
-            {
-                bgTask = UIBackgroundTaskInvalid;
-            }
-        });
-    }];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (bgTask != UIBackgroundTaskInvalid)
-            {
-                bgTask = UIBackgroundTaskInvalid;
-            }
-        });
-    });
-}
+//- (void)applicationDidEnterBackground:(UIApplication *)application{
+//    
+//    UIApplication*   app = [UIApplication sharedApplication];
+//    __block    UIBackgroundTaskIdentifier bgTask;
+//    bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            if (bgTask != UIBackgroundTaskInvalid)
+//            {
+//                bgTask = UIBackgroundTaskInvalid;
+//            }
+//        });
+//    }];
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            if (bgTask != UIBackgroundTaskInvalid)
+//            {
+//                bgTask = UIBackgroundTaskInvalid;
+//            }
+//        });
+//    });
+//}
 - (void)registerLocalNotification
 {
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 10.0) {
@@ -302,5 +304,35 @@
         abort();
     }
 }
+- (void)applicationWillResignActive:(UIApplication *)application
+{//将要进入后台
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents]; // 让后台可以处理多媒体的事件
+    NSLog(@"%s",__FUNCTION__);
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setActive:YES error:nil];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil]; //后台播放
+    
+}
 
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{//进入后台
+    NSLog(@"%s",__FUNCTION__);
+    
+    AVAudioPlayer *player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"wusheng" ofType:@"mp3"]] error:nil];
+    _player = player;
+    // 创建播放器
+    AVAudioPlayer *audioPlayer = player; //赋值给自己定义的类变量
+    
+    [audioPlayer prepareToPlay];
+    [audioPlayer setVolume:1];
+    audioPlayer.numberOfLoops = -1; //设置音乐播放次数  -1为一直循环
+    if(audioPlayer)
+    {
+        [audioPlayer play]; //播放
+    }
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setActive:YES error:nil];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
+}
 @end

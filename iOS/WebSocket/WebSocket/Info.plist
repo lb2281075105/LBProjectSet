@@ -30,7 +30,6 @@
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
-		<string>fetch</string>
 		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
@@ -45,7 +44,7 @@
 	</array>
 	<key>WKBackgroundModes</key>
 	<array>
-		<string>App plays audio</string>
+		<string></string>
 	</array>
 </dict>
 </plist>
