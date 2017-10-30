@@ -1,0 +1,49 @@
+/* 5个图片 */
+.weui-cell-3{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+}
+.weui-cell-a{
+  -webkit-box-flex: 1;
+    -moz-box-flex:1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+          flex: 1;
+          text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.weui-cell-width{
+  width: 5px;
+  background-color: transparent;
+}
+.weui-cell-height{
+  height: 5px;
+  background-color: transparent;
+}
+.weui-cell-image{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+}
+.weui-cell-image-3{
+
+  -webkit-box-flex: 1;
+    -moz-box-flex:1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+          flex: 1;
+/*background-color: red;*/
+text-align: center;
+}

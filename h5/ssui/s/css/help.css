@@ -1,0 +1,185 @@
+
+/* 字体家族 */
+
+/* 字体大小 */
+.f-11{
+    font-size: 11px;
+}
+.f-12{
+    font-size: 12px;
+}
+.f-14{
+    font-size: 14px;
+}
+.f-16{
+    font-size: 16px;
+}
+.f-20{
+    font-size: 20px;
+}
+
+/* 字体颜色 */
+
+.f-black{
+    color:#111 ;
+}
+.f-red{
+    color:#f12528 ;
+}
+
+.f-light-red{
+   color:#d33a2a ;
+}
+
+.f-blue{
+    color:#198ded ;
+}
+
+.f-yellow{
+    color:#ffbe26 ;
+}
+
+.f-gray{
+    color:#999999 ;
+}
+
+.f-orange{
+   color:#fc5b23 ;
+}
+
+.f-green{
+   color:#1AAD19 ;
+}
+
+.f-white{
+    color: #fff;
+}
+
+.f-cyan{
+    color: #04c0cf;
+}
+.f-pink{
+    color:#f5317f
+}
+
+
+
+.f-purple{
+    color: #7265e6;
+
+}
+.f-dark-blue{
+    color: #1110E9;
+}
+/* 字体样式 */
+
+.f-w600{
+    font-weight: 600;
+}
+
+/* 字体行高 */
+
+.lh-12{
+    line-height: 1.2;
+}
+
+
+/* 背景颜色 */
+
+.bg-black{
+    background-color:#111 ;
+}
+.bg-red{
+    background-color:#f12528 ;
+}
+
+.bg-light-red{
+    background-color:#d33a2a ;
+}
+
+.bg-blue{
+    background-color:#198ded ;
+}
+
+.bg-yellow{
+    background-color:#ffbe26 ;
+}
+
+.bg-gray{
+    background-color:#999999 ;
+}
+
+.bg-orange{
+    background-color:#fc5b23 ;
+}
+
+.bg-green{
+    background-color:#1AAD19 ;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.bg-cyan{
+    background-color: #04c0cf;
+}
+
+.bg-pink{
+    background-color: #f5317f;
+}
+.bg-purple{
+    background-color: #7265e6;
+
+}
+.bg-dark-blue{
+    background-color: #1110E9;
+}
+
+.bg-bg,.bg-gray-bg{
+    background-color: #F8F8F8;
+}
+.bg-none{
+    background-color: transparent !important;
+}
+
+/* 圆角，扁平 */
+
+.flat{
+    border-radius: 0px;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+
+
+
+
+/* 浮动 */
+
+.float-left{
+    float: left;
+}
+
+
+
+/* 距离 */
+
+.mg-10{
+    margin: 10px;
+}
+
+.mgt-10{
+    margin-top: 10px;
+}
+.pd-10{
+    padding: 10px;
+}
+
+.pdb-10{
+    padding-bottom: 10px;
+}
+
+/* 边框 */

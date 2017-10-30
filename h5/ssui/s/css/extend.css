@@ -1,0 +1,17 @@
+
+/* 点点小标题 */
+
+
+.xs-title-mr{
+    margin: 10px 0px 10px 0px;
+}
+
+
+.xs-title-b{
+    width: 5px; height: 16px; vertical-align: text-bottom; display: inline-block; color: rgb(255, 255, 255); background-color: rgb(211, 42, 99);
+
+}
+.xs-title-e{
+    font-size: 16px; vertical-align: text-bottom; line-height: 14px; padding: 0px 10px; display: inline-block;font-weight: bold;
+
+}

@@ -1,0 +1,68 @@
+body, html {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f8f8f8;
+}
+.demos-title {
+
+  font-size: 20px;
+  font-weight: 400;
+
+}
+.demo-info{
+  margin-top: 5px;
+  color: #888;
+  text-align: left;
+  font-size: 14px;
+}
+
+.demos-sub-title {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.demos-header {
+  padding: 40px 40px 40px 15px;
+}
+
+.demos-content-padded {
+  padding: 15px;
+}
+
+.demo-placeholder {
+  margin: 5px;
+  padding: 0 10px;
+  background-color: #ebebeb;
+  height: 2.3em;
+  line-height: 2.3em;
+  text-align: center;
+  color: #cfcfcf;
+}
+
+.demos-second-title {
+  text-align: center;
+  font-size: 24px;
+  color: #3cc51f;
+  font-weight: 400;
+  margin: 0 15%;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+
+
+
+.demo-c{
+ margin: 5px;
+  padding: 0 10px;
+}

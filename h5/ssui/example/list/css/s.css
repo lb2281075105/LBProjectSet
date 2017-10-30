@@ -1,0 +1,37 @@
+/* 千牛列表 */
+.weui-panel1{
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+          flex:1;
+}
+.weui-top{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    font-size: 13px;
+    color: black;
+}
+.weui-down{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:flex;
+    flex-direction: row;
+    font-size: 11px;
+    margin-top: 9px;
+    position: relative;
+}
+.weui-down-first{
+    width: 60px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.weui-down-second{
+    width: 100%;
+    /*background-color: red;*/
+    text-align: right;
+}
+.iconfont{
+    font-size: 11px;
+    color: green;
+}

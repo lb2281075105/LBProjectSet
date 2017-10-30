@@ -1,0 +1,36 @@
+/* 商品列表 */
+.weui-media-box__desc{
+  position: relative;
+}
+.weui-content-right{
+  position: absolute;
+  right: 0px;
+}
+.img-border{
+  border-radius: 5px;
+}
+.weui-panel-line{
+  font-weight:400;
+  font-size:17px;
+  width:auto;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:wrap;
+  word-wrap:normal;
+  word-wrap:break-word;
+  word-break:break-all;
+}
+.weui-media-box-pd{
+  color:#999999;
+  font-size:13px;
+  line-height:1.2;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  display: flex;
+}
+.weui-cell-flex{
+  flex: 1;
+}

@@ -1,0 +1,72 @@
+
+
+.weui-cell-topIcon{
+  display: flex;
+  justify-content: center;
+}
+.weui-cell-topIcon-style{
+  text-align: center;
+}
+.weui-cells-top-images{
+  width: 95%;
+  border-radius: 6px;
+}
+.weui-cell-bottom > div{
+  float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.f-gray{
+  color:#999999;
+
+}
+.f-13{
+  font-size: 13px;
+}
+.pdb-5{
+    padding-bottom: 5px;
+}
+.f-14{
+  font-size:14px;
+}
+
+
+
+
+/* 品质团购 */
+.weui-cell-top-nav{
+  margin-top: 20px;
+}
+.weui-cell-more{
+    float: right;
+}
+.weui-cell-tuangou{
+  position: absolute;
+  left: 10px;
+}
+.weui-cell-bottom-bootom1{
+    -webkit-box-flex: 1;
+    -moz-box-flex:1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+          flex: 1;
+          /*overflow: hidden;*/
+}
+.weui-cell-bottom-bootom1 > img{
+  border-radius: 3px;
+  width: 100%;
+}
+.weui-cell-bottom-image{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.mglr-10{
+  margin: 0px 10px;
+}
+.bg-white{
+  background-color: white;
+}

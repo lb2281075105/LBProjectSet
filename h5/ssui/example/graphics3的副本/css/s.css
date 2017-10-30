@@ -1,0 +1,35 @@
+
+
+.weui-cell-topIcon{
+  display: flex;
+  justify-content: center;
+}
+.weui-cell-topIcon-style{
+  text-align: center;
+}
+.weui-cells-top-images{
+  width: 95%;
+  border-radius: 6px;
+}
+.weui-cell-bottom > div{
+  float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.f-gray{
+  color:#999999;
+
+}
+.f-13{
+  font-size: 13px;
+}
+.pdb-5{
+    padding-bottom: 5px;
+}
+.f-14{
+  font-size:14px;
+}
+
+
+
