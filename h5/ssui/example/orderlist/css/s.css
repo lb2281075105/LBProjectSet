@@ -1,0 +1,105 @@
+.weui-cell-right{
+  padding-left: 13px;
+  color:#999999;
+}
+.weui-cell-pf{
+  position: absolute;
+  left: 15px;
+}
+.weui-cell-title{
+  position: relative;
+}
+.weui-cell-img{
+  width: 200px;
+  height: 20px;
+  position: relative;
+}
+.weui-cell-img > img {
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  left: 200px;
+} 
+.orderlist-left{
+  float: left;
+  width: 10%;
+  height: 180px;
+  /*background-color: red;*/
+  border-top: 1px solid rgb(240,240,240);
+}
+.orderlist-right{
+  height: 180px;
+  float: left;
+  width: 90%;
+}
+.orderlist-top{
+  height: 50px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgb(240,240,240);
+}
+.orderlist-center{
+  height: 60px;
+  position: relative;
+  border: 1px solid rgb(240,240,240);
+}
+.orderlist-down{
+  height: 40px;
+  line-height: 40px;
+}
+.orderlist-top-content{
+  height: 50px;
+  background-color: gray;
+  padding-left: 5px;
+}
+.orderlist-top-content1{
+  height: 25px;
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 25px;
+}
+.orderlist-top-content2{
+  height: 25px;
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  line-height: 25px;
+}
+.orderlist-top-content3{
+  float: left;
+}
+.orderlist-top-content4{
+  float: right;
+  padding-right: 5px;
+}
+.orderlist-center-right{
+  position: absolute;
+  right: 20px;
+  margin-top: 5px;
+  height: 25px;
+  text-align: right;
+}
+.orderlist-center-right-top{
+  display: block;
+  height: 15px;
+  width: 50px;
+  font-size: 13px;
+}
+.orderlist-center > div{
+  float: left;
+  width: 40px;
+  height: 40px;
+  padding: 10px 0px;
+  padding-left: 5px;
+}
+.orderlist-center > div > img{
+  width: 100%;
+}
+.orderlist-center-right-down{
+  display: block;
+  height: 30px;
+}
+.orderlist-left > img{
+  width: 100%
+}

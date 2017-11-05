@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="http://ui.we63.com/s/css/help.css">
 
     <!-- 每个组件或者页面独立的样式，整合好后才可以放到扩展里  -->
-    <link rel="stylesheet" href="http://ui.we63.com/s/css/iconfont.css">
+    <!-- <link rel="stylesheet" href="http://ui.we63.com/s/css/iconfont.css"> -->
     <link rel="stylesheet" href="css/s.css">
 
 
