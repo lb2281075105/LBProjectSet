@@ -1,6 +1,0 @@
-framework module Pods_LBAiBoKe {
-  umbrella header "Pods-LBAiBoKe-umbrella.h"
-
-  export *
-  module * { export * }
-}
